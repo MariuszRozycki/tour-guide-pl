@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Trip 1",
+    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
+    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
+    "price": 580
+  },
+  {
+    "title": "Trip 2",
+    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
+    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
+    "price": 680
+  },
+  {
+    "title": "Trip 3",
+    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
+    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
+    "price": 480
+  },
+  {
+    "title": "Trip 4",
+    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
+    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
+    "price": 120
+  },
+  {
+    "title": "Trip 5",
+    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
+    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
+    "price": 150
+  }
+]
