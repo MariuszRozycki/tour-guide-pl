@@ -22,6 +22,7 @@ const Offers: React.FC = () => {
 
   return (
     <div>
+      <h1>Moje oferty dla Ciebie</h1>
       {offers.map((offer, index) => (
         <div key={index}>
           <h2>{offer.title}</h2>

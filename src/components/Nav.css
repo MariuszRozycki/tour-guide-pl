@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  .nav-logo-wrapper {
+    width: 90px;
+    height: 90px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+    gap: 10px;
+  }
+}
