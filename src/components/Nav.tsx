@@ -5,15 +5,19 @@ import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
 const Nav: React.FC = () => {
+  // const getNavLinkClass = (isActive: boolean) => (isActive ? "nav-link active" : "nav-link");
+
   return (
     <nav className="nav">
       <div className="nav-logo-wrapper">
-        <img src="../../public/logo.jpg" alt="logo" />
+        <a href="/">
+          <img src="../../public/logo.jpg" alt="logo" />
+        </a>
       </div>
       <ul>
         <li>
           <NavLink to="/" className={({ isActive }) => (isActive ? "active" : undefined)}>
-            Glowna
+            Główna
           </NavLink>
         </li>
         <li>

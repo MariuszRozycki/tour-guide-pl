@@ -1,0 +1,28 @@
+.h1-home-page {
+  font-size: var(--h1-fs);
+  span {
+    line-height: 1.5;
+    display: block;
+    text-transform: uppercase;
+    font-size: var(--h1-spam-fs);
+  }
+}
+
+.about-wrapper {
+  width: 100%;
+  text-align: justify;
+
+  .about-text {
+    margin: 0;
+  }
+
+  .img-wrapper {
+    float: right;
+    width: 40%; /* Możesz dostosować tę wartość według potrzeb */
+    margin: 0 0 0.5em 1.5em; /* Marginesy, aby tekst nie przylegał do obrazu */
+  }
+
+  .img-wrapper img {
+    width: 100%; /* Dopasowuje obraz do kontenera */
+  }
+}

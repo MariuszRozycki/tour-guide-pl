@@ -1,8 +1,17 @@
-.nav {
+/* nav global styles */
+.nav,
+.nav-logo-wrapper,
+ul {
   display: flex;
+}
+
+/* nav single elements */
+.nav {
   align-items: center;
+  border-bottom: 4px solid;
 
   .nav-logo-wrapper {
+    align-items: center;
     width: 90px;
     height: 90px;
 
@@ -12,10 +21,13 @@
   }
 
   ul {
-    display: flex;
     justify-content: flex-end;
     width: 100%;
     list-style: none;
-    gap: 10px;
+    gap: 50px;
+
+    li {
+      padding: 10px;
+    }
   }
 }
