@@ -1,0 +1,43 @@
+.container {
+  .PageNavigator-buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 15px 0 0 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+
+      .bo-back-arrow {
+        width: 25px;
+      }
+
+      p,
+      .PageNavigator-buttons {
+        padding: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: var(--btn-fs);
+        background-color: transparent;
+        color: var(--primary-color);
+        transition: var(--transition-standard);
+      }
+
+      .active {
+        color: var(--orange-color);
+      }
+    }
+
+    .arrow-wrapper {
+      width: 100%;
+    }
+  }
+}

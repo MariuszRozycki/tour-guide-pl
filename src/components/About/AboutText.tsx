@@ -1,20 +1,8 @@
-// src/components/Home.tsx
-import React from "react";
-
-import "./Home.css";
-
-const Home: React.FC = () => {
+const AboutText = () => {
   return (
-    <div>
-      <h1 className="h1-home-page">
-        Tour Guide <span>Kraftowe Wyjazdy</span>
-      </h1>
-      <h2>O mnie</h2>
-      <div className="about-wrapper">
-        <div className="img-wrapper">
-          <img src="../../public/pictures/TomekZ.webp" alt="Tomek Z. avarat" />
-        </div>
-        <p className="about-text">
+    <ul className="about-text">
+      <li>
+        <p>
           Nazywam się Tomasz Zdunek i jestem właścicielem oraz głównym przewodnikiem w biurze podróży Tour Guide. Nasze biuro działa
           nieprzerwanie od 2008 roku, oferując naszym klientom niezapomniane wycieczki po najpiękniejszych zakątkach Polski i Europy.
           Jako pasjonat podróży, przygody i aktywnego wypoczynku, osobiście dbam o każdy szczegół organizowanych wyjazdów, aby
@@ -27,11 +15,14 @@ const Home: React.FC = () => {
           wycieczki – od transportu, przez zakwaterowanie, aż po atrakcje turystyczne. Bezpieczeństwo: Dbamy o bezpieczeństwo naszych
           klientów, współpracując tylko z zaufanymi przewoźnikami i obiektami noclegowymi. Atrakcyjne ceny: Oferujemy konkurencyjne
           ceny, zapewniając jednocześnie wysoki standard usług. Zapraszam do odkrywania świata z Tour Guide – podróżuj z pasjonatami!
-          Z wyrazami szacunku, Tomasz Zdunek Właściciel Tour Guide
         </p>
-      </div>
-    </div>
+      </li>
+      <li>
+        <p>Z wyrazami szacunku,</p>
+        <p>Tomasz Zdunek Właściciel Tour Guide</p>
+      </li>
+    </ul>
   );
 };
 
-export default Home;
+export default AboutText;
