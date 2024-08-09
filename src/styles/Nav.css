@@ -1,0 +1,115 @@
+.nav .container,
+.nav-logo-wrapper,
+ul {
+  display: flex;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+}
+
+.nav .container {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-blue-color);
+
+  .nav-logo-wrapper {
+    align-items: center;
+    width: 60px;
+    height: 60px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  /* hamburger menu bars */
+  .hamburger-menu {
+    cursor: pointer;
+    .bars {
+      display: block;
+      width: 40px;
+      height: 4px;
+      margin: 6px 0;
+      background-color: var(--primary-color);
+      border-radius: 50px;
+      transition: var(--transition-standard);
+    }
+
+    /* bars transition */
+    .bar-one {
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    .bar-three {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .bar-two {
+      display: translate(100px);
+      opacity: 0;
+    }
+  }
+
+  .nav-main_list {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    background-color: var(--light-blue-color);
+    top: 52px;
+    left: -100vw;
+    transition: var(--transition-medium);
+    padding-bottom: 20px;
+
+    li {
+      display: block;
+      text-align: left;
+      color: var(--color-no9);
+      font-size: calc(var(--normal-font-size) + 2vw);
+      width: 100%;
+      padding: var(--mobile-view-padding);
+      margin: 5px 0;
+      transition: var(--transition-medium);
+      text-transform: uppercase;
+
+      &:hover {
+        color: var(--color-no1);
+      }
+    }
+  }
+
+  .background-action {
+    background-color: var(--color-no7);
+  }
+
+  .show {
+    left: 0;
+  }
+}
+
+/* media queries */
+@media (min-width: 480px) {
+  .nav .container {
+    .hamburger-menu {
+      display: none;
+    }
+
+    .nav-main_list {
+      position: static;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 70%;
+      gap: 10px;
+      padding-bottom: 0;
+
+      li {
+        text-align: center;
+        padding: var(--desktop-view-padding);
+        margin: 0;
+      }
+    }
+  }
+}
