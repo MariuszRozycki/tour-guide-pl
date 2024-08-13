@@ -35,7 +35,7 @@ const PageNavigator = () => {
     goBackBtn = (
       <li className="arrow-wrapper">
         <button className="PageNavigator-buttons" onClick={goBack}>
-          <img className="bo-back-arrow" src="/public/icons/go-back-arrow.svg" alt="Go back arrow" />
+          <img className="bo-back-arrow" src="/icons/go-back-arrow.svg" alt="Go back arrow" />
           <p>Poprzednia</p>
         </button>
       </li>

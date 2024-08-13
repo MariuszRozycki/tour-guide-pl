@@ -2,8 +2,6 @@ import HomeAboutText from "./HomeAboutText";
 import MainHeading from "../MainHeading/MainHeading";
 import HomeSlider from "./HomeSlider";
 
-// import "./Home.css";
-
 const Home = () => {
   return (
     <div>
