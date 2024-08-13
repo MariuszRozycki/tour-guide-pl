@@ -15,7 +15,6 @@ export const useGetOffers = (): OfferResponse => {
           id: uuidv4(),
         }));
 
-        console.log("response.data: ", offersWithId);
         setOffers(offersWithId);
       })
       .catch((error) => {
