@@ -1,14 +1,26 @@
-import Offers from "./components/Offers";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Nav from "./components/Nav/Nav";
+import PageNavigator from "./components/PageNavigator/PageNavigator";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Offers from "./components/Offers/Offers";
+import Contact from "./components/Contact/Contact";
 
-import "./App.css";
+import "./styles/index.css";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <h1>TourGuide</h1>
-      <Offers />
-    </>
+    <Router>
+      <Nav />
+      <PageNavigator />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/offers" element={<Offers />} />
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
