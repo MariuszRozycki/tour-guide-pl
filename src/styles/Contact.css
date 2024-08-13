@@ -1,0 +1,45 @@
+.form {
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+
+  .form-el-wrapper {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+
+    label {
+      font-weight: 600;
+    }
+  }
+
+  input,
+  textarea {
+    padding: var(--input-padding);
+    margin-top: 4px;
+    width: 100%;
+    border-radius: var(--border-radius-min);
+    border: 1px solid var(--primary-color);
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+
+  button {
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 160px;
+    align-self: center;
+  }
+
+  .greetings-wrapper {
+    margin-top: 50px;
+    text-align: left;
+
+    p {
+      margin: 0;
+    }
+  }
+}

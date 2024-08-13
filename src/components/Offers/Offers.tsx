@@ -9,11 +9,6 @@ const Offers = () => {
     return <div>Loading...</div>;
   }
 
-  offers.forEach((offer) => {
-    console.log("offer inside Offers.tsx: ", offer);
-    console.log("offer.id: ", offer.id);
-  });
-
   return (
     <div className="container">
       <MainHeading />

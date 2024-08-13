@@ -1,4 +1,5 @@
 import MainHeading from "../MainHeading/MainHeading";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -6,19 +7,10 @@ const Contact = () => {
       <div className="container">
         <MainHeading />
         <h2>Kontakt</h2>
-        <div className="about-wrapper">
-          <div className="img-wrapper">
-            <img src="/pictures/TomekZ.webp" alt="Tomek Z. avatar" />
-          </div>
-          <ul className="about-text">
-            <li>
-              <p>Napisz do mnie!</p>
-            </li>
-            <li>
-              <p>Z wyrazami szacunku,</p>
-              <p>Tomasz Zdunek Właściciel Tour Guide</p>
-            </li>
-          </ul>
+        <div className="contact-wrapper">
+          <h3>Napisz do mnie!</h3>
+
+          <ContactForm />
         </div>
       </div>
     </div>
