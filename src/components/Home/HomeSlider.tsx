@@ -48,8 +48,8 @@ const HomeSlider = () => {
     <div className="slider-container">
       <h2>Oferty dla Ciebie</h2>
       <Slider {...settings}>
-        {offers.map((offer, index) => (
-          <div key={index} className="slider-item">
+        {offers.map((offer) => (
+          <div key={offer.id} className="slider-item">
             <h2>{offer.title}</h2>
             <div className="slider-img-wrapper">
               <img src={offer.imageMain} alt={`${offer.title}`} />

@@ -63,16 +63,16 @@ const PageNavigator = () => {
   } else if (isOffers) {
     buttonToShow = (
       <li>
-        <button className="PageNavigator-buttons go-contact-btn active" onClick={goContact}>
-          Kontakt
+        <button className="PageNavigator-buttons go-contact-btn active" onClick={goOffers}>
+          Oferty
         </button>
       </li>
     );
   } else if (isContact) {
     buttonToShow = (
       <li>
-        <button className="PageNavigator-buttons go-offers-btn active" onClick={goOffers}>
-          Oferty
+        <button className="PageNavigator-buttons go-offers-btn active" onClick={goContact}>
+          Kontakt
         </button>
       </li>
     );

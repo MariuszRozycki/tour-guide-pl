@@ -1,6 +1,7 @@
 import { OfferResponse } from "../types/offers";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 export const useGetOffers = (): OfferResponse => {
   const [offers, setOffers] = useState<OfferResponse>([]);
@@ -9,9 +10,13 @@ export const useGetOffers = (): OfferResponse => {
     axios
       .get<OfferResponse>("/src/assets/offers.json")
       .then((response) => {
-        console.log("response.data: ", response.data);
+        const offersWithId = response.data.map((offer) => ({
+          ...offer,
+          id: uuidv4(),
+        }));
 
-        setOffers(response.data);
+        console.log("response.data: ", offersWithId);
+        setOffers(offersWithId);
       })
       .catch((error) => {
         console.error("Error fetching offers:", error);
