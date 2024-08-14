@@ -45,7 +45,7 @@
     "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
     "imageMain": "/pictures/tomek-sea.webp",
     "price": 150,
-    "typeOfTrip": "plane",
+    "typeOfTrip": "plane-trip",
     "lengthOfTrip": "five-days",
     "destinationType": "abroad"
   }

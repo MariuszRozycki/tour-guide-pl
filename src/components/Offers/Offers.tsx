@@ -1,15 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { useGetOffers } from "../../hooks/useGetOffers";
-import { OfferResponse } from "../../types/offers";
 import MainHeading from "../MainHeading/MainHeading";
 
 const Offers = () => {
-  const offers: OfferResponse = useGetOffers();
-
-  if (!offers) {
-    return <div>Loading...</div>;
-  }
-
   // Lista kategorii oparta na danych
   const categories = [
     { name: "Zagraniczne", type: "abroad" },
@@ -35,21 +27,6 @@ const Offers = () => {
           </NavLink>
         ))}
       </nav>
-
-      <div className="offers-list">
-        {offers.map((offer) => (
-          <div key={offer.title}>
-            <h2>{offer.title}</h2>
-
-            <div className="offer-img-wrapper">
-              <img src={offer.imageMain} alt={offer.title} />
-            </div>
-
-            <p>{offer.description}</p>
-            <p>{offer.price} PLN</p>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

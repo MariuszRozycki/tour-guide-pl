@@ -1,29 +1,29 @@
 import { useGetOffers } from "../../hooks/useGetOffers";
 import { OfferResponse } from "../../types/offers";
-import { conditionNotMeet } from "../../utils/conditionNotMeet";
 import MainHeading from "../MainHeading/MainHeading";
+import { conditionNotMeet } from "../../utils/conditionNotMeet";
 
-const ThreeDaysTrip = () => {
+const DomesticTrip = () => {
   const offers: OfferResponse = useGetOffers();
 
   if (!offers) {
     return <div>Loading...</div>;
   }
 
-  const threeDaysOffers = offers.filter((offer) => offer.lengthOfTrip === "three-days");
-  console.log(threeDaysOffers);
-  const conditionNotExists = conditionNotMeet(threeDaysOffers);
+  const domesticOffers = offers.filter((offer) => offer.destinationType === "domestic");
+  console.log(domesticOffers);
+  const conditionNotExists = conditionNotMeet(domesticOffers);
 
   return (
     <div>
       <div className="container">
         <MainHeading />
 
-        <h2>Wycieczki trzydniowe</h2>
+        <h2>Wycieczki krajowe</h2>
 
         <div className="offers-list">
           {conditionNotExists}
-          {threeDaysOffers.map((offer) => (
+          {domesticOffers.map((offer) => (
             <div key={offer.title}>
               <h2>{offer.title}</h2>
 
@@ -41,4 +41,4 @@ const ThreeDaysTrip = () => {
   );
 };
 
-export default ThreeDaysTrip;
+export default DomesticTrip;
