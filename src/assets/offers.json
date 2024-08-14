@@ -4,34 +4,49 @@
     "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
     "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
     "imageMain": "/pictures/autokar-tomek.jpg",
-    "price": 580
+    "price": 580,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "abroad"
   },
   {
     "title": "Trip 2",
     "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
     "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
     "imageMain": "/pictures/kayak-tomek.jpg",
-    "price": 680
+    "price": 680,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "abroad"
   },
   {
     "title": "Trip 3",
     "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
     "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
     "imageMain": "/pictures/mountains-tomek.jpg",
-    "price": 480
+    "price": 480,
+    "typeOfTrip": "kayak",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
   },
   {
     "title": "Trip 4",
     "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
     "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
     "imageMain": "/pictures/tomek-sea.png",
-    "price": 120
+    "price": 120,
+    "typeOfTrip": "kayak",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
   },
   {
     "title": "Trip 5",
     "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
     "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
     "imageMain": "/pictures/tomek-sea.webp",
-    "price": 150
+    "price": 150,
+    "typeOfTrip": "plane",
+    "lengthOfTrip": "five-days",
+    "destinationType": "abroad"
   }
 ]
