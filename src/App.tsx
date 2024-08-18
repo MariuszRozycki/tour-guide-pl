@@ -5,8 +5,6 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Offers from "./components/Offers/Offers";
 import Contact from "./components/Contact/Contact";
-
-import "./styles/index.css";
 import AbroadTrip from "./components/Offers/AbroadTrip";
 import DomesticTrip from "./components/Offers/DomesticTrip";
 import BussTrip from "./components/Offers/BussTrip";
@@ -16,6 +14,8 @@ import TwoDayTrip from "./components/Offers/TwoDaysTrip";
 import ThreeDaysTrip from "./components/Offers/ThreeDaysTrip";
 import FiveDaysTrip from "./components/Offers/FiveDaysTrip";
 import KayakTrip from "./components/Offers/KayakTrip";
+
+import "./styles/index.css";
 
 const App = () => {
   return (

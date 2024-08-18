@@ -1,42 +1,5 @@
-import { useGetOffers } from "../../hooks/useGetOffers";
-import { OfferResponse } from "../../types/offers";
-import MainHeading from "../MainHeading/MainHeading";
-import { conditionNotMeet } from "../../utils/conditionNotMeet";
+import TripList from "./TripList";
 
-const AbroadTrip = () => {
-  const offers: OfferResponse = useGetOffers();
-
-  if (!offers) {
-    return <div>Loading...</div>;
-  }
-
-  const abroadOffers = offers.filter((offer) => offer.destinationType === "abroad");
-  console.log(abroadOffers);
-  const conditionNotExists = conditionNotMeet(abroadOffers);
-
-  return (
-    <div>
-      <div className="container">
-        <MainHeading />
-        <h2>Wycieczki zagraniczne</h2>
-        {conditionNotExists}
-        <div className="offers-list">
-          {abroadOffers.map((offer) => (
-            <div key={offer.title}>
-              <h2>{offer.title}</h2>
-
-              <div className="offer-img-wrapper">
-                <img src={offer.imageMain} alt={offer.title} />
-              </div>
-
-              <p>{offer.description}</p>
-              <p>Cena: {offer.price} PLN</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+const AbroadTrip = () => <TripList title="Wycieczki zagraniczne" filterCondition={(offer) => offer.destinationType === "abroad"} />;
 
 export default AbroadTrip;
