@@ -8,58 +8,6 @@ const PageNavigator = () => {
     navigate(-1);
   };
 
-  const goHome = () => {
-    navigate("/");
-  };
-
-  const goAbout = () => {
-    navigate("/about");
-  };
-
-  const goOffers = () => {
-    navigate("/offers");
-  };
-
-  const goContact = () => {
-    navigate("/contact");
-  };
-
-  const goOffersAbroad = () => {
-    navigate("/offers/abroad");
-  };
-
-  const goOffersDomestic = () => {
-    navigate("/offers/domestic");
-  };
-
-  const goOffersOneDay = () => {
-    navigate("/offers/one-day");
-  };
-
-  const goOffersTwoDays = () => {
-    navigate("/offers/two-days");
-  };
-
-  const goOffersThreeDays = () => {
-    navigate("/offers/three-days");
-  };
-
-  const goOffersFiveDays = () => {
-    navigate("/offers/five-days");
-  };
-
-  const goOffersKayak = () => {
-    navigate("/offers/kayak");
-  };
-
-  const goOffersBuss = () => {
-    navigate("/offers/buss-trip");
-  };
-
-  const goOffersPlane = () => {
-    navigate("/offers/plane");
-  };
-
   const isHome = location.pathname === "/";
   const isAbout = location.pathname === "/about";
   const isOffers = location.pathname === "/offers";
@@ -80,51 +28,91 @@ const PageNavigator = () => {
     goBackBtn = (
       <li className="arrow-wrapper">
         <button className="PageNavigator-buttons" onClick={goBack}>
-          <img className="bo-back-arrow" src="/icons/go-back-arrow.svg" alt="Go back arrow" />
+          <img className="go-back-arrow" src="/icons/go-back-arrow.svg" alt="Go back arrow" />
           <p>Poprzednia</p>
         </button>
       </li>
     );
   }
 
-  let buttonToShow;
+  let currentPageToShow;
 
   if (isHome) {
-    buttonToShow = (
+    currentPageToShow = (
       <li>
-        <button className="PageNavigator-buttons go-about-btn active" onClick={goHome}>
-          Home
-        </button>
+        <p className="PageNavigator-element active">Home</p>
       </li>
     );
   } else if (isAbout) {
-    buttonToShow = (
+    currentPageToShow = (
       <li>
-        <button className="PageNavigator-buttons go-home-btn active" onClick={goAbout}>
-          O mnie
-        </button>
+        <p className="PageNavigator-element active">O mnie</p>
       </li>
     );
   } else if (isOffers) {
-    buttonToShow = (
+    currentPageToShow = (
       <li>
-        <button className="PageNavigator-buttons go-contact-btn active" onClick={goOffers}>
-          Oferty
-        </button>
+        <p className="PageNavigator-element active">Oferty</p>
       </li>
     );
   } else if (isContact) {
-    buttonToShow = (
+    currentPageToShow = (
       <li>
-        <button className="PageNavigator-buttons go-offers-btn active" onClick={goContact}>
-          Kontakt
-        </button>
+        <p className="PageNavigator-element active">Kontakt</p>
       </li>
     );
   } else if (isOffersAbroad) {
-    buttonToShow = (
+    currentPageToShow = (
       <li>
-        <button className="PageNavigator-buttons go-contact-btn active">Zagraniczne</button>
+        <p className="PageNavigator-element active">Zagraniczne</p>
+      </li>
+    );
+  } else if (isOffersDomestic) {
+    currentPageToShow = (
+      <li>
+        <p className="PageNavigator-element active">Krajowe</p>
+      </li>
+    );
+  } else if (isOffersOneDay) {
+    currentPageToShow = (
+      <li>
+        <p className="PageNavigator-element active">Jednodniowe</p>
+      </li>
+    );
+  } else if (isOffersTwoDays) {
+    currentPageToShow = (
+      <li>
+        <p className="PageNavigator-element active">Dwudniowe</p>
+      </li>
+    );
+  } else if (isOffersThreeDays) {
+    currentPageToShow = (
+      <li>
+        <p className="PageNavigator-element active">Trzydniowe</p>
+      </li>
+    );
+  } else if (isOffersFiveDays) {
+    currentPageToShow = (
+      <li>
+        <p className="PageNavigator-element active">Pieciodniowe</p>
+      </li>
+    );
+  } else if (isOffersKayak) {
+    currentPageToShow = (
+      <li>
+        <p className="PageNavigator-element active">Spływy kajakowe</p>
+      </li>
+    );
+  } else if (isOffersBuss) {
+    currentPageToShow = (
+      <li>
+        <p className="PageNavigator-element active">Autokarowe</p>
+      </li>
+    );
+  } else if (isOffersPlane) {
+    currentPageToShow = (
+      <li>
+        <p className="PageNavigator-element active">Samolotowe</p>
       </li>
     );
   }
@@ -141,7 +129,7 @@ const PageNavigator = () => {
         <ul className="PageNavigator-buttons-wrapper">
           {goBackBtn}
           {onSideText}
-          {buttonToShow}
+          {currentPageToShow}
         </ul>
       </div>
     </div>

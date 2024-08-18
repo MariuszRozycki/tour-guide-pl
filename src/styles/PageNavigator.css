@@ -14,12 +14,13 @@
       align-items: center;
       margin: 0;
 
-      .bo-back-arrow {
+      .go-back-arrow {
         width: 25px;
       }
 
       p,
-      .PageNavigator-buttons {
+      .PageNavigator-buttons,
+      .PageNavigator-element {
         padding: 0 5px;
         display: flex;
         justify-content: center;

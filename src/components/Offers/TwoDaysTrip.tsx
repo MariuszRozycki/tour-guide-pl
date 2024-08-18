@@ -20,9 +20,8 @@ const TwoDaysTrip = () => {
         <MainHeading />
 
         <h2>Wycieczki dwudniowe</h2>
-
+        {conditionNotExists}
         <div className="offers-list">
-          {conditionNotExists}
           {twoDaysOffers.map((offer) => (
             <div key={offer.title}>
               <h2>{offer.title}</h2>

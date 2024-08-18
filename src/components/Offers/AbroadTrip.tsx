@@ -18,11 +18,9 @@ const AbroadTrip = () => {
     <div>
       <div className="container">
         <MainHeading />
-
         <h2>Wycieczki zagraniczne</h2>
-
+        {conditionNotExists}
         <div className="offers-list">
-          {conditionNotExists}
           {abroadOffers.map((offer) => (
             <div key={offer.title}>
               <h2>{offer.title}</h2>
