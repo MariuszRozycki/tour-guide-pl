@@ -1,7 +1,7 @@
-import TripList from "./TripList";
+import OffersList from "./OffersList";
 
 const BussTrip = () => {
-  return <TripList title="Wycieczki autobusowe" filterCondition={(offer) => offer.destinationType === "buss-trip"} />;
+  return <OffersList title="Wycieczki autobusowe" filterCondition={(offer) => offer.typeOfTrip === "buss-trip"} />;
 };
 
 export default BussTrip;

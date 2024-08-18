@@ -23,6 +23,17 @@
         margin-top: 15px;
         display: block;
         text-align: left;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .icon {
+            width: 20px;
+            height: auto;
+          }
+        }
       }
     }
 

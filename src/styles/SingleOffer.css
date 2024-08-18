@@ -1,0 +1,20 @@
+.single-offer {
+  h2,
+  p {
+    text-align: left;
+  }
+
+  border: 2px solid;
+  padding: 0 15px 15px;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow-medium);
+
+  .single-offer-btn {
+    box-shadow: var(--box-shadow-medium);
+    transition: var(--transition-standard);
+
+    &:hover {
+      box-shadow: var(--box-shadow-null);
+    }
+  }
+}

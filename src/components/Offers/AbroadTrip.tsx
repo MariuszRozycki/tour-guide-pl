@@ -1,5 +1,7 @@
-import TripList from "./TripList";
+import OffersList from "./OffersList";
 
-const AbroadTrip = () => <TripList title="Wycieczki zagraniczne" filterCondition={(offer) => offer.destinationType === "abroad"} />;
+const AbroadTrip = () => (
+  <OffersList title="Wycieczki zagraniczne" filterCondition={(offer) => offer.destinationType === "abroad"} />
+);
 
 export default AbroadTrip;
