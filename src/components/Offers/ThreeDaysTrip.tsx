@@ -1,7 +1,7 @@
-import TripList from "./TripList";
+import OffersList from "./OffersList";
 
 const ThreeDaysTrip = () => {
-  return <TripList title="Wycieczki trzydniowe" filterCondition={(offer) => offer.destinationType === "three-days"} />;
+  return <OffersList title="Wycieczki trzydniowe" filterCondition={(offer) => offer.lengthOfTrip === "three-days"} />;
 };
 
 export default ThreeDaysTrip;

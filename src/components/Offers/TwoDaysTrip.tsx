@@ -1,7 +1,7 @@
-import TripList from "./TripList";
+import OffersList from "./OffersList";
 
 const TwoDaysTrip = () => {
-  return <TripList title="Wycieczki dwudniowe" filterCondition={(offer) => offer.typeOfTrip === "two-days"} />;
+  return <OffersList title="Wycieczki dwudniowe" filterCondition={(offer) => offer.lengthOfTrip === "two-days"} />;
 };
 
 export default TwoDaysTrip;

@@ -10,7 +10,10 @@ const HomeAboutText = () => {
           Jako pasjonat podróży, przygody i aktywnego wypoczynku, osobiście dbam o każdy szczegół organizowanych wyjazdów, aby
           zapewnić naszym klientom najwyższą jakość usług i niezapomniane wspomnienia...
           <span>
-            <NavLink to="/about">Kliknij tutaj aby przeczytac wiecej w sekcji "O MNIE"</NavLink>
+            <NavLink to="/about">
+              <img className="icon" src="/icons/right-arrow.png" alt="Icon right arrow" />
+              Kliknij aby przeczytac wiecej w sekcji "O MNIE"
+            </NavLink>
           </span>
         </p>
       </li>

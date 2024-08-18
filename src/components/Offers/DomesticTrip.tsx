@@ -1,5 +1,7 @@
-import TripList from "./TripList";
+import OffersList from "./OffersList";
 
-const DomesticTrip = () => <TripList title="Wycieczki krajowe" filterCondition={(offer) => offer.destinationType === "domestic"} />;
+const DomesticTrip = () => (
+  <OffersList title="Wycieczki krajowe" filterCondition={(offer) => offer.destinationType === "domestic"} />
+);
 
 export default DomesticTrip;

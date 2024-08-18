@@ -1,7 +1,7 @@
-import TripList from "./TripList";
+import OffersList from "./OffersList";
 
 const OneDayTrip = () => {
-  return <TripList title="Wycieczki jednodniowe" filterCondition={(offer) => offer.typeOfTrip === "one-day"} />;
+  return <OffersList title="Wycieczki jednodniowe" filterCondition={(offer) => offer.lengthOfTrip === "one-day"} />;
 };
 
 export default OneDayTrip;

@@ -1,7 +1,7 @@
-import TripList from "./TripList";
+import OffersList from "./OffersList";
 
 const FiveDaysTrip = () => (
-  <TripList title="Wycieczki pięciodniowe" filterCondition={(offer) => offer.lengthOfTrip === "five-days"} />
+  <OffersList title="Wycieczki pięciodniowe" filterCondition={(offer) => offer.lengthOfTrip === "five-days"} />
 );
 
 export default FiveDaysTrip;
