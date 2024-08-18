@@ -8,6 +8,10 @@ const PageNavigator = () => {
     navigate(-1);
   };
 
+  const goOffers = () => {
+    navigate("/offers");
+  };
+
   const pages = [
     { path: "/", label: "Home" },
     { path: "/about", label: "O mnie" },
@@ -25,27 +29,48 @@ const PageNavigator = () => {
   ];
 
   const currentPage = pages.find((page) => page.path === location.pathname);
+  const isOffersPage = location.pathname.startsWith("/offers");
+
+  const allOffersBtn =
+    isOffersPage && location.pathname !== "/offers" ? (
+      <li className="PageNavigator-element">
+        <button className="PageNavigator-button" onClick={goOffers}>
+          <img className="icon" src="/icons/target.png" alt="Icon target" />
+          <p>Pokaż wszystkie oferty</p>
+        </button>
+      </li>
+    ) : null;
+
+  const previousPageBtn =
+    !currentPage || currentPage.path !== "/" ? (
+      <li className="icon-wrapper PageNavigator-element">
+        <button className="PageNavigator-button" onClick={goBack}>
+          <img className="icon" src="/icons/go-back-arrow.svg" alt="Icon arrow" />
+          <p>Poprzednia</p>
+        </button>
+      </li>
+    ) : null;
+
+  const currentPageBtn = (
+    <>
+      <li>
+        <p>Jesteś na:</p>
+      </li>
+      {currentPage ? (
+        <li>
+          <p className="PageNavigator-element-paragraph active">{currentPage.label}</p>
+        </li>
+      ) : null}
+    </>
+  );
 
   return (
     <div>
       <div className="container">
         <ul className="PageNavigator-buttons-wrapper">
-          {!currentPage || currentPage.path !== "/" ? (
-            <li className="arrow-wrapper">
-              <button className="PageNavigator-buttons" onClick={goBack}>
-                <img className="go-back-arrow" src="/icons/go-back-arrow.svg" alt="Go back arrow" />
-                <p>Poprzednia</p>
-              </button>
-            </li>
-          ) : null}
-          <li>
-            <p>Jesteś na:</p>
-          </li>
-          {currentPage ? (
-            <li>
-              <p className="PageNavigator-element active">{currentPage.label}</p>
-            </li>
-          ) : null}
+          {currentPageBtn}
+          {allOffersBtn}
+          {previousPageBtn}
         </ul>
       </div>
     </div>
