@@ -7,13 +7,14 @@ ul {
 .nav {
   position: sticky;
   top: 0;
+  z-index: 1;
+  background-color: var(--light-blue-color);
 }
 
 .nav .container {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--light-blue-color);
 
   .nav-logo-wrapper {
     align-items: center;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface ModalProps {
   isOpen: boolean;
@@ -7,44 +7,18 @@ interface ModalProps {
 }
 
 const OfferModal = ({ isOpen, onClose, children }: ModalProps) => {
-  const [isClosing, setIsClosing] = useState(false);
-
-  useEffect(() => {
-    if (!isOpen) {
-      setIsClosing(true);
-      const timer = setTimeout(() => {
-        setIsClosing(false);
-      }, 300);
-
-      return () => clearTimeout(timer);
-    }
-  }, [isOpen]);
-
-  if (!isOpen && !isClosing) return null;
+  if (!isOpen) return null;
 
   const handleOutsideClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
-      setIsClosing(true);
-      setTimeout(() => {
-        onClose();
-        setIsClosing(false);
-      }, 300);
+      onClose();
     }
   };
 
   return (
     <div className="modal-backdrop" onClick={handleOutsideClick}>
-      <div className={`modal-content ${isOpen && !isClosing ? "fade-in" : "fade-out"}`}>
-        <button
-          className="modal-close"
-          onClick={() => {
-            setIsClosing(true);
-            setTimeout(() => {
-              onClose();
-              setIsClosing(false);
-            }, 300);
-          }}
-        >
+      <div className="modal-content fade-in">
+        <button className="modal-close" onClick={onClose}>
           &times;
         </button>
         {children}

@@ -4,10 +4,17 @@
       display: grid;
       grid-template-columns: 1fr;
       list-style: none;
-      padding: 0;
+      padding: 10px;
+      max-width: 450px;
+      margin: auto;
+      background-color: var(--yellow-light-color);
+      border-radius: var(--border-radius-small);
+      text-align: center;
+      box-shadow: var(--box-shadow-light);
 
       p {
         margin: 10px 0;
+        font-weight: 600;
       }
     }
   }

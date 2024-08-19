@@ -27,6 +27,7 @@ const ContactForm = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+      <h3>Napisz do mnie!</h3>
       <div className="form-el-wrapper">
         <label htmlFor="name">
           Imię:

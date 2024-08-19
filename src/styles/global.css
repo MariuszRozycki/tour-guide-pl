@@ -4,9 +4,13 @@
 
 body {
   margin: 0;
+  background-color: #d7fff6bd;
 }
 
 :root {
+  min-height: 100vh;
+  position: relative;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -60,9 +64,6 @@ body {
   --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
   --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
   --box-shadow-hard: 0 4px 8px rgba(0, 0, 0, 0.9), 0 6px 20px rgba(0, 0, 0, 0.9);
-
-  /* break points */
-  --min-width_480px: 480px;
 }
 
 .container {
@@ -70,7 +71,6 @@ body {
   margin: 0 auto;
   padding: var(--mobile-view-padding);
   text-align: center;
-  background-color: #d7fff6bd;
 }
 
 section {
@@ -112,7 +112,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 button {

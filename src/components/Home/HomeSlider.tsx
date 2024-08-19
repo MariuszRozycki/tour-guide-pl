@@ -75,7 +75,7 @@ const HomeSlider = () => {
               <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
             </div>
             <p>{selectedOffer.description}</p>
-            <p>Cena: {selectedOffer.price} PLN</p>
+            <p className="modal-offer-price">Cena: {selectedOffer.price} PLN</p>
           </>
         )}
       </OfferModal>

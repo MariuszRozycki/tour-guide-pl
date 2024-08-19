@@ -28,9 +28,6 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <p>albo</p>
-          </li>
-          <li>
             <a href="mailto:tourguide@poczta.onet.pl">
               <div className="contact-details-icon-wrapper email-icon">
                 <img src="/icons/email-icon.png" alt="Email icon" />
@@ -40,8 +37,6 @@ const Contact = () => {
           </li>
         </ul>
         <div className="contact-form-wrapper">
-          <h3>Napisz do mnie!</h3>
-
           <ContactForm />
         </div>
       </div>
