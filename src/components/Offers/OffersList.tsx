@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useGetOffers } from "../../hooks/useGetOffers";
 import { OfferResponse } from "../../types/offers";
 import MainHeading from "../MainHeading/MainHeading";
