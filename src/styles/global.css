@@ -36,6 +36,7 @@ body {
   --h1-spam-fs: clamp(1.6rem, 3vw, 2.2rem);
   --h2-fs: clamp(1.5rem, 3vw, 2rem);
   --a-link-fs: clamp(1rem, 2vw, 1.5rem);
+  --a-link-fs-footer: clamp(1rem, 2vw, 1.1rem);
   --paragraph-fs: clamp(1rem, 3vw, 1.2rem);
   --paragraph-slider-fs: clamp(1rem, 2vw, 1.5rem);
   --btn-fs: clamp(1.2rem, 2vw, 1.5rem);
@@ -47,6 +48,7 @@ body {
   /* padding */
   --mobile-view-padding: 5px 15px;
   --desktop-view-padding: 5px 0px;
+  --desktop-media-queries-padding: 5px 25px;
   --input-padding: 8px 5px;
 
   /* border-radius */
@@ -136,4 +138,10 @@ button:focus-visible {
   content: "";
   display: table;
   clear: both;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding: var(--desktop-media-queries-padding);
+  }
 }

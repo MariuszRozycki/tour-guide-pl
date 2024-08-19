@@ -14,19 +14,17 @@ const OffersNav = () => {
   ];
 
   return (
-    <div className="container">
-      <nav className="offers-navigator">
-        <ul>
-          {categories.map((category) => (
-            <li key={category.type}>
-              <NavLink to={`/offers/${category.type}`} className={({ isActive }) => (isActive ? "active" : "")}>
-                <p>{category.name}</p>
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
+    <nav className="offers-navigator">
+      <ul>
+        {categories.map((category) => (
+          <li key={category.type}>
+            <NavLink to={`/offers/${category.type}`} className={({ isActive }) => (isActive ? "active" : "")}>
+              <p>{category.name}</p>
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 

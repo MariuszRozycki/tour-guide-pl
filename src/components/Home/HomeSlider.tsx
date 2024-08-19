@@ -18,10 +18,10 @@ const HomeSlider = () => {
     slidesToScroll: 1,
     swipe: true,
     arrows: false,
-    autoplay: true, // Automatyczne przewijanie slajdów
-    autoplaySpeed: 3000, // Prędkość automatycznego przewijania (ms)
-    fade: false, // Włącza tryb zanikania między slajdami
-    pauseOnHover: true, // Wstrzymuje automatyczne przewijanie na hover
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: false,
+    pauseOnHover: true,
     initialSlide: 0,
     responsive: [
       {
@@ -59,9 +59,9 @@ const HomeSlider = () => {
               <img src={offer.imageMain} alt={`${offer.title}`} />
             </div>
             <p className="slider-desc-abbrev">{offer.descAbbrev}</p>
-            <p className="slider-offer-price">Price: ${offer.price}</p>
+            <p className="slider-offer-price">Cena: {offer.price} PLN</p>
             <button className="slider-offer-details-btn" onClick={() => setSelectedOffer(offer)}>
-              Detale
+              Szczegóły
             </button>
           </div>
         ))}

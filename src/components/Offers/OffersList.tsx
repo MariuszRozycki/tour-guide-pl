@@ -3,6 +3,7 @@ import { useGetOffers } from "../../hooks/useGetOffers";
 import { OfferResponse } from "../../types/offers";
 import MainHeading from "../MainHeading/MainHeading";
 import { conditionNotMeet } from "../../utils/conditionNotMeet";
+import OfferModal from "./OfferModal";
 
 interface OffersListProps {
   title: string;
@@ -20,14 +21,6 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
   const filteredOffers = offers.filter(filterCondition);
   const conditionNotExists = conditionNotMeet(filteredOffers);
 
-  const closeModal = () => setSelectedOffer(null);
-
-  const handleOutsideClick = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) {
-      closeModal();
-    }
-  };
-
   return (
     <div>
       <div className="container">
@@ -42,28 +35,25 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
                 <img src={offer.imageMain} alt={offer.title} />
               </div>
               <p>{offer.descAbbrev}</p>
-              <p>Cena: {offer.price} PLN</p>
+              <p className="single-offer-price">Cena: {offer.price} PLN</p>
               <button className="single-offer-btn">Szczegóły</button>
             </div>
           ))}
         </div>
       </div>
 
-      {selectedOffer && (
-        <div className="modal-backdrop" onClick={handleOutsideClick}>
-          <div className="modal-content">
-            <button className="modal-close" onClick={closeModal}>
-              &times;
-            </button>
+      <OfferModal isOpen={!!selectedOffer} onClose={() => setSelectedOffer(null)}>
+        {selectedOffer && (
+          <>
             <h2>{selectedOffer.title}</h2>
             <div className="offer-img-wrapper">
               <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
             </div>
             <p>{selectedOffer.description}</p>
-            <p>Cena: {selectedOffer.price} PLN</p>
-          </div>
-        </div>
-      )}
+            <p className="modal-offer-price">Cena: {selectedOffer.price} PLN</p>
+          </>
+        )}
+      </OfferModal>
     </div>
   );
 };
