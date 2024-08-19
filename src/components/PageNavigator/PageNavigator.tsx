@@ -8,89 +8,69 @@ const PageNavigator = () => {
     navigate(-1);
   };
 
-  const goHome = () => {
-    navigate("/");
-  };
-
-  const goAbout = () => {
-    navigate("/about");
-  };
-
   const goOffers = () => {
     navigate("/offers");
   };
 
-  const goContact = () => {
-    navigate("/contact");
-  };
+  const pages = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "O mnie" },
+    { path: "/offers", label: "Oferty" },
+    { path: "/contact", label: "Kontakt" },
+    { path: "/offers/abroad", label: "Zagraniczne" },
+    { path: "/offers/domestic", label: "Krajowe" },
+    { path: "/offers/one-day", label: "Jednodniowe" },
+    { path: "/offers/two-days", label: "Dwudniowe" },
+    { path: "/offers/three-days", label: "Trzydniowe" },
+    { path: "/offers/five-days", label: "Pięciodniowe" },
+    { path: "/offers/kayak", label: "Spływy kajakowe" },
+    { path: "/offers/buss-trip", label: "Autokarowe" },
+    { path: "/offers/plane", label: "Samolotowe" },
+  ];
 
-  const isHome = location.pathname === "/";
-  const isAbout = location.pathname === "/about";
-  const isOffers = location.pathname === "/offers";
-  const isContact = location.pathname === "/contact";
+  const currentPage = pages.find((page) => page.path === location.pathname);
+  const isOffersPage = location.pathname.startsWith("/offers");
 
-  let goBackBtn;
+  const allOffersBtn =
+    isOffersPage && location.pathname !== "/offers" ? (
+      <li className="PageNavigator-element">
+        <button className="PageNavigator-button" onClick={goOffers}>
+          <img className="icon" src="/icons/target.png" alt="Icon target" />
+          <p>Pokaż wszystkie oferty</p>
+        </button>
+      </li>
+    ) : null;
 
-  if (!isHome) {
-    goBackBtn = (
-      <li className="arrow-wrapper">
-        <button className="PageNavigator-buttons" onClick={goBack}>
-          <img className="bo-back-arrow" src="/icons/go-back-arrow.svg" alt="Go back arrow" />
+  const previousPageBtn =
+    !currentPage || currentPage.path !== "/" ? (
+      <li className="icon-wrapper PageNavigator-element">
+        <button className="PageNavigator-button" onClick={goBack}>
+          <img className="icon" src="/icons/go-back-arrow.svg" alt="Icon arrow" />
           <p>Poprzednia</p>
         </button>
       </li>
-    );
-  }
+    ) : null;
 
-  let buttonToShow;
-
-  if (isHome) {
-    buttonToShow = (
+  const currentPageBtn = (
+    <>
       <li>
-        <button className="PageNavigator-buttons go-about-btn active" onClick={goHome}>
-          Home
-        </button>
+        <p>Jesteś na:</p>
       </li>
-    );
-  } else if (isAbout) {
-    buttonToShow = (
-      <li>
-        <button className="PageNavigator-buttons go-home-btn active" onClick={goAbout}>
-          O mnie
-        </button>
-      </li>
-    );
-  } else if (isOffers) {
-    buttonToShow = (
-      <li>
-        <button className="PageNavigator-buttons go-contact-btn active" onClick={goOffers}>
-          Oferty
-        </button>
-      </li>
-    );
-  } else if (isContact) {
-    buttonToShow = (
-      <li>
-        <button className="PageNavigator-buttons go-offers-btn active" onClick={goContact}>
-          Kontakt
-        </button>
-      </li>
-    );
-  }
-
-  const onSideText = (
-    <li>
-      <p>Jestes na: </p>
-    </li>
+      {currentPage ? (
+        <li>
+          <p className="PageNavigator-element-paragraph active">{currentPage.label}</p>
+        </li>
+      ) : null}
+    </>
   );
 
   return (
     <div>
       <div className="container">
         <ul className="PageNavigator-buttons-wrapper">
-          {goBackBtn}
-          {onSideText}
-          {buttonToShow}
+          {currentPageBtn}
+          {allOffersBtn}
+          {previousPageBtn}
         </ul>
       </div>
     </div>

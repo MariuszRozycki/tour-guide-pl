@@ -1,10 +1,14 @@
 import Slider from "react-slick";
 import { useGetOffers } from "../../hooks/useGetOffers";
+import OfferModal from "../Offers/OfferModal";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { OfferResponse } from "../../types/offers";
+import { useState } from "react";
 
 const HomeSlider = () => {
   const offers = useGetOffers();
+  const [selectedOffer, setSelectedOffer] = useState<OfferResponse[number] | null>(null);
 
   const settings = {
     dots: true,
@@ -14,10 +18,10 @@ const HomeSlider = () => {
     slidesToScroll: 1,
     swipe: true,
     arrows: false,
-    autoplay: true, // Automatyczne przewijanie slajdów
-    autoplaySpeed: 3000, // Prędkość automatycznego przewijania (ms)
-    fade: false, // Włącza tryb zanikania między slajdami
-    pauseOnHover: true, // Wstrzymuje automatyczne przewijanie na hover
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: false,
+    pauseOnHover: true,
     initialSlide: 0,
     responsive: [
       {
@@ -55,11 +59,26 @@ const HomeSlider = () => {
               <img src={offer.imageMain} alt={`${offer.title}`} />
             </div>
             <p className="slider-desc-abbrev">{offer.descAbbrev}</p>
-            <p className="slider-offer-price">Price: ${offer.price}</p>
-            <button className="slider-offer-details-btn">Detale</button>
+            <p className="slider-offer-price">Cena: {offer.price} PLN</p>
+            <button className="slider-offer-details-btn" onClick={() => setSelectedOffer(offer)}>
+              Szczegóły
+            </button>
           </div>
         ))}
       </Slider>
+
+      <OfferModal isOpen={!!selectedOffer} onClose={() => setSelectedOffer(null)}>
+        {selectedOffer && (
+          <>
+            <h2>{selectedOffer.title}</h2>
+            <div className="offer-img-wrapper">
+              <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
+            </div>
+            <p>{selectedOffer.description}</p>
+            <p className="modal-offer-price">Cena: {selectedOffer.price} PLN</p>
+          </>
+        )}
+      </OfferModal>
     </div>
   );
 };

@@ -5,6 +5,9 @@ export interface Offer {
   descAbbrev: string;
   imageMain: string;
   price: number;
+  typeOfTrip: string;
+  lengthOfTrip: string;
+  destinationType: string;
 }
 
 export type OfferResponse = Offer[];

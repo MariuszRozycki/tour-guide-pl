@@ -1,35 +1,12 @@
-import { useGetOffers } from "../../hooks/useGetOffers";
-import { OfferResponse } from "../../types/offers";
 import MainHeading from "../MainHeading/MainHeading";
+import OffersNav from "./OffersNav";
 
 const Offers = () => {
-  const offers: OfferResponse = useGetOffers();
-
-  if (!offers) {
-    return <div>Loading...</div>;
-  }
-
-  offers.forEach((offer) => {
-    console.log("offer inside Offers.tsx: ", offer);
-    console.log("offer.id: ", offer.id);
-  });
-
   return (
-    <div className="container">
+    <div className="container OffersContainer">
       <MainHeading />
       <h2>Oferty dla Ciebie</h2>
-      {offers.map((offer) => (
-        <div key={offer.id}>
-          <h2>{offer.title}</h2>
-
-          <div className="offer-img-wrapper">
-            <img src={offer.imageMain} alt={`${offer.title}`} />
-          </div>
-
-          <p>{offer.description}</p>
-          <p>{offer.price}</p>
-        </div>
-      ))}
+      <OffersNav />
     </div>
   );
 };

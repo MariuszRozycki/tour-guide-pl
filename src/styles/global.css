@@ -4,9 +4,13 @@
 
 body {
   margin: 0;
+  background-color: #d7fff6bd;
 }
 
 :root {
+  min-height: 100vh;
+  position: relative;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -36,7 +40,8 @@ body {
   --h1-spam-fs: clamp(1.6rem, 3vw, 2.2rem);
   --h2-fs: clamp(1.5rem, 3vw, 2rem);
   --a-link-fs: clamp(1rem, 2vw, 1.5rem);
-  --paragraph-fs: clamp(1rem, 3vw, 1.5rem);
+  --a-link-fs-footer: clamp(1rem, 2vw, 1.1rem);
+  --paragraph-fs: clamp(1rem, 3vw, 1.2rem);
   --paragraph-slider-fs: clamp(1rem, 2vw, 1.5rem);
   --btn-fs: clamp(1.2rem, 2vw, 1.5rem);
 
@@ -47,12 +52,18 @@ body {
   /* padding */
   --mobile-view-padding: 5px 15px;
   --desktop-view-padding: 5px 0px;
+  --desktop-media-queries-padding: 5px 25px;
+  --input-padding: 8px 5px;
 
   /* border-radius */
+  --border-radius-min: 5px;
   --border-radius-small: 10px;
 
-  /* break points */
-  --min-width_480px: 480px;
+  /* box-shadow */
+  --box-shadow-null: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
+  --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
+  --box-shadow-hard: 0 4px 8px rgba(0, 0, 0, 0.9), 0 6px 20px rgba(0, 0, 0, 0.9);
 }
 
 .container {
@@ -60,14 +71,19 @@ body {
   margin: 0 auto;
   padding: var(--mobile-view-padding);
   text-align: center;
-  background-color: #d7fff6bd;
 }
 
 section {
   margin-top: 40px;
 }
 
-p {
+p,
+label,
+input,
+textarea {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
   font-size: var(--paragraph-fs);
 }
 
@@ -95,6 +111,10 @@ h2 {
   font-size: var(--h2-fs);
 }
 
+h3 {
+  margin-top: 20px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -102,7 +122,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--orange-color);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -118,4 +138,10 @@ button:focus-visible {
   content: "";
   display: table;
   clear: both;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding: var(--desktop-media-queries-padding);
+  }
 }

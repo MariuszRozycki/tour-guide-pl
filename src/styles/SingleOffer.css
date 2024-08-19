@@ -1,0 +1,20 @@
+.single-offer {
+  background-color: var(--yellow-light-color);
+  padding: 0 15px 15px;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow-light);
+
+  h2,
+  p {
+    text-align: left;
+  }
+
+  .single-offer-btn {
+    box-shadow: var(--box-shadow-light);
+    transition: var(--transition-standard);
+
+    &:hover {
+      box-shadow: var(--box-shadow-null);
+    }
+  }
+}

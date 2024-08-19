@@ -2,12 +2,21 @@
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2020", // Określ docelowy poziom ECMAScript
+    "module": "commonjs", // Dla Node.js używaj commonjs
+    "moduleResolution": "node", // Node.js wymaga 'node' do poprawnej resolucji modułów
     "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noEmit": true
+    "esModuleInterop": true, // Umożliwia importowanie modułów CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist", // Folder wyjściowy dla skompilowanych plików (jeśli używasz kompilacji)
+    "rootDir": "./server", // Główna ścieżka do plików źródłowych
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true, // Pozwala na importowanie plików JSON jako modułów
+    "types": ["node"], // Dodaj typy Node.js
+    "noEmit": false, // Ustawienie 'true' blokuje emisję skompilowanych plików, a potrzebujesz emisji dla serwera
+    "isolatedModules": false // Nie jest potrzebne dla Node.js
   },
-  "include": ["vite.config.ts"]
+  "include": ["server/**/*"], // Uwzględnij wszystkie pliki w folderze 'server'
+  "exclude": ["node_modules"] // Wyklucz folder 'node_modules'
 }

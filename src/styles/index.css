@@ -1,6 +1,11 @@
 @import url("./global.css");
 @import url("./Nav.css");
 @import url("./PageNavigator.css");
+@import url("./OfferModal.css");
 @import url("./Home&About.css");
 @import url("./HomeSlider.css");
 @import url("./Offers.css");
+@import url("./offersByCategory.css");
+@import url("./SingleOffer.css");
+@import url("./Contact.css");
+@import url("./Footer.css");
