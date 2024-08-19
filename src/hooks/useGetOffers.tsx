@@ -7,8 +7,9 @@ export const useGetOffers = (): OfferResponse => {
   const [offers, setOffers] = useState<OfferResponse>([]);
 
   useEffect(() => {
+    const url = "/assets/offers.json";
     axios
-      .get<OfferResponse>("/src/assets/offers.json")
+      .get<OfferResponse>(url)
       .then((response) => {
         const offersWithId = response.data.map((offer) => ({
           ...offer,
