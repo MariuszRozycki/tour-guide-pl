@@ -14,6 +14,7 @@ import TwoDayTrip from "./components/Offers/TwoDaysTrip";
 import ThreeDaysTrip from "./components/Offers/ThreeDaysTrip";
 import FiveDaysTrip from "./components/Offers/FiveDaysTrip";
 import KayakTrip from "./components/Offers/KayakTrip";
+import Footer from "./components/Footer/Footer";
 
 import "./styles/index.css";
 
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/offers/five-days" element={<FiveDaysTrip />} />
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
+      <Footer />
     </Router>
   );
 };
