@@ -12,7 +12,7 @@ const HomeAboutText = () => {
           <span>
             <NavLink to="/about">
               <img className="icon" src="/icons/right-arrow.png" alt="Icon right arrow" />
-              Kliknij aby przeczytac wiecej w sekcji "O MNIE"
+              Przeczytaj wiecej w sekcji "O MNIE"
             </NavLink>
           </span>
         </p>
