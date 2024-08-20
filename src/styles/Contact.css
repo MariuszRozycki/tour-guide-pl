@@ -70,6 +70,7 @@
     width: 100%;
     border-radius: var(--border-radius-min);
     border: 1px solid var(--primary-color);
+    background-color: var(--white-color);
   }
 
   textarea {
