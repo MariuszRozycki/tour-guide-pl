@@ -30,8 +30,8 @@ footer {
           color: var(--white-color);
 
           .contact-details-icon-wrapper {
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
             background-color: white;
             border-radius: 50%;
             padding: 6px;

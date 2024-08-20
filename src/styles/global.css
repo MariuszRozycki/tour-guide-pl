@@ -125,6 +125,7 @@ button {
   background-color: var(--orange-color);
   cursor: pointer;
   transition: border-color 0.25s;
+  color: var(--very-dark-blue-color);
 }
 button:hover {
   border-color: #646cff;
