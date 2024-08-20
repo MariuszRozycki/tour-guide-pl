@@ -41,6 +41,12 @@
       }
     }
   }
+
+  .excursion-schedule-title {
+    p {
+      margin-bottom: 3px;
+    }
+  }
 }
 
 .form {

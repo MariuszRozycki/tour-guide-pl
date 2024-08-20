@@ -16,7 +16,7 @@ const Contact = () => {
               +48 601-786-363
             </a>
           </li>
-          <li>
+          <li className="excursion-schedule-title">
             <p>Szczegółowy program wycieczki zamów: </p>
           </li>
           <li>
