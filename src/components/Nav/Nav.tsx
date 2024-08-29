@@ -13,7 +13,7 @@ const Nav = () => {
       <div className="container">
         <div className="nav-logo-wrapper">
           <NavLink to="/">
-            <img src="/logo.png" alt="logo" />
+            <img src="/pictures/logo.png" alt="logo" />
           </NavLink>
         </div>
         <HamburgerMenu
