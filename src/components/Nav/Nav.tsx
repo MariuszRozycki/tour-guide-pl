@@ -3,8 +3,6 @@ import { useNavLogic } from "../../hooks/useNavLogic";
 import HamburgerMenu from "./HamburgerMenu";
 import NavMainList from "./NavMainList";
 
-// import "./Nav.css";
-
 const Nav = () => {
   const { hamburgerMenuRef, navMainListRef, navMainRef, barOneRef, barTwoRef, barThreeRef, toggleMenu, closeModal } = useNavLogic();
 
@@ -13,7 +11,7 @@ const Nav = () => {
       <div className="container">
         <div className="nav-logo-wrapper">
           <NavLink to="/">
-            <img src="/logo.png" alt="logo" />
+            <img src="/pictures/logo.png" alt="logo" />
           </NavLink>
         </div>
         <HamburgerMenu
