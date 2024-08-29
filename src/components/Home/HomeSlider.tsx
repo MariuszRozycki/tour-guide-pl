@@ -5,9 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { OfferResponse } from "../../types/offers";
 import { useState } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const HomeSlider = () => {
-  const offers = useGetOffers();
+  const { offers, loading } = useGetOffers();
   const [selectedOffer, setSelectedOffer] = useState<OfferResponse[number] | null>(null);
 
   const settings = {
@@ -47,6 +48,14 @@ const HomeSlider = () => {
       },
     ],
   };
+
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <ClipLoader size={50} color={"#123abc"} loading={loading} />
+      </div>
+    );
+  }
 
   return (
     <div className="slider-container">

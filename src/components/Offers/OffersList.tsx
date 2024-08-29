@@ -4,6 +4,7 @@ import { OfferResponse } from "../../types/offers";
 import MainHeading from "../MainHeading/MainHeading";
 import { conditionNotMeet } from "../../utils/conditionNotMeet";
 import OfferModal from "./OfferModal";
+import ClipLoader from "react-spinners/ClipLoader";
 
 interface OffersListProps {
   title: string;
@@ -11,11 +12,15 @@ interface OffersListProps {
 }
 
 const OffersList = ({ title, filterCondition }: OffersListProps) => {
-  const offers: OfferResponse = useGetOffers();
+  const { offers, loading } = useGetOffers();
   const [selectedOffer, setSelectedOffer] = useState<OfferResponse[number] | null>(null);
 
-  if (!offers) {
-    return <div>Loading...</div>;
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <ClipLoader size={50} color={"#123abc"} loading={loading} />
+      </div>
+    );
   }
 
   const filteredOffers = offers.filter(filterCondition);
@@ -29,7 +34,7 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
         <div className="offers-list">
           {conditionNotExists}
           {filteredOffers.map((offer) => (
-            <div className="single-offer" onClick={() => setSelectedOffer(offer)} key={offer.title}>
+            <div className="single-offer" onClick={() => setSelectedOffer(offer)} key={offer.id}>
               <h2>{offer.title}</h2>
               <div className="offer-img-wrapper">
                 <img src={offer.imageMain} alt={offer.title} />

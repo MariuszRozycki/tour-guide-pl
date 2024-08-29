@@ -3,8 +3,6 @@ import { useNavLogic } from "../../hooks/useNavLogic";
 import HamburgerMenu from "./HamburgerMenu";
 import NavMainList from "./NavMainList";
 
-// import "./Nav.css";
-
 const Nav = () => {
   const { hamburgerMenuRef, navMainListRef, navMainRef, barOneRef, barTwoRef, barThreeRef, toggleMenu, closeModal } = useNavLogic();
 
