@@ -38,6 +38,11 @@
   p {
     text-align: left;
   }
+
+  .contact-details {
+    align-items: flex-start;
+    margin: 0;
+  }
 }
 
 .modal-close {
