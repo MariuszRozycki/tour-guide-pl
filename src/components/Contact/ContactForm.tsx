@@ -30,6 +30,7 @@ const ContactForm: React.FC = () => {
   });
 
   const [responseMessage, setResponseMessage] = useState<string>("");
+  const [responseClass, setResponseClass] = useState<string>("");
 
   const checkLength = (value: string, len: number): boolean => {
     return value.trim().length > len;
@@ -80,12 +81,18 @@ const ContactForm: React.FC = () => {
     }
 
     const { action, method } = e.currentTarget;
+
+    const formID = "form-5"; // Zakładam, że ID formularza to "form-15", dopasuj je do rzeczywistego ID
+
     const formDataObject = new FormData();
 
     formDataObject.append("user-name", formData.userName);
     formDataObject.append("your-email", formData.email);
     formDataObject.append("your-subject", formData.subject);
     formDataObject.append("your-message", formData.message);
+
+    // Add the `_wpcf7_unit_tag` field
+    formDataObject.append("_wpcf7_unit_tag", formID);
 
     try {
       const response = await fetch(action, {
@@ -98,21 +105,24 @@ const ContactForm: React.FC = () => {
 
       if (result.status === "mail_sent") {
         setResponseMessage("Your message has been sent.");
+        setResponseClass("success");
         setFormData({ userName: "", email: "", subject: "", message: "" });
         setErrors({ userName: "", email: "", subject: "", message: "" });
       } else {
         setResponseMessage("There was a problem sending your message.");
+        setResponseClass("error");
       }
     } catch (error) {
       console.error("Error during message sending:", error);
       setResponseMessage("An error occurred while sending your message.");
+      setResponseClass("error");
     }
   };
 
   return (
     <form
-      id="form"
-      action="https://mariuszrozycki.info/portfolio/wp-json/contact-form-7/v1/contact-forms/5/feedbac"
+      id="form-5" // Dopasuj to ID do tego, co faktycznie masz na stronie WordPressa
+      action="https://mariuszrozycki.info/portfolio/wp-json/contact-form-7/v1/contact-forms/5/feedback"
       method="post"
       onSubmit={handleSubmit}
     >
@@ -157,7 +167,7 @@ const ContactForm: React.FC = () => {
         )}
       </label>
 
-      <div id="message" className="message">
+      <div id="message" className={`message ${responseClass}`}>
         {responseMessage && <p>{responseMessage}</p>}
       </div>
 

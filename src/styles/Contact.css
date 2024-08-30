@@ -102,7 +102,11 @@ form {
     margin-top: 5px;
   }
 
-  .message {
+  .success {
     color: green;
+  }
+
+  .error {
+    color: red;
   }
 }
