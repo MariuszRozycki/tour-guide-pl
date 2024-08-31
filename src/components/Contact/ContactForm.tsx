@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Oval } from "react-loader-spinner";
 
 interface FormData {
   userName: string;
@@ -29,8 +32,7 @@ const ContactForm: React.FC = () => {
     message: "",
   });
 
-  const [responseMessage, setResponseMessage] = useState<string>("");
-  const [responseClass, setResponseClass] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const formID = "15";
   const url = `https://tour-guide.pl/wp-json/contact-form-7/v1/contact-forms/${formID}/feedback`;
@@ -83,6 +85,8 @@ const ContactForm: React.FC = () => {
       return;
     }
 
+    setIsLoading(true);
+
     const { action, method } = e.currentTarget;
 
     const formDataObject = new FormData();
@@ -103,18 +107,17 @@ const ContactForm: React.FC = () => {
       console.log(result);
 
       if (result.status === "mail_sent") {
-        setResponseMessage("Twoja wiadomość została wysłana");
-        setResponseClass("success");
+        toast.success("Twoja wiadomość została wysłana");
         setFormData({ userName: "", email: "", subject: "", message: "" });
         setErrors({ userName: "", email: "", subject: "", message: "" });
       } else {
-        setResponseMessage("Wystąpił problem z wysłaniem wiadomości. Zadzwoń do Tomka +48 601 786 363");
-        setResponseClass("error");
+        toast.error("Wystąpił problem z wysłaniem wiadomości. Zadzwoń do Tomka +48 601 786 363");
       }
     } catch (error) {
       console.error("Error during message sending:", error);
-      setResponseMessage("An error occurred while sending your message.");
-      setResponseClass("error");
+      toast.error("Wystąpił błąd podczas wysyłania wiadomości.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -161,13 +164,17 @@ const ContactForm: React.FC = () => {
         )}
       </label>
 
-      <div id="message" className={`message ${responseClass}`}>
-        {responseMessage && <p>{responseMessage}</p>}
+      <div id="message" className={`message`} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        {isLoading ? (
+          <Oval color="#00BFFF" height={40} width={40} />
+        ) : (
+          <button className="btn" type="submit">
+            Wyślij
+          </button>
+        )}
       </div>
 
-      <button className="btn" type="submit">
-        Wyślij
-      </button>
+      <ToastContainer position="top-center" />
     </form>
   );
 };
