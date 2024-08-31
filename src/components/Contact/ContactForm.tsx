@@ -85,7 +85,7 @@ const ContactForm: React.FC = () => {
       return;
     }
 
-    setIsLoading(true); // Uruchom loader
+    setIsLoading(true);
 
     const { action, method } = e.currentTarget;
 
@@ -107,7 +107,7 @@ const ContactForm: React.FC = () => {
       console.log(result);
 
       if (result.status === "mail_sent") {
-        toast.success("Twoja wiadomość została wysłana"); // Wyświetl sukces
+        toast.success("Twoja wiadomość została wysłana");
         setFormData({ userName: "", email: "", subject: "", message: "" });
         setErrors({ userName: "", email: "", subject: "", message: "" });
       } else {
@@ -117,7 +117,7 @@ const ContactForm: React.FC = () => {
       console.error("Error during message sending:", error);
       toast.error("Wystąpił błąd podczas wysyłania wiadomości.");
     } finally {
-      setIsLoading(false); // Zatrzymaj loader
+      setIsLoading(false);
     }
   };
 
