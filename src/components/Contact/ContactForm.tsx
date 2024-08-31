@@ -120,7 +120,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <form id="form-15" action={url} method="post" onSubmit={handleSubmit}>
-      <h3>Zapytaj o oferte przez formularz</h3>
+      <h3>Zapytaj o ofertę przez formularz</h3>
       <label htmlFor="user-name">
         Twoje imię:
         <input id="user-name" type="text" name="userName" value={formData.userName} onChange={handleChange} />
