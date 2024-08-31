@@ -104,7 +104,6 @@ const ContactForm: React.FC = () => {
       });
 
       const result = await response.json();
-      console.log(result);
 
       if (result.status === "mail_sent") {
         toast.success("Twoja wiadomość została wysłana");
