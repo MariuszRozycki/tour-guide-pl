@@ -6,6 +6,7 @@ import { Oval } from "react-loader-spinner";
 interface FormData {
   userName: string;
   email: string;
+  phone: string;
   subject: string;
   message: string;
 }
@@ -13,6 +14,7 @@ interface FormData {
 interface FormErrors {
   userName: string;
   email: string;
+  phone: string;
   subject: string;
   message: string;
 }
@@ -21,6 +23,7 @@ const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     userName: "",
     email: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -28,6 +31,7 @@ const ContactForm: React.FC = () => {
   const [errors, setErrors] = useState<FormErrors>({
     userName: "",
     email: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -48,7 +52,13 @@ const ContactForm: React.FC = () => {
 
   const validateForm = (): boolean => {
     let formIsValid = true;
-    const validationErrors: FormErrors = { userName: "", email: "", subject: "", message: "" };
+    const validationErrors: FormErrors = {
+      userName: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    };
 
     if (!checkLength(formData.userName, 1)) {
       validationErrors.userName = "Pole musi zawierać minimum dwie litery.";
@@ -62,6 +72,11 @@ const ContactForm: React.FC = () => {
 
     if (!checkEmail(formData.email)) {
       validationErrors.email = "Wpisz poprawny adres email.";
+      formIsValid = false;
+    }
+
+    if (!checkLength(formData.phone, 6)) {
+      validationErrors.phone = "Wpisz poprawny numer telefonu.";
       formIsValid = false;
     }
 
@@ -93,6 +108,7 @@ const ContactForm: React.FC = () => {
 
     formDataObject.append("user-name", formData.userName);
     formDataObject.append("your-email", formData.email);
+    formDataObject.append("your-phone", formData.phone); // Dodaj numer telefonu
     formDataObject.append("your-subject", formData.subject);
     formDataObject.append("your-message", formData.message);
     formDataObject.append("_wpcf7_unit_tag", `form-${formID}`);
@@ -104,12 +120,11 @@ const ContactForm: React.FC = () => {
       });
 
       const result = await response.json();
-      console.log(result);
 
       if (result.status === "mail_sent") {
         toast.success("Twoja wiadomość została wysłana");
-        setFormData({ userName: "", email: "", subject: "", message: "" });
-        setErrors({ userName: "", email: "", subject: "", message: "" });
+        setFormData({ userName: "", email: "", phone: "", subject: "", message: "" });
+        setErrors({ userName: "", email: "", phone: "", subject: "", message: "" });
       } else {
         toast.error("Wystąpił problem z wysłaniem wiadomości. Zadzwoń do Tomka +48 601 786 363");
       }
@@ -124,6 +139,7 @@ const ContactForm: React.FC = () => {
   return (
     <form id="form-15" action={url} method="post" onSubmit={handleSubmit}>
       <h3>Zapytaj o ofertę przez formularz</h3>
+
       <label htmlFor="user-name">
         Twoje imię:
         <input id="user-name" type="text" name="userName" value={formData.userName} onChange={handleChange} />
@@ -140,6 +156,16 @@ const ContactForm: React.FC = () => {
         {errors.email && (
           <p className="form-error" id="email-error">
             {errors.email}
+          </p>
+        )}
+      </label>
+
+      <label htmlFor="your-phone">
+        Twój numer telefonu:
+        <input id="your-phone" type="tel" name="phone" value={formData.phone} onChange={handleChange} />
+        {errors.phone && (
+          <p className="form-error" id="phone-error">
+            {errors.phone}
           </p>
         )}
       </label>
@@ -164,7 +190,7 @@ const ContactForm: React.FC = () => {
         )}
       </label>
 
-      <div id="message" className={`message`} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <div id="message" className="message" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         {isLoading ? (
           <Oval color="#00BFFF" height={40} width={40} />
         ) : (
