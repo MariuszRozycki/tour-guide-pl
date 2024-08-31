@@ -59,8 +59,15 @@ form {
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow-light);
 
+  h3 {
+    font-size: var(--h3-fs);
+  }
+
   label {
     margin-top: 20px;
+    color: var(--very-dark-blue-color);
+    font-weight: 500;
+    text-align: left;
   }
 
   input,
@@ -71,10 +78,12 @@ form {
     border-radius: var(--border-radius-min);
     border: 1px solid var(--primary-color);
     background-color: var(--white-color);
+    color: var(--very-dark-blue-color);
   }
 
   textarea {
     min-height: 200px;
+    resize: none;
   }
 
   button {
