@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 interface ModalProps {
   isOpen: boolean;
@@ -31,6 +32,14 @@ const OfferModal = ({ isOpen, onClose, children }: ModalProps) => {
               </div>
               +48 601-786-363
             </a>
+          </li>
+          <li>
+            <NavLink to="/contact">
+              <div className="contact-details-icon-wrapper contact-form-icon">
+                <img src="/icons/google-forms.png" alt="Email icon" />
+              </div>
+              Formularz kontaktowy
+            </NavLink>
           </li>
           <li>
             <a href="mailto:info@tour-guide.pl">
