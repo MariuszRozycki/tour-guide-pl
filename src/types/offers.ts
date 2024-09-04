@@ -3,6 +3,7 @@ export interface Offer {
   title: string;
   description: string;
   descAbbrev: string;
+  additionallyDesc?: string;
   imageMain: string;
   price: number;
   typeOfTrip: string;
