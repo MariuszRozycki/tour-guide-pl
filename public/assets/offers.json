@@ -1,52 +1,895 @@
 [
   {
-    "title": "Trip 1",
-    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
-    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
+    "idNumber": 1,
+    "title": "BESKIDY ZACHODNIE",
+    "days": "5 dni",
+    "titleSub": "Pensjonat w Węgierskiej Górce lub Zwardoniu, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Kopalnia Srebra w Tarnowskich Górach",
+      "2. Mała Fatra (SK) i spacer Janosikowymi Dierami (wąwozy, wodospady), wizyta w Terchovej",
+      "3. Koniaków: Izba Regionalna, Istebna: Chata u Kawuloka, Ochodzita",
+      "4. Spacer na Rachowiec",
+      "5. Browar w Żywcu lub SFA w Bielsku-Białej"
+    ],
     "imageMain": "/pictures/autokar-tomek.jpg",
-    "price": 580,
+    "price45people": 560,
+    "price40people": 585,
     "typeOfTrip": "buss-trip",
-    "lengthOfTrip": "three-days",
-    "destinationType": "abroad"
-  },
-  {
-    "title": "Trip 2",
-    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
-    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
-    "imageMain": "/pictures/kayak-tomek.jpg",
-    "price": 680,
-    "typeOfTrip": "buss-trip",
-    "lengthOfTrip": "three-days",
-    "destinationType": "abroad"
-  },
-  {
-    "title": "Trip 3",
-    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
-    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
-    "imageMain": "/pictures/mountains-tomek.jpg",
-    "price": 480,
-    "typeOfTrip": "kayak",
-    "lengthOfTrip": "one-day",
-    "destinationType": "domestic"
-  },
-  {
-    "title": "Trip 4",
-    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
-    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
-    "imageMain": "/pictures/tomek-sea.png",
-    "price": 120,
-    "typeOfTrip": "kayak",
-    "lengthOfTrip": "one-day",
-    "destinationType": "domestic"
-  },
-  {
-    "title": "Trip 5",
-    "description": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą, w rzeczywistości wszystkie profesje zajmujące się wszechświatem komunikacji mają stabilny związek z tymi słowami, ale co to jest? Lorem ipsum to tekst atrapowy bez żadnego sensu.",
-    "descAbbrev": "Lorem ipsum dolor sit amet . Operatorzy graficzni i typograficzni dobrze to wiedzą...",
-    "imageMain": "/pictures/tomek-sea.webp",
-    "price": 150,
-    "typeOfTrip": "plane-trip",
     "lengthOfTrip": "five-days",
+    "destinationType": "domestic&abroad"
+  },
+  {
+    "idNumber": 2,
+    "title": "BIESZCZADY",
+    "days": "5 dni",
+    "titleSub": "Hotel/pensjonat w okolicach Jez. Solińskiego, wyżywienie 3X",
+    "description": [
+      "1. Zamek w Iłży i Sobień (ew. zamek Krzyżtopór), Kamień Leski",
+      "2. Spacer po okolicy, zwiedzanie dawnej cerkwi w Górzance",
+      "3. Wielka Pętla, m.in.: Cisna - Siekierezada, Majdan - kolejka, wejście na Połoninę Wetlińską, Ustrzyki Górne, Wołosate, Czarna",
+      "4. Polańczyk Zdrój, rejs statkiem po Jez. Solińskim, korona zapory",
+      "5. Sandomierz: zamek, rynek, wąwóz, Brama Opatowska, zbrojownia"
+    ],
+    "imageMain": "/pictures/kayak-tomek.jpg",
+    "price45people": 560,
+    "price40people": 610,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 3,
+    "title": "KARKONOSZE",
+    "days": "5 dni",
+    "titleSub": "Hotel 􀂌 P􀂍ze􀂎iece lub Karpaczu, wyzyw1eme 2X + prowiant",
+    "description": [
+      "1. Wrocław: (plan do uzgodnienia)",
+      "2. Pieszo: zamek Chojnik, wodospad Podgórnej, Zloty Widok",
+      "3. Świątynia Vang, spacer w Karkonoszach",
+      "4. Wodospady Szklarki i Kamieńczyka, Chata Walońska, skala 'Chybotek', Szklarska Poręba",
+      "5. Park miniatur w Kowarach, zamek Książ lub: Sokoliki, zamek Bolków i Świny"
+    ],
+
+    "imageMain": "/pictures/mountains-tomek.jpg",
+    "price45people": 560,
+    "price40people": 610,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 4,
+    "title": "KOTLINA KŁODZKA",
+    "days": "5 dni",
+    "titleSub": "Hotel w Nowej Rudzie lub Bystrzycy Kłodzkiej, wyzywienie 2X + prowiant",
+    "description": [
+      "1. Wrocław: miejska gra terenowa na Starym Mieście lub stadion, ew. Panorama Racławicka",
+      "2. Góry Stołowe: Wambierzyce, Szczeliniec, Kaplica Czaszek, Droga Stu Zakrętów",
+      "3. Kopalnia w Nowej Rudzie, podziemia w Walimiu lub Osówce, wejście na Wielką Sowę",
+      "4. Twierdza w Srebrnej Górze lub Kłodzku, papiernia w Dusznikach",
+      "5. Kopalnia Złota w Złotym Stoku lub: zamek Książ, Świdnica - kościół Pokoju"
+    ],
+    "imageMain": "/pictures/tomek-sea.png",
+    "price45people": 560,
+    "price40people": 620,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 5,
+    "title": "POMORZE ZACHODNIE",
+    "days": "5 dni",
+    "titleSub": "OW/P.ensJon.at w Sianożętach, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Toruń: zwiedzanie, w tym: Muzeum Piernika, Planetarium",
+      "2. Latarnia morska w Gąskach, Aquapark i park linowy w Ustroniu",
+      "3. Zabawa w CAW Bastion oraz Western City - Zieleniewo, latarnia morska w Kołobrzegu, dawne lotnisko UW Podczele - Bagicz",
+      "4. Woliński PN: zagroda żubrów, klif Gosań, latarnia Kikut i Niechorze, Międzyzdroje, park miniatur latarni morskich",
+      "5. Muzeum Mydła i Brudu - Bydgoszcz"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 600,
+    "price40people": 670,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 6,
+    "title": "SPAŁA, JURA, KRAKÓW",
+    "days": "5 dni",
+    "titleSub": "OW w Spale i pensjonat Jurze, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Tomaszów Maz: rez. Niebieskie Źródła, groty lessowe, Skansen Rzeki Pilicy, rez. pokazowy żubrów w Smardzewicach",
+      "2. Spacer po Spale: COS, Grota, Myśliwska, drewniany kościółek, sosny na szczudłach, schron kolejowy, w Konewce, prelekcja o Spale i okolicach",
+      "3. Inowłódz: romański kościół św. Idziego, Zamek Królewski",
+      "4. Zamki w Ogrodzieńcu, Olsztynie, Bobolicach i Mirowie",
+      "5. Kraków"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 580,
+    "price40people": 630,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 7,
+    "title": "TATRY POLSKIE",
+    "days": "5 dni",
+    "titleSub": "Pensjonat w Murzasichlu lub Małem Cichem, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Muzeum Czynu Powstańczego, zamek w Chęcinach lub Kraków, m.in.: Wawel, Rynek, Planty",
+      "2. Zakopane: Gubałówka (kolejką lub pieszo), cmentarzyk, Krupowki, skocznia, prelekcja w Izbie Regionalnej",
+      "3. Spacer w Tatrach (cel do uzgodnienia)",
+      "4. Spacer w Tatrach (j.w.) lub aquapark",
+      "5. Ojcowski PN: Jaskinia Łokietka, zamek na Pieskowej Skale i w Ojcowie, lub Kopalnia Soli w Wieliczce"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 580,
+    "price40people": 630,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 8,
+    "title": "TATRY I SŁOWACJA",
+    "days": "5 dni",
+    "titleSub": "Pensjonat w Murzasichlu lub Małem Cichem, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Kraków, m.in.: Wawel, Rynek, Planty",
+      "2. Pieniny: zamek w Niedzicy, spacer Drogą Pienińską (Cerveny Klaźtor - Szczawnica)",
+      "3. Spisz: Jaskinia Bielańska, kurorty podtatrzańskie, elektriczka, spacer do Popradzkiego Plesa",
+      "4. Orava: Aquapark w Oravicach, zamek Orawski, skansen w Zubercu",
+      "5. Ojcowski PN: Jaskinia Łokietka, zamek na Pieskowej Skale i w Ojcowie"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 580,
+    "price40people": 630,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic&abroad"
+  },
+  {
+    "idNumber": 9,
+    "title": "WARMIA i MAZURY",
+    "days": "5 dni",
+    "titleSub": "OW/pensjonat w okolicach Giżycka, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Galindia i Park Dzikich Zwierząt w Kadzidłowie",
+      "2. Twierdza Boyen, rejs statkiem, po jez. Niegocin lub Tajty, wzgórze i krzyż św. Brunnona",
+      "3. Zamek w Reszlu, Sanktuarium w św. Lipce, Bezławki, Wilczy Szaniec",
+      "4. Wiadukty w Kruklankach, Bunkry Himmlera w Pozezdrzu, pałac w Sztynorcie, śluzy na Kanale Mazurskim",
+      "5. Zamek w Rynie"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 550,
+    "price40people": 590,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 10,
+    "title": "SUWALSZCZYZNA, LITWA",
+    "days": "5 dni",
+    "titleSub": "Pensjonat w okolicach Suwałk, wyżywienie 2X + prowiant",
+    "description": [
+      "1. 'Polskie Termopile', Tykocin, Biebrzanski PN",
+      "2. Suwalski PK oraz Wigierski PN",
+      "3. Wilno (śladami polskości) i Troki (zamek i ulica Karaimów)",
+      "4. Druskienniki i Grutas (Muzeum Komunizmu)",
+      "5. 'Litewski' Puńsk i Sejny, Sanktuarium w Studzienicznej, śluzy na Kanale Augustowskim"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 590,
+    "price40people": 640,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic&abroad"
+  },
+  {
+    "idNumber": 11,
+    "title": "MIERZEJA WIŚLANA",
+    "days": "5 dni",
+    "titleSub": "Pensjonat nad morzem w Kątach Rybackich, wyżywienie 3X",
+    "description": [
+      "1. Zamek w Nidzicy , rez. źródła Łyny, pola Grunwaldu lub Toruń: planetarium, Muzeum Piernika",
+      "2. Rez. kormoranów, KL Stuthoff, prelekcja o bursztynie",
+      "3. Trójmiasto: plan do uzgodnienia",
+      "4. Latarnia morska w Krynicy, rejs statkiem. Muzeum Zalewu",
+      "5. Zamek w Malborku lub: Frombork (Wzgórze Zamkowe z planetarium, katedra, dzwonnica, lub: skansen i Huta Szkła Artystycznego w Olsztynku"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 550,
+    "price40people": 579,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 12,
+    "title": "PRAGA, SKALNE MIASTO",
+    "days": "5 dni",
+    "titleSub": "Hotel w Nowej Rudzie, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Góra Św. Anny",
+      "2. Wyjazd do Skalnego Miasta (spacer wraz z rejsem po jeziorku)",
+      "3. Wyjazd do Pragi Czeskiej",
+      "4. Kopalnia węgla kamiennego w Nowej Rudzie, sztolnie Walim lub Osówka, zamek Grodno lub: Szczeliniec, Kaplica Czaszek, Wambierzyce",
+      "5. Kopalnia węgla"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 620,
+    "price40people": 660,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic&abroad"
+  },
+  {
+    "idNumber": 13,
+    "title": "PODLASIE",
+    "days": "5 dni",
+    "titleSub": "Hotel/pensjonat w Tykocinie lub Supraślu, wyzywienie 2X + prowiant",
+    "description": [
+      "1. Zwiedzanie Tykocina - kultura żydowska - lekcja edukacyjna w Synagodze i zamek",
+      "2. Mamucia Dolina, Pętowo - wioska bociania, Kiermusy",
+      "3. Bunkier W. Raginisa k. Wizny, Biebrzański PN - spacer i zajęcia edukacyjne, twierdza Osowiec",
+      "4. Muzeum Ikon, Silvarium, Kultura Tatarska - zwiedzanie Minaretu i Mizaru",
+      "5. Białowieża: Muzeum BPN, Dęby Królewskie, Miejsce Mocy, rezerwat pokazowy żubrów"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 555,
+    "price40people": 585,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 14,
+    "title": "POMORZE ŚRODKOWE",
+    "days": "5 dni",
+    "titleSub": "OW/pensjonat w Chłapowie lub Jastrzębiej Górze, wyżywienie Je + prowiant",
+    "description": [
+      "1. Toruń: zwiedzanie, w tym: Muzeum Piernika, Planetarium",
+      "2. Słowiński PN, w tym wydma Czołpińska i latarnia morska, skansen w Klukach, góra Rokowół",
+      "3. Trójmiasto, np: Centrum Hewelianum, CN Experyment, Oceanarium lub Kaszuby: Szymbark, Wieżyca, Droga Kaszubska",
+      "4. Półwysep Helski: Fokarium, bunkry, muzeum rybołówstwa, Jastarnia, Chałupy",
+      "5. Drezyny w Kolbudach"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 580,
+    "price40people": 620,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 15,
+    "title": "PUSZCZA KAMPINOSKA",
+    "days": "3 dni",
+    "titleSub": "OW w Kampinoskim PN (część zachodnia), wyżywienie 3x lub 2x + ognisko z kiełbaskami",
+    "description": [
+      "1. Dojazd własny rowerem lub autokarem, na miejscu zajecia integracyjne i artystyczne",
+      "2. Spacer lub rajd rowerowy śladami Mennonitów, zajecia z konmi, plastykiem, lesnikiem, mini zoo, olimpiada sportowa, przejazdzka bryczka itd. ",
+      "3. Warowny koscioł w Brochowie i dwor w Tułowicach, powrot"
+    ],
+    "additionallyDesc": "W cenie brak kosztow dodatkowych i dojazdu!",
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 250,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 16,
+    "title": "PODLASIE",
+    "days": "3 dni",
+    "titleSub": "Hotel/pensjonat w Tykocinie lub Supraślu, wyzywienie 2X + prowiant",
+    "description": [
+      "1. Białowieża: rez. pokazowy żubrów, Muzeum BPN, cerkiew, Dęby Królewskie",
+      "2. Tykocin, m.in.: Dom Talmudyczny, Wielka Synagoga, zamek, Pętowo - wioska bociania, bunkier kpt. W. Raginisa k. Wizny, Biebrzański PN - zajęcia edukacyjne, twierdza Osowiec",
+      "3. Muzeum Ikon w Supraślu, Silvarium, Kruszyniany - zwiedzanie Minaretu i Mizaru"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 350,
+    "price40people": 385,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 17,
+    "title": "ROZTOCZE",
+    "days": "3 dni",
+    "titleSub": "OW/pensjonat w Krasnobrodzie lub Zwierzyńcu, wyżywienie l< + prowiant",
+    "description": [
+      "1. Muzeum rowerów w Gołębiu, Lublin: zamek i Stare Miasto (ew. Majdanek)",
+      "2. Rezerwaty: szumy na Tanwii, Czartowe Pole, skansen w Guciowie, Zwierzyniec, Górecka Kościelne",
+      "3. Stare Miasto w Zamościu, Kozłówka: zamek Zamoyskich"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 330,
+    "price40people": 365,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 18,
+    "title": "SPAŁA",
+    "days": "3 dni",
+    "titleSub": "OW w Spale, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Tomaszów Maz: rez. Niebieskie Źródła, groty lessowe, Skansen Rzeki Pilicy, rez. pokazowy żubrów w Smardzewicach",
+      "2. Spacer po Spale: COS, Grota Myśliwska, drewniany kościółek, sosny na szczudłach, schron kolejowy w Konewce, prelekcja o Spale i okolicach",
+      "3. Inowłódz: romański kościół św. Idziego, Zamek Królewski lub Rogów: przejazd kolejką wąskotorową, muzeum kolei"
+    ],
+    "additionallyDesc": "Proponujemy rozważyć kilkugodzinny spływ kajakowy Pilicą na odcinku Tomaszów - Inowłódz",
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 335,
+    "price40people": 370,
+    "typeOfTrip": "buss-trip&kayak",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 19,
+    "title": "SZLAK PIASTOWSKI",
+    "days": "3 dni",
+    "titleSub": "Hotel/ OW na Pojezierzu Gnieźnieńskim, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Kruszwica: Mysia Wieża, rejs statkiem po jez. Gopło, Kolegiata romańska, Strzelno: Xll-wieczny kościół św. Prokopa",
+      "2. Biskupin: rez. archeologiczny, przejazd kolejką wąskotorową, muzeum kolei wąskotorowej, Gniezno: katedra oraz Muzeum Powstania Państwa Polskiego, Ostrów Lednicki - Muzeum Pierwszych Piastów",
+      "3. Powidz - zwiedzanie lotniska NATO lub Bazylika w Licheniu"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 380,
+    "price40people": 430,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 20,
+    "title": "WROCŁAW",
+    "days": "3 dni",
+    "titleSub": "Hostel w centrum lub pensjonat na peryferiach, wyżywienie do ustalenia",
+    "description": [
+      "1. ZOO+ Afrykanarium, Hala Stulecia",
+      "2. Hydropolis, Panorama Racławicka, stadion miejski",
+      "3. Stare Miasto, Ostrów Tumski z przewodnikiem"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 410,
+    "price40people": 450,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 21,
+    "title": "BIAŁOWIEŻA",
+    "days": "3 dni",
+    "titleSub": "Pensjonacik w Białowieży lub w okolicach jez. Siemianówka, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Drohiczyn, Prawosławne Sanktuarium w Grabarce, bunkry linii Mołotowa kolo Mielnika",
+      "2. Białowieża: rez. pokazowy żubrów, Muzeum BPN, cerkiew, Dęby Królewskie, Ośrodek Edukacji Leśnej Jagiellońskie, Stara Białowieża",
+      "3. Rez. ścisły BPN z przewodnikiem, Miejsce Mocy, skansen, Hajnówka"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 380,
+    "price40people": 420,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 22,
+    "title": "BIAŁOWIEŻA",
+    "days": "3 dni",
+    "titleSub": "Pensjonacik w Białowieży lub w okolicach jez. Siemianówka, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Drohiczyn, Prawosławne Sanktuarium w Grabarce, bunkry linii Mołotowa kolo Mielnika",
+      "2. Białowieża: rez. pokazowy żubrów, Muzeum BPN, cerkiew, Dęby Królewskie, Ośrodek Edukacji Leśnej Jagiellońskie, Stara Białowieża",
+      "3. Rez. ścisły BPN z przewodnikiem, Miejsce Mocy, skansen, Hajnówka"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 380,
+    "price40people": 430,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 23,
+    "title": "JURA",
+    "days": "3 dni",
+    "titleSub": "OW lub pensjonat w Podlesicach, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Zamek w Olsztynie, rez. Sokole Góry, Zamki Mirów i Bobolice ew. Jasna Góra",
+      "2. Kraków i Ojcowski PN (w tym Jaskinia Łokietka, zamek na Pieskowej Skale i Ojcowie)",
+      "3. Zamek w Ogrodzieńcu, spacer Doliną Wiercicy (skałki, zamki, groty)"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 350,
+    "price40people": 385,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 24,
+    "title": "TORUŃ",
+    "days": "3 dni",
+    "titleSub": "Pensjonat lub hotelik w Toruniu lub okolicach, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Skansen Wsi Mazowieckiej w Sierpcu, zamek w Golubiu Dobrzyniu",
+      "2. Toruń: Stare Miasto, Planetarium, Muzeum Piernika i Kopernika, Zamek Krzyżacki, Obserwatorium Astronomiczne w Piwnicach",
+      "3. Muzeum Mydła i Brudu w Bydgoszczy, Ciechocinek - kurort i tężnie, spacer po starym Płocku"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 380,
+    "price40people": 430,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 25,
+    "title": "LUBELSZCZYZNA",
+    "days": "3 dni",
+    "titleSub": "Pensjonat lub hotelik w Puławach lub Kazimierzu Dolnym, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Pałac w Kozłówce, Lublin - Stare Miasto, Nałęczów - park zdrojowy",
+      "2. Janowiec- skansen i Zamek Firlejów, Sandomierz: Brama Opatowska, Rynek, wąwóz, zbrojownia, podziemia, kościół św. Jakuba",
+      "3. Kazimierz Dolny: rynek, góra Trzech Krzyży, zamek i baszta, Spichlerze, Puławy- Pałac i park, Muzeum nietypowych rowerów w Gołębiu"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 380,
+    "price40people": 430,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 26,
+    "title": "MIERZEJA WIŚLANA",
+    "days": "3 dni",
+    "titleSub": "Pensjonat nad morzem w Kątach Rybackich, wyżywienie 2X + prowiant",
+    "description": [
+      "1. Nidzica - zamek, rez. źródła Łyny, pola Grunwaldu lub Toruń: Planetarium, Muzeum Piernika",
+      "2. Rez. kormoranów, KL Stuthoff, prelekcja o bursztynie lub Trójmiasto: plan do uzgodnienia lub latarnia morska, rejs statkiem, Muzeum Zalewu",
+      "3. Zamek w Malborku lub Frombork: katedra, dzwonnica lub: skansen i Huta Szkła Artystycznego w Olsztynku"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 360,
+    "price40people": 400,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 27,
+    "days": "3 dni",
+    "title": "SUWALSZCZYZNA",
+    "titleSub": "Pensjonat w okolicach Suwałk, wyżywienie 2X + prowiant",
+    "description": [
+      "1. 'Polskie Termopile', Tykocin, min: Dom Talmudyczny, Wielka Synagoga, zamek, Biebrzański PN",
+      "2. Kolej wąskotorowa, klasztor Kamedułów nad Wigrami, rez. Glazowisko Bachanowo, jez. Hańcza, wiadukty w Stańczykach, 'trójstyk' granic, Góra Cisowa i Zamkowa, molenna w Wodzilkach",
+      "3. 'Litewski' Puńsk i Sejny, Sanktuarium w Studzienicznej, śluzy na Kanale Augustowskim"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 380,
+    "price40people": 430,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 28,
+    "title": "WKRA",
+    "days": "1 dzień",
+    "description": ["1. Spływ kajakowy lub rejs pontonowy"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 120,
+    "price40people": 0,
+    "typeOfTrip": "kayak",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 29,
+    "title": "PILICA",
+    "days": "1 dzień",
+    "description": ["1. Spływ kajakowy lub rejs pontonowy"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 120,
+    "price40people": 0,
+    "typeOfTrip": "kayak",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 30,
+    "title": "BZURA",
+    "days": "1 dzień",
+    "description": ["1. Spływ kajakowy lub rejs pontonowy"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 120,
+    "price40people": 0,
+    "typeOfTrip": "kayak",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 31,
+    "title": "SPAŁA, KONEWKA, INOWŁÓDZ, TOMASZÓW",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 95,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 32,
+    "title": "GOSPODARSTWO AGROTURYSTYCZNE",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 69,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 33,
+    "title": "TORUŃ",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 34,
+    "title": "ŁĘCZYCA, TUM, OPORÓW",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 79,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 35,
+    "title": "DZIAŁDOWO, NIDZICA, ŁYNA",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 36,
+    "title": "KAZIMIERZ DOLNY, JANOWIEC, GOŁĄB",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 99,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 37,
+    "title": "ARKADIA, NIEBOROW, BUDY GRABSKIE",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 79,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 38,
+    "title": "PALMIRY, KAZUŃ, MODLIN, WIERSZE",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 69,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 39,
+    "title": "SIERPC, CZERWIŃSK, MODLIN",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 80,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 40,
+    "title": "PUŁTUSK, MODLIN",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 79,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 41,
+    "title": "KAZUŃ, MODLIN, LEONCIN I SECYMIN",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 69,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 42,
+    "title": "ŻELAZOWA WOLA, GRANICA",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 95,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 43,
+    "title": "ŁÓDŹ",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 44,
+    "title": "PUSZCZA KAMPINOSKA",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 69,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 45,
+    "title": "LIW, WĘGRÓW, SUCHA, SIEDLCE",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 80,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 46,
+    "title": "CIECHANÓW, GOŁOTCZYZNA, OPINOGÓRA",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 99,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 47,
+    "title": "OD ZIARENEK DO BOCHENKA",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 79,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 48,
+    "title": "LIW, DROHICZYN, GRABARKA, MIELNIK",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 85,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 49,
+    "title": "PŁOCK",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 50,
+    "title": "FARMA ILUZJI",
+    "days": "1 dzień",
+    "description": ["Wymyślić krótki opis"],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 79,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "idNumber": 51,
+    "title": "BERLIN",
+    "days": "4 dni",
+    "titleSub": "Hotel *** w Słubicach, wyżywienie 2X",
+    "description": [
+      "1. Poznań: Stare Miasto, Frankfurt nad Odrą",
+      "2. Berlin: Mur Berliński, Reichstag, Brama Brandenburska, Alexanderplatz, Aleja pod Lipami, wieża telewizyjna",
+      "3. Poczdam: Sanssouci (pałac i park) lub Babelsberg (studio filmowe) lub Berlin: Muzeum Pergameńskie, Checkpoint Charlie, Muzeum Muru Berlińskiego, Charlottenburg",
+      "4. Tropi cal Island, powrót do Polski"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 740,
+    "price40people": 790,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "four-days",
+    "destinationType": "abroad"
+  },
+  {
+    "idNumber": 52,
+    "title": "CZECHY, SAKSONIA",
+    "days": "4 dni",
+    "titleSub": "Hotel/pensjonat w Decinie (Czechy) lub okolicach, wyżywienie 2X",
+    "description": [
+      "1. Wrocław - Panorama Racławicka",
+      "2. Czechy: Hrensko i Pravcicka Brama, rejs łodzią przełomem potoku Kamenice, Niemcy: kolejka Karnitztal, wodospad Lichtencheimer, Bad Sandau, skały Bastei",
+      "3. Drezno i Pirna",
+      "4. Zamek w Stolpen"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 775,
+    "price40people": 799,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "four-days",
+    "destinationType": "abroad"
+  },
+  {
+    "idNumber": 53,
+    "title": "KRAJE BAŁTYCKIE",
+    "days": "5 dni",
+    "titleSub": "Łotwa -2 noce: hotel w Rydze lub Jurmali, Estonia -2 noce: hotel w Parnawie lub Tallinie, wyżywienie 2X",
+    "description": [
+      "1. Przyjazd do hotelu na Łotwie",
+      "2. Ryga: Stare Miasto, Pałac Kulturyą. Jurmala - Łotewski Sopotą",
+      "3. Wyspy Muhu i Saaremma: skansen Koguva, Kuressaare: Zamek Krzyżacki, krater meteorytu w Kaali, Angla: wzgórze wiatraków",
+      "4. Tallin: Stare Miasto",
+      "5. Powrót do Polski"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 899,
+    "price40people": 999,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "abroad"
+  },
+  {
+    "idNumber": 54,
+    "title": "SZWECJA",
+    "days": "4 dni",
+    "titleSub": "Kabiny na promie i hotel w Karlskronie, wyżywienie 2X",
+    "description": [
+      "1. Przejazd do Gdyni (rejs nocny, nocleg w kabinach)",
+      "2. Kalmar- Zamek i Stare Miasto, wyspa Olandia: latarnia Lange Jan, Eketorp - rez. archeologiczny, płaskowyż Stora Alvaret",
+      "3. Karlskrona: Muzeum Marynarki Wojennej, rejs na wyspę Aspoo, zakupy, rejs do Gdyni",
+      "4. Powrót przez Malbork lub Toruń"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 999,
+    "price40people": 1100,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "four-days",
+    "destinationType": "abroad"
+  },
+  {
+    "idNumber": 55,
+    "title": "SŁOWACJA",
+    "days": "5 dni",
+    "titleSub": "Hotel w Jasnej w Dolinie Demanowskiej, wyżywienie 2X",
+    "description": [
+      "1. Muzeum Wsi Orawskiej w Zubercu lub baseny termalne w Oravicach",
+      "2. Liptowski Mikulasz - Więzienie Janosika, Choczańskie Wierchy: doliny Prosiecka i Kwaczańska i zabytkowa wies Velke Borove",
+      "3. Spacer po grani Niskich Tatr (wjazd kolejką na Chopok)",
+      "4. Jaskinia Słobody lub Lodowa, Vrbickie Jezioro, Tatralandia lub baseny w Beszeniowej",
+      "5. Zamek Orawski lub wieś Vlkolinec"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 700,
+    "price40people": 750,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "four-days",
+    "destinationType": "abroad"
+  },
+  {
+    "idNumber": 56,
+    "title": "TRZY STOLICE",
+    "days": "5 dni",
+    "titleSub": "Hotel/pensjonat w Bratysławie lub okolicach, wyżywienie 2x",
+    "description": [
+      "1. Przejazd do hotelu",
+      "2. Bratysława: zamek Devin, Stare Miasto, Parlament, Pałac Prezydencki itd.",
+      "3. Budapeszt: plan do uzgodnienia",
+      "4. Wiedeń: plan do uzgodnienia (architektura, Mozart, Habsburgowie itd.)",
+      "5. Powrót przez Zwardoń"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 790,
+    "price40people": 850,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "five-days",
+    "destinationType": "abroad"
+  },
+  {
+    "idNumber": 57,
+    "title": "LITWA",
+    "days": "3 dni",
+    "titleSub": "Hotel na peryferiach Wilna, wyżywienie 2X",
+    "description": [
+      "1. Druskienniki: spacer po uzdrowisku, Muzeum Komunizmu w Grutas",
+      "2. Wilno (plan do uzgodnienia)",
+      "3. Troki: zamek i ulica Karaimów"
+    ],
+    "imageMain": "/pictures/tomek-sea.webp",
+    "price45people": 499,
+    "price40people": 550,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "three-days",
     "destinationType": "abroad"
   }
 ]

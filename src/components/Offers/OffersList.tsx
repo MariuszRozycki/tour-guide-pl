@@ -13,6 +13,8 @@ interface OffersListProps {
 
 const OffersList = ({ title, filterCondition }: OffersListProps) => {
   const { offers, loading } = useGetOffers();
+  console.log("offers: ", offers);
+
   const [selectedOffer, setSelectedOffer] = useState<OfferResponse[number] | null>(null);
 
   if (loading) {
@@ -35,12 +37,30 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
           {conditionNotExists}
           {filteredOffers.map((offer) => (
             <div className="single-offer" onClick={() => setSelectedOffer(offer)} key={offer.id}>
-              <h2>{offer.title}</h2>
+              <h2>
+                {offer.title}
+                <br />
+                {offer.days}
+              </h2>
+              {/* <h3>{offer.titleSub}</h3> */}
               <div className="offer-img-wrapper">
                 <img src={offer.imageMain} alt={offer.title} />
               </div>
-              <p>{offer.descAbbrev}</p>
-              <p className="single-offer-price">Cena: {offer.price} PLN</p>
+              <ul className="single-offer-description">
+                {offer.description.map((desc, index) => (
+                  <li key={index}>
+                    <p>{desc}</p>
+                  </li>
+                ))}
+              </ul>
+              <div className="offers-list-price-wrapper">
+                {/* Warunek na wyświetlanie ceny w modalu dla 45 osób */}
+                {offer.price45people !== 0 && <p className="single-offer-price">Cena (45 osób): {offer.price45people} PLN</p>}
+                {/* Warunek na wyświetlanie ceny w modalu dla 40 osób */}
+                {offer.price40people !== 0 && <p className="single-offer-price">Cena (40 osób): {offer.price40people} PLN</p>}
+                {/* <p className="">Cena (45 osób): {offer.price45people} PLN</p>
+              <p className="single-offer-price">Cena (40 osób): {offer.price40people} PLN</p> */}
+              </div>
               <button className="single-offer-btn">Szczegóły</button>
             </div>
           ))}
@@ -51,11 +71,23 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
         {selectedOffer && (
           <>
             <h2>{selectedOffer.title}</h2>
+            <h3>{selectedOffer.titleSub}</h3>
             <div className="offer-img-wrapper">
               <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
             </div>
-            <p>{selectedOffer.description}</p>
-            <p className="modal-offer-price">Cena: {selectedOffer.price} PLN</p>
+            <ul>
+              {selectedOffer.description.map((desc, index) => (
+                <li key={index}>{desc}</li>
+              ))}
+            </ul>
+            {/* Warunek na wyświetlanie ceny w modalu dla 45 osób */}
+            {selectedOffer.price45people !== 0 && (
+              <p className="modal-offer-price">Cena (45 osób): {selectedOffer.price45people} PLN</p>
+            )}
+            {/* Warunek na wyświetlanie ceny w modalu dla 40 osób */}
+            {selectedOffer.price40people !== 0 && (
+              <p className="modal-offer-price">Cena (40 osób): {selectedOffer.price40people} PLN</p>
+            )}
           </>
         )}
       </OfferModal>

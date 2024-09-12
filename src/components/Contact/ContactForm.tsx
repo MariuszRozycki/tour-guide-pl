@@ -108,7 +108,7 @@ const ContactForm: React.FC = () => {
 
     formDataObject.append("user-name", formData.userName);
     formDataObject.append("your-email", formData.email);
-    formDataObject.append("your-phone", formData.phone); // Dodaj numer telefonu
+    formDataObject.append("your-phone", formData.phone);
     formDataObject.append("your-subject", formData.subject);
     formDataObject.append("your-message", formData.message);
     formDataObject.append("_wpcf7_unit_tag", `form-${formID}`);

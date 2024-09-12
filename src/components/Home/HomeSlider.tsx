@@ -12,13 +12,13 @@ const HomeSlider = () => {
   const [selectedOffer, setSelectedOffer] = useState<OfferResponse[number] | null>(null);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     swipe: true,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
     fade: false,
@@ -67,8 +67,7 @@ const HomeSlider = () => {
             <div className="slider-img-wrapper">
               <img src={offer.imageMain} alt={`${offer.title}`} />
             </div>
-            <p className="slider-desc-abbrev">{offer.descAbbrev}</p>
-            <p className="slider-offer-price">Cena: {offer.price} PLN</p>
+            <p className="slider-offer-price">Cena od: {offer.price45people} PLN</p>
             <button className="slider-offer-details-btn" onClick={() => setSelectedOffer(offer)}>
               Szczegóły
             </button>
@@ -83,8 +82,19 @@ const HomeSlider = () => {
             <div className="offer-img-wrapper">
               <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
             </div>
+            <ul>
+              <li></li>
+            </ul>
             <p>{selectedOffer.description}</p>
-            <p className="modal-offer-price">Cena: {selectedOffer.price} PLN</p>
+
+            {/* Warunek na wyświetlanie ceny w modalu dla 45 osób */}
+            {selectedOffer.price45people !== 0 && (
+              <p className="modal-offer-price">Cena (45 osób): {selectedOffer.price45people} PLN</p>
+            )}
+            {/* Warunek na wyświetlanie ceny w modalu dla 40 osób */}
+            {selectedOffer.price40people !== 0 && (
+              <p className="modal-offer-price">Cena (40 osób): {selectedOffer.price40people} PLN</p>
+            )}
           </>
         )}
       </OfferModal>

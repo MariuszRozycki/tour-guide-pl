@@ -14,8 +14,12 @@
       align-items: center;
       margin: 0;
 
-      .icon {
-        width: 25px;
+      button {
+        box-shadow: var(--box-shadow-null);
+
+        .icon {
+          width: 25px;
+        }
       }
     }
 
@@ -42,7 +46,7 @@
     }
 
     .active {
-      color: var(--orange-color);
+      color: var(--active-color);
     }
 
     .icon-wrapper {

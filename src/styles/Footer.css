@@ -1,6 +1,8 @@
 footer {
   margin: 80px 0 0 0;
-  background-color: var(--primary-color);
+  background-color: var(--very-dark-green-color);
+  box-shadow: var(--box-shadow-hard-white);
+  border-top: 2px solid black;
 
   .container {
     h3 {

@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #d7fff6bd;
+  background-color: var(--very-light-green-color);
 }
 
 :root {
@@ -27,18 +27,24 @@ body {
   /* colors */
   --primary-color: rgb(33, 53, 71);
   --light-blue-color: #b1daec;
+  --very-light-green-color: #f7fff8;
+  --light-green-color: #b7ebbe;
   --dark-blue-color: #243662;
   --very-dark-blue-color: #121d38;
+  --very-dark-green-color: #1a351f;
   --orange-color: #ff5722;
+  --red-color: #80341d;
   --yellow-color: #ffa210;
   --yellow-light-color: #ffe3b3;
-
   --white-color: #fff;
+  --black-color: #000;
+  --active-color: var(--very-dark-green-color);
 
   /* font-size */
-  --h1-fs: clamp(2.5rem, 5vw, 2.8rem);
-  --h1-spam-fs: clamp(1.6rem, 3vw, 2.2rem);
+  --h1-fs: clamp(2rem, 2.2vw, 2.8rem);
+  --h1-spam-fs: clamp(1.4rem, 2.5vw, 2.2rem);
   --h2-fs: clamp(1.5rem, 3vw, 2rem);
+  --h2-fs-offer: clamp(1.5rem, 2vw, 2rem);
   --h3-fs: clamp(1.2rem, 2.5vw, 1.8rem);
   --a-link-fs: clamp(1rem, 2vw, 1.5rem);
   --a-link-fs-footer: clamp(1rem, 2vw, 1.1rem);
@@ -65,6 +71,12 @@ body {
   --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
   --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
   --box-shadow-hard: 0 4px 8px rgba(0, 0, 0, 0.9), 0 6px 20px rgba(0, 0, 0, 0.9);
+  --box-shadow-hard-white: 4px 2px 6px white;
+
+  /* text-shadow */
+  --text-shadow: 2px 2px 6px var(--very-dark-green-color);
+  --text-shadow-hover: 4px 4px 4px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.2);
+  --prefix-text-shadow: 4px 5px 4px #000;
 }
 
 .container {
@@ -76,6 +88,10 @@ body {
 
 section {
   margin-top: 40px;
+}
+
+ul {
+  list-style: none;
 }
 
 p,
@@ -96,24 +112,42 @@ a {
   transition: var(--transition-standard);
 }
 a:hover {
-  color: var(--orange-color);
+  color: var(--active-color);
 }
 
 .active {
-  color: var(--orange-color);
+  color: var(--active-color);
+  position: relative;
+  text-shadow: var(--text-shadow);
+  transition: var(--transition-standard);
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 110%;
+  transform: translateX(-5%);
+  height: 2px;
+  background-color: var(--active-color);
+  box-shadow: var(--text-shadow);
 }
 
 h1 {
   font-size: var(--h1-fs);
+  text-shadow: var(--text-shadow);
   line-height: 1.1;
 }
 
 h2 {
   font-size: var(--h2-fs);
+  text-shadow: var(--text-shadow);
 }
 
 h3 {
   margin-top: 20px;
+  text-shadow: var(--text-shadow);
 }
 
 button {
@@ -126,10 +160,12 @@ button {
   background-color: var(--orange-color);
   cursor: pointer;
   transition: border-color 0.25s;
-  color: var(--very-dark-blue-color);
+  color: var(--black-color);
+  box-shadow: var(--box-shadow-medium);
+  transition: var(--transition-standard);
 }
 button:hover {
-  border-color: #646cff;
+  box-shadow: var(--box-shadow-hard);
 }
 button:focus,
 button:focus-visible {

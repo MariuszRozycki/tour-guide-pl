@@ -54,7 +54,7 @@ form {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: var(--yellow-light-color);
+  background-color: var(--light-green-color);
   padding: 20px;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow-light);

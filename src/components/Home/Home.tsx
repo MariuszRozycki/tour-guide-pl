@@ -1,12 +1,13 @@
 import HomeAboutText from "./HomeAboutText";
-import MainHeading from "../MainHeading/MainHeading";
+import Hero from "./Hero";
 import HomeSlider from "./HomeSlider";
 
 const Home = () => {
   return (
     <div>
       <div className="container">
-        <MainHeading />
+        <Hero />
+
         <section>
           <h2>Witaj na stronie głównej!</h2>
           <div className="about-wrapper clearfix">
