@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { useNavLogic } from "../../hooks/useNavLogic";
 import HamburgerMenu from "./HamburgerMenu";
 import NavMainList from "./NavMainList";
@@ -10,9 +9,9 @@ const Nav = () => {
     <nav className="nav" ref={navMainRef}>
       <div className="container">
         <div className="nav-logo-wrapper">
-          <NavLink to="/">
+          <a href="/">
             <img src="/pictures/logo.png" alt="logo" />
-          </NavLink>
+          </a>
         </div>
         <HamburgerMenu
           ref={hamburgerMenuRef}

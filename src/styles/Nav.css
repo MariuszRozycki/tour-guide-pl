@@ -7,8 +7,9 @@ ul {
 .nav {
   position: sticky;
   top: 0;
-  z-index: 1;
-  background-color: var(--light-blue-color);
+  z-index: 3;
+  background-color: var(--light-green-color);
+  box-shadow: var(--box-shadow-medium);
 }
 
 .nav .container {
@@ -59,7 +60,7 @@ ul {
     width: 100%;
     padding: 0;
     position: absolute;
-    background-color: var(--light-blue-color);
+    background-color: var(--light-green-color);
     top: 52px;
     left: -100vw;
     transition: var(--transition-medium);
