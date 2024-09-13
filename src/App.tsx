@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./utils/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./components/Nav/Nav";
 import PageNavigator from "./components/PageNavigator/PageNavigator";
@@ -22,6 +23,7 @@ import "./styles/index.css";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Nav />
       <PageNavigator />
       <Routes>

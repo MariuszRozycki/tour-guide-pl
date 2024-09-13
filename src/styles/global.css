@@ -28,17 +28,18 @@ body {
   --primary-color: rgb(33, 53, 71);
   --light-blue-color: #b1daec;
   --very-light-green-color: #f7fff8;
-  --light-green-color: #b7ebbe;
+  --light-beige-color: #fff5ef;
+  --light-green-color: #84a98c;
   --dark-blue-color: #243662;
-  --very-dark-blue-color: #121d38;
-  --very-dark-green-color: #1a351f;
-  --orange-color: #ff5722;
-  --red-color: #80341d;
+  --very-dark-blue-color: #2f3e46;
+  --very-dark-green-color: #283d3b;
+  --orange-color: #c44536;
+  --red-color: #772e25;
   --yellow-color: #ffa210;
   --yellow-light-color: #ffe3b3;
   --white-color: #fff;
   --black-color: #000;
-  --active-color: var(--very-dark-green-color);
+  --active-color: var(--orange-color);
 
   /* font-size */
   --h1-fs: clamp(2rem, 2.2vw, 2.8rem);
@@ -75,7 +76,7 @@ body {
   --box-shadow-hard-white: 1px 1px 6px white;
 
   /* text-shadow */
-  --text-shadow: 2px 2px 6px var(--very-dark-green-color);
+  --text-shadow: 2px 2px 6px var(--black-color);
   --text-shadow-hover: 4px 4px 4px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.2);
   --prefix-text-shadow: 4px 5px 4px #000;
 }
@@ -93,6 +94,7 @@ section {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 p,
@@ -107,19 +109,18 @@ textarea {
 
 a {
   font-weight: 500;
-  color: var(---primary-color);
+  color: var(--black-color);
   text-decoration: inherit;
   font-size: var(--a-link-fs);
   transition: var(--transition-standard);
 }
 a:hover {
-  color: var(--active-color);
+  color: var(--primary-color);
 }
 
 .active {
-  color: var(--active-color);
+  color: var(--black-color);
   position: relative;
-  text-shadow: var(--text-shadow);
   transition: var(--transition-standard);
 }
 
@@ -130,7 +131,7 @@ a:hover {
   left: 0;
   width: 110%;
   transform: translateX(-5%);
-  height: 2px;
+  height: 3px;
   background-color: var(--active-color);
   box-shadow: var(--text-shadow);
 }
@@ -163,9 +164,10 @@ button,
   background-color: var(--orange-color);
   cursor: pointer;
   transition: border-color 0.25s;
-  color: var(--black-color);
+  color: var(--light-beige-color);
   box-shadow: var(--box-shadow-hard);
   transition: var(--transition-standard);
+  text-transform: uppercase;
 }
 button:hover {
   box-shadow: var(--box-shadow-null);

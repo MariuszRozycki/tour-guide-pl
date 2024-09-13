@@ -46,7 +46,7 @@
     }
 
     .active {
-      color: var(--active-color);
+      text-shadow: none;
     }
 
     .icon-wrapper {
