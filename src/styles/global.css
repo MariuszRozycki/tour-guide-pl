@@ -144,10 +144,12 @@ h1 {
 h2 {
   font-size: var(--h2-fs);
   text-shadow: var(--text-shadow);
+  margin-bottom: 20px;
 }
 
 h3 {
   margin-top: 20px;
+
   text-shadow: var(--text-shadow);
 }
 
@@ -167,7 +169,7 @@ button,
   transition: var(--transition-standard);
 }
 button:hover {
-  box-shadow: var(--box-shadow-hard);
+  box-shadow: var(--box-shadow-null);
 }
 button:focus,
 button:focus-visible {

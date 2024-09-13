@@ -5,7 +5,7 @@
       grid-template-columns: 1fr;
       list-style: none;
       padding: 10px;
-      max-width: 450px;
+      max-width: 600px;
       margin: auto;
       background-color: var(--light-green-color);
       border-radius: var(--border-radius-small);
@@ -18,10 +18,10 @@
           margin: 10px 0;
           font-weight: 700;
           transition: var(--transition-standard);
-          /* text-shadow: var(--text-shadow); */
+          text-shadow: var(--text-shadow);
 
           &:hover {
-            text-shadow: var(--text-shadow-hover);
+            text-shadow: none;
             transform: scale(1.1);
           }
         }

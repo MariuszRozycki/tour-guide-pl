@@ -17,7 +17,7 @@ const HomeAboutText = () => {
           </span>
         </p>
       </li>
-      <li>
+      <li className="owner-signature">
         <p>Z wyrazami szacunku,</p>
         <p>Tomasz Zdunek Właściciel Tour Guide</p>
       </li>

@@ -32,6 +32,9 @@ footer {
           color: var(--white-color);
 
           .contact-details-icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 30px;
             height: 30px;
             background-color: white;
