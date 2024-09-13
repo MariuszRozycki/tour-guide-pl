@@ -33,7 +33,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       max-height: 82px;
-      line-height: 2em;
+      /* line-height: 2em; */
       white-space: normal;
     }
     .single-offer-price {
