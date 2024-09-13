@@ -20,7 +20,7 @@ const PageNavigator = () => {
     { path: "/offers/abroad", label: "Zagraniczne" },
     { path: "/offers/domestic", label: "Krajowe" },
     { path: "/offers/one-day", label: "Jednodniowe" },
-    { path: "/offers/two-days", label: "Dwudniowe" },
+    { path: "/offers/cross-border", label: "Transgraniczne" },
     { path: "/offers/three-days", label: "Trzydniowe" },
     { path: "/offers/five-days", label: "Pięciodniowe" },
     { path: "/offers/kayak", label: "Spływy kajakowe" },

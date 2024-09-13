@@ -27,7 +27,7 @@
   padding: 20px;
   border-radius: 8px;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
   max-height: 90%;
   overflow-y: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
@@ -38,6 +38,17 @@
   h3,
   p {
     text-align: left;
+  }
+
+  .offer-img-wrapper {
+    margin-bottom: 20px;
+    height: 250px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
   }
 
   ul {
@@ -81,15 +92,6 @@
   }
 }
 
-.offer-img-wrapper {
-  margin-bottom: 20px;
-}
-
-.offer-img-wrapper img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
 .modal-offer-price {
   margin: 5px 0;
   font-weight: 700;
@@ -100,4 +102,12 @@
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .modal-content {
+    .offer-img-wrapper {
+      height: 380px;
+    }
+  }
 }

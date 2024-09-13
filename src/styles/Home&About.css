@@ -1,6 +1,5 @@
 .h1-heading {
   font-size: var(--h1-fs);
-  color: var(--very-dark-green-color);
   span {
     line-height: 1.5;
     display: block;
@@ -55,6 +54,7 @@
 
   .img-wrapper {
     width: 100%;
+    margin-bottom: 15px;
   }
 
   .img-wrapper img {

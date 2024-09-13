@@ -11,7 +11,7 @@ import DomesticTrip from "./components/Offers/DomesticTrip";
 import BussTrip from "./components/Offers/BussTrip";
 import PlaneTrip from "./components/Offers/PlaneTrip";
 import OneDayTrip from "./components/Offers/OneDayTrip";
-import TwoDayTrip from "./components/Offers/TwoDaysTrip";
+import CrossBorder from "./components/Offers/CrossBorder";
 import ThreeDaysTrip from "./components/Offers/ThreeDaysTrip";
 import FiveDaysTrip from "./components/Offers/FiveDaysTrip";
 import KayakTrip from "./components/Offers/KayakTrip";
@@ -34,7 +34,7 @@ const App = () => {
         <Route path="/offers/plane" element={<PlaneTrip />} />
         <Route path="/offers/kayak" element={<KayakTrip />} />
         <Route path="/offers/one-day" element={<OneDayTrip />} />
-        <Route path="/offers/two-days" element={<TwoDayTrip />} />
+        <Route path="/offers/cross-border" element={<CrossBorder />} />
         <Route path="/offers/three-days" element={<ThreeDaysTrip />} />
         <Route path="/offers/five-days" element={<FiveDaysTrip />} />
         <Route path="/contact" element={<Contact />}></Route>

@@ -9,7 +9,7 @@ const About = () => {
         <h2>O mnie</h2>
         <div className="about-wrapper">
           <div className="img-wrapper">
-            <img src="/pictures/TomekZ.webp" alt="Tomek Z. avatar" />
+            <img src="/pictures/tomek-zdunek.jpg" alt="Tour Guide - Tomek Zdunek" />
           </div>
           <AboutText />
         </div>

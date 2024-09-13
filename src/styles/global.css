@@ -49,7 +49,7 @@ body {
   --a-link-fs: clamp(1rem, 2vw, 1.5rem);
   --a-link-fs-footer: clamp(1rem, 2vw, 1.1rem);
   --paragraph-fs: clamp(1rem, 3vw, 1.2rem);
-  --paragraph-slider-fs: clamp(1rem, 2vw, 1.5rem);
+  --paragraph-slider-fs: clamp(1.1rem, 2vw, 1.5rem);
   --btn-fs: clamp(0.9rem, 1.6vw, 1.1rem);
 
   /* transitions */
@@ -138,19 +138,18 @@ a:hover {
 h1 {
   font-size: var(--h1-fs);
   text-shadow: var(--text-shadow);
+  color: var(--black-color);
   line-height: 1.1;
 }
 
 h2 {
   font-size: var(--h2-fs);
-  text-shadow: var(--text-shadow);
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 h3 {
   margin-top: 20px;
-
-  text-shadow: var(--text-shadow);
 }
 
 button,
@@ -165,7 +164,7 @@ button,
   cursor: pointer;
   transition: border-color 0.25s;
   color: var(--black-color);
-  box-shadow: var(--box-shadow-medium);
+  box-shadow: var(--box-shadow-hard);
   transition: var(--transition-standard);
 }
 button:hover {
@@ -174,6 +173,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+img {
+  object-fit: cover;
 }
 
 .clearfix::after {
