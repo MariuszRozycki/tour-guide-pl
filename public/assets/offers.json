@@ -11,12 +11,12 @@
       "4. Spacer na Rachowiec",
       "5. Browar w Żywcu lub SFA w Bielsku-Białej"
     ],
-    "imageMain": "/pictures/autokar-tomek.jpg",
+    "imageMain": "/pictures/beskidy-zachodnie.jpg",
     "price45people": 560,
     "price40people": 585,
     "typeOfTrip": "buss-trip",
     "lengthOfTrip": "five-days",
-    "destinationType": "domestic&abroad"
+    "destinationType": "cross-border"
   },
   {
     "idNumber": 2,
@@ -30,7 +30,7 @@
       "4. Polańczyk Zdrój, rejs statkiem po Jez. Solińskim, korona zapory",
       "5. Sandomierz: zamek, rynek, wąwóz, Brama Opatowska, zbrojownia"
     ],
-    "imageMain": "/pictures/kayak-tomek.jpg",
+    "imageMain": "/pictures/pexels-marek-piwnicki-3907296-15499463.jpg",
     "price45people": 560,
     "price40people": 610,
     "typeOfTrip": "buss-trip",
@@ -41,7 +41,7 @@
     "idNumber": 3,
     "title": "KARKONOSZE",
     "days": "5 dni",
-    "titleSub": "Hotel 􀂌 P􀂍ze􀂎iece lub Karpaczu, wyzyw1eme 2X + prowiant",
+    "titleSub": "Hotel w Przesiece lub Karpaczu, wyżywienie 2X + prowiant",
     "description": [
       "1. Wrocław: (plan do uzgodnienia)",
       "2. Pieszo: zamek Chojnik, wodospad Podgórnej, Zloty Widok",
@@ -50,7 +50,7 @@
       "5. Park miniatur w Kowarach, zamek Książ lub: Sokoliki, zamek Bolków i Świny"
     ],
 
-    "imageMain": "/pictures/mountains-tomek.jpg",
+    "imageMain": "/pictures/pexels-marcin-jozwiak-199600-3193686.jpg",
     "price45people": 560,
     "price40people": 610,
     "typeOfTrip": "buss-trip",
@@ -69,7 +69,7 @@
       "4. Twierdza w Srebrnej Górze lub Kłodzku, papiernia w Dusznikach",
       "5. Kopalnia Złota w Złotym Stoku lub: zamek Książ, Świdnica - kościół Pokoju"
     ],
-    "imageMain": "/pictures/tomek-sea.png",
+    "imageMain": "/pictures/castle-6789725_1280.jpg",
     "price45people": 560,
     "price40people": 620,
     "typeOfTrip": "buss-trip",
@@ -80,7 +80,7 @@
     "idNumber": 5,
     "title": "POMORZE ZACHODNIE",
     "days": "5 dni",
-    "titleSub": "OW/P.ensJon.at w Sianożętach, wyżywienie 2X + prowiant",
+    "titleSub": "OW/Pensjonat w Sianożętach, wyżywienie 2X + prowiant",
     "description": [
       "1. Toruń: zwiedzanie, w tym: Muzeum Piernika, Planetarium",
       "2. Latarnia morska w Gąskach, Aquapark i park linowy w Ustroniu",
@@ -88,7 +88,7 @@
       "4. Woliński PN: zagroda żubrów, klif Gosań, latarnia Kikut i Niechorze, Międzyzdroje, park miniatur latarni morskich",
       "5. Muzeum Mydła i Brudu - Bydgoszcz"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/lighthouse-1632134_1280.jpg",
     "price45people": 600,
     "price40people": 670,
     "typeOfTrip": "buss-trip",
@@ -107,7 +107,7 @@
       "4. Zamki w Ogrodzieńcu, Olsztynie, Bobolicach i Mirowie",
       "5. Kraków"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/krakow-2893783_1280.jpg",
     "price45people": 580,
     "price40people": 630,
     "typeOfTrip": "buss-trip",
@@ -150,7 +150,7 @@
     "price40people": 630,
     "typeOfTrip": "buss-trip",
     "lengthOfTrip": "five-days",
-    "destinationType": "domestic&abroad"
+    "destinationType": "cross-border"
   },
   {
     "idNumber": 9,
@@ -188,7 +188,7 @@
     "price40people": 640,
     "typeOfTrip": "buss-trip",
     "lengthOfTrip": "five-days",
-    "destinationType": "domestic&abroad"
+    "destinationType": "cross-border"
   },
   {
     "idNumber": 11,
@@ -226,7 +226,7 @@
     "price40people": 660,
     "typeOfTrip": "buss-trip",
     "lengthOfTrip": "five-days",
-    "destinationType": "domestic&abroad"
+    "destinationType": "cross-border"
   },
   {
     "idNumber": 13,

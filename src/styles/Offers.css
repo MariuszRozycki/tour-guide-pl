@@ -18,10 +18,9 @@
           margin: 10px 0;
           font-weight: 700;
           transition: var(--transition-standard);
-          text-shadow: var(--text-shadow);
 
           &:hover {
-            text-shadow: none;
+            color: var(--black-color);
             transform: scale(1.1);
           }
         }

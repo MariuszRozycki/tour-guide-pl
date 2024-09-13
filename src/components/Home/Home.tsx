@@ -12,7 +12,7 @@ const Home = () => {
           <h2>Witaj na stronie głównej!</h2>
           <div className="about-wrapper clearfix">
             <div className="img-wrapper">
-              <img src="/pictures/TomekZ.webp" alt="Tomek Z. avatar" />
+              <img src="/pictures/tomek-zdunek.jpg" alt="Tour Guide - Tomek Zdunek" />
             </div>
             <HomeAboutText />
           </div>

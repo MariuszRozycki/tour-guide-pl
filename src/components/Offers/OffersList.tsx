@@ -43,11 +43,6 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
               <div className="offer-img-wrapper">
                 <img src={offer.imageMain} alt={offer.title} />
               </div>
-              <ul className="single-offer-description">
-                {offer.description.map((desc, index) => (
-                  <li key={index}>{desc}</li>
-                ))}
-              </ul>
               <div className="offers-list-price-wrapper">
                 {offer.price45people !== 0 && <p className="single-offer-price">Cena (45 osób): {offer.price45people} PLN</p>}
                 {offer.price40people !== 0 && <p className="single-offer-price">Cena (40 osób): {offer.price40people} PLN</p>}
