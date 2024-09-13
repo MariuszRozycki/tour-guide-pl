@@ -13,8 +13,6 @@ interface OffersListProps {
 
 const OffersList = ({ title, filterCondition }: OffersListProps) => {
   const { offers, loading } = useGetOffers();
-  console.log("offers: ", offers);
-
   const [selectedOffer, setSelectedOffer] = useState<OfferResponse[number] | null>(null);
 
   if (loading) {
@@ -42,24 +40,17 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
                 <br />
                 {offer.days}
               </h2>
-              {/* <h3>{offer.titleSub}</h3> */}
               <div className="offer-img-wrapper">
                 <img src={offer.imageMain} alt={offer.title} />
               </div>
               <ul className="single-offer-description">
                 {offer.description.map((desc, index) => (
-                  <li key={index}>
-                    <p>{desc}</p>
-                  </li>
+                  <li key={index}>{desc}</li>
                 ))}
               </ul>
               <div className="offers-list-price-wrapper">
-                {/* Warunek na wyświetlanie ceny w modalu dla 45 osób */}
                 {offer.price45people !== 0 && <p className="single-offer-price">Cena (45 osób): {offer.price45people} PLN</p>}
-                {/* Warunek na wyświetlanie ceny w modalu dla 40 osób */}
                 {offer.price40people !== 0 && <p className="single-offer-price">Cena (40 osób): {offer.price40people} PLN</p>}
-                {/* <p className="">Cena (45 osób): {offer.price45people} PLN</p>
-              <p className="single-offer-price">Cena (40 osób): {offer.price40people} PLN</p> */}
               </div>
               <button className="single-offer-btn">Szczegóły</button>
             </div>
@@ -70,7 +61,10 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
       <OfferModal isOpen={!!selectedOffer} onClose={() => setSelectedOffer(null)}>
         {selectedOffer && (
           <>
-            <h2>{selectedOffer.title}</h2>
+            <h2>
+              {selectedOffer.title} <br />
+              {selectedOffer.days}
+            </h2>
             <h3>{selectedOffer.titleSub}</h3>
             <div className="offer-img-wrapper">
               <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
@@ -80,11 +74,9 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
                 <li key={index}>{desc}</li>
               ))}
             </ul>
-            {/* Warunek na wyświetlanie ceny w modalu dla 45 osób */}
             {selectedOffer.price45people !== 0 && (
               <p className="modal-offer-price">Cena (45 osób): {selectedOffer.price45people} PLN</p>
             )}
-            {/* Warunek na wyświetlanie ceny w modalu dla 40 osób */}
             {selectedOffer.price40people !== 0 && (
               <p className="modal-offer-price">Cena (40 osób): {selectedOffer.price40people} PLN</p>
             )}

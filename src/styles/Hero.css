@@ -1,5 +1,5 @@
 .hero-wrapper {
-  height: 50vh;
+  height: 30vh;
   overflow: hidden;
   transform: scale(100%);
 }
@@ -19,7 +19,6 @@
   position: relative;
   z-index: 2;
   color: var(--very-light-green-color);
-  animation: scaleBg 20s infinite alternate ease-in-out;
   transition: var(--transition-medium);
 }
 
@@ -66,39 +65,34 @@
     padding: var(--mobile-view-padding);
   }
 
-  button {
-    background-color: var(--orange-color);
-    border: 2px solid var(--orange-color);
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-    /* padding: 7px 15px; */
+  .hero-btn {
     color: var(--black-color);
-    font-size: calc(var(--paragraph-fs) - 5px);
+    text-transform: uppercase;
+    box-shadow: var(--box-shadow-medium);
+    transition: var(--transition-standard);
+    font-weight: 700;
 
     &:hover {
       box-shadow: var(--box-shadow-hard);
       background-color: var(--red-color);
-      border: 2px solid var(--red-color);
+      color: var(--very-light-green-color);
     }
   }
 }
 
-/* Animacja pojawiania się tekstu */
 @keyframes fadeInText {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: scale(0);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(100%);
   }
 }
 
-@media (min-width: 480px) {
-  .hero-wrapper {
-    height: 50vh;
+@media (min-width: 600px) {
+  .hero {
+    animation: scaleBg 20s infinite alternate ease-in-out;
   }
 }

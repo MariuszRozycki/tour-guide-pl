@@ -63,7 +63,11 @@ const HomeSlider = () => {
       <Slider {...settings}>
         {offers.map((offer) => (
           <div key={offer.id} className="slider-item">
-            <h2>{offer.title}</h2>
+            <h2>
+              {offer.title}
+              <br />
+              {offer.days}
+            </h2>
             <div className="slider-img-wrapper">
               <img src={offer.imageMain} alt={`${offer.title}`} />
             </div>
@@ -78,20 +82,23 @@ const HomeSlider = () => {
       <OfferModal isOpen={!!selectedOffer} onClose={() => setSelectedOffer(null)}>
         {selectedOffer && (
           <>
-            <h2>{selectedOffer.title}</h2>
+            <h2>
+              {selectedOffer.title}
+              <br />
+              {selectedOffer.days}
+            </h2>
+            <h3>{selectedOffer.titleSub}</h3>
             <div className="offer-img-wrapper">
               <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
             </div>
             <ul>
-              <li></li>
+              {selectedOffer.description.map((desc, index) => (
+                <li key={index}>{desc}</li>
+              ))}
             </ul>
-            <p>{selectedOffer.description}</p>
-
-            {/* Warunek na wyświetlanie ceny w modalu dla 45 osób */}
             {selectedOffer.price45people !== 0 && (
               <p className="modal-offer-price">Cena (45 osób): {selectedOffer.price45people} PLN</p>
             )}
-            {/* Warunek na wyświetlanie ceny w modalu dla 40 osób */}
             {selectedOffer.price40people !== 0 && (
               <p className="modal-offer-price">Cena (40 osób): {selectedOffer.price40people} PLN</p>
             )}

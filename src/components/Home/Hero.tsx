@@ -1,6 +1,6 @@
 import React from "react";
 import MainHeading from "../MainHeading/MainHeading";
-import { Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
@@ -9,7 +9,10 @@ const Hero: React.FC = () => {
         <div className="hero-content">
           <MainHeading />
           <p>Skorzystaj z najlepszych ofert na podróże już teraz!</p>
-          <Button variant="primary">Zobacz oferty</Button>
+
+          <NavLink to="/offers" className="btn hero-btn">
+            Zobacz oferty
+          </NavLink>
         </div>
       </div>
     </div>
