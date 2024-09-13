@@ -5,8 +5,8 @@
   margin-top: 20px;
 
   .single-offer {
-    background-color: var(--yellow-light-color);
-    padding: 0 15px 15px;
+    background-color: var(--light-green-color);
+    padding: 10px 15px 15px;
     border-radius: var(--border-radius-small);
     box-shadow: var(--box-shadow-light);
     display: flex;

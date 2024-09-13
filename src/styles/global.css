@@ -50,9 +50,10 @@ body {
   --a-link-fs-footer: clamp(1rem, 2vw, 1.1rem);
   --paragraph-fs: clamp(1rem, 3vw, 1.2rem);
   --paragraph-slider-fs: clamp(1rem, 2vw, 1.5rem);
-  --btn-fs: clamp(1.2rem, 2vw, 1.5rem);
+  --btn-fs: clamp(0.9rem, 1.6vw, 1.1rem);
 
   /* transitions */
+  --transition-fast: 0.1s;
   --transition-standard: 0.2s;
   --transition-medium: 0.5s;
 
@@ -71,7 +72,7 @@ body {
   --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
   --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
   --box-shadow-hard: 0 4px 8px rgba(0, 0, 0, 0.9), 0 6px 20px rgba(0, 0, 0, 0.9);
-  --box-shadow-hard-white: 4px 2px 6px white;
+  --box-shadow-hard-white: 1px 1px 6px white;
 
   /* text-shadow */
   --text-shadow: 2px 2px 6px var(--very-dark-green-color);
@@ -150,11 +151,12 @@ h3 {
   text-shadow: var(--text-shadow);
 }
 
-button {
+button,
+.btn {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: var(--btn-fs);
   font-weight: 500;
   font-family: inherit;
   background-color: var(--orange-color);
