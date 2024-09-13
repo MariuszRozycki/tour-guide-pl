@@ -3,15 +3,19 @@
   margin: auto;
   max-width: 500px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 0;
   gap: 10px;
 
   li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     a {
       display: flex;
       justify-content: center;
-      align-items: center;
       gap: 5px;
       font-weight: 700;
 
@@ -57,7 +61,7 @@ form {
   background-color: var(--light-green-color);
   padding: 20px;
   border-radius: var(--border-radius-small);
-  box-shadow: var(--box-shadow-light);
+  box-shadow: var(--box-shadow-medium);
 
   h3 {
     font-size: var(--h3-fs);
@@ -86,14 +90,20 @@ form {
     resize: none;
   }
 
-  button {
+  .btn {
     text-transform: uppercase;
     font-weight: 700;
     max-width: 100%;
     align-self: center;
     margin-top: 15px;
-    box-shadow: var(--box-shadow-light);
-    border: 1px solid;
+    box-shadow: var(--box-shadow-medium);
+    border: 1px solid var(--orange-color);
+
+    &:hover {
+      background-color: var(--orange-color);
+      color: var(--black-color);
+      box-shadow: var(--box-shadow-none);
+    }
   }
 
   .greetings-wrapper {

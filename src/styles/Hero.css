@@ -68,14 +68,14 @@
   .hero-btn {
     color: var(--black-color);
     text-transform: uppercase;
-    box-shadow: var(--box-shadow-medium);
+    box-shadow: var(--box-shadow-hard);
     transition: var(--transition-standard);
     font-weight: 700;
 
     &:hover {
-      box-shadow: var(--box-shadow-hard);
-      background-color: var(--red-color);
-      color: var(--very-light-green-color);
+      box-shadow: var(--box-shadow-none);
+      background-color: var(--orange-color);
+      color: var(--black-color);
     }
   }
 }
