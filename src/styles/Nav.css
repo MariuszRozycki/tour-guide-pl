@@ -8,7 +8,7 @@ ul {
   position: sticky;
   top: 0;
   z-index: 3;
-  background-color: var(--light-green-color);
+  background-color: var(--main-color);
   box-shadow: var(--box-shadow-medium);
 }
 
@@ -35,7 +35,7 @@ ul {
       width: 40px;
       height: 4px;
       margin: 6px 0;
-      background-color: var(--primary-color);
+      background-color: var(--black-color);
       border-radius: 50px;
       transition: var(--transition-standard);
     }
@@ -60,11 +60,11 @@ ul {
     width: 100%;
     padding: 0;
     position: absolute;
-    background-color: var(--light-green-color);
-    top: 52px;
+    top: 72px;
     left: -100vw;
     transition: var(--transition-medium);
     padding-bottom: 20px;
+    background-color: var(--main-color);
 
     li {
       display: block;

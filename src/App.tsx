@@ -14,6 +14,7 @@ import PlaneTrip from "./components/Offers/PlaneTrip";
 import OneDayTrip from "./components/Offers/OneDayTrip";
 import CrossBorder from "./components/Offers/CrossBorder";
 import ThreeDaysTrip from "./components/Offers/ThreeDaysTrip";
+import FourDaysTrip from "./components/Offers/FourDaysTrip";
 import FiveDaysTrip from "./components/Offers/FiveDaysTrip";
 import KayakTrip from "./components/Offers/KayakTrip";
 import Footer from "./components/Footer/Footer";
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/offers/one-day" element={<OneDayTrip />} />
         <Route path="/offers/cross-border" element={<CrossBorder />} />
         <Route path="/offers/three-days" element={<ThreeDaysTrip />} />
+        <Route path="/offers/four-days" element={<FourDaysTrip />} />
         <Route path="/offers/five-days" element={<FiveDaysTrip />} />
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>

@@ -13,7 +13,7 @@ const PageNavigator = () => {
   };
 
   const pages = [
-    { path: "/", label: "Home" },
+    { path: "/", label: "Strona główna" },
     { path: "/about", label: "O mnie" },
     { path: "/offers", label: "Oferty" },
     { path: "/contact", label: "Kontakt" },
@@ -22,6 +22,7 @@ const PageNavigator = () => {
     { path: "/offers/one-day", label: "Jednodniowe" },
     { path: "/offers/cross-border", label: "Transgraniczne" },
     { path: "/offers/three-days", label: "Trzydniowe" },
+    { path: "/offers/four-days", label: "Czterodniowe" },
     { path: "/offers/five-days", label: "Pięciodniowe" },
     { path: "/offers/kayak", label: "Spływy kajakowe" },
     { path: "/offers/buss-trip", label: "Autokarowe" },
@@ -35,7 +36,7 @@ const PageNavigator = () => {
     isOffersPage && location.pathname !== "/offers" ? (
       <li className="PageNavigator-element">
         <button className="PageNavigator-button" onClick={goOffers}>
-          <img className="icon" src="/icons/target.png" alt="Icon target" />
+          <img className="icon" src="/icons/list-interface-symbol.png" alt="List icon" />
           <p>Pokaż wszystkie oferty</p>
         </button>
       </li>

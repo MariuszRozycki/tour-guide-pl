@@ -7,7 +7,7 @@
       padding: 10px;
       max-width: 600px;
       margin: auto;
-      background-color: var(--light-green-color);
+      background-color: var(--tertiary-color);
       border-radius: var(--border-radius-small);
       text-align: center;
       box-shadow: var(--box-shadow-hard);
