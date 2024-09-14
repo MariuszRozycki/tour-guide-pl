@@ -1,6 +1,5 @@
 [
   {
-    "idNumber": 1,
     "title": "BESKIDY ZACHODNIE",
     "days": "5 dni",
     "titleSub": "Pensjonat w Węgierskiej Górce lub Zwardoniu, wyżywienie 2X + prowiant",
@@ -19,7 +18,6 @@
     "destinationType": "cross-border"
   },
   {
-    "idNumber": 2,
     "title": "BIESZCZADY",
     "days": "5 dni",
     "titleSub": "Hotel/pensjonat w okolicach Jez. Solińskiego, wyżywienie 3X",
@@ -38,7 +36,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 3,
     "title": "KARKONOSZE",
     "days": "5 dni",
     "titleSub": "Hotel w Przesiece lub Karpaczu, wyżywienie 2X + prowiant",
@@ -58,7 +55,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 4,
     "title": "KOTLINA KŁODZKA",
     "days": "5 dni",
     "titleSub": "Hotel w Nowej Rudzie lub Bystrzycy Kłodzkiej, wyzywienie 2X + prowiant",
@@ -77,7 +73,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 5,
     "title": "POMORZE ZACHODNIE",
     "days": "5 dni",
     "titleSub": "OW/Pensjonat w Sianożętach, wyżywienie 2X + prowiant",
@@ -96,7 +91,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 6,
     "title": "SPAŁA, JURA, KRAKÓW",
     "days": "5 dni",
     "titleSub": "OW w Spale i pensjonat Jurze, wyżywienie 2X + prowiant",
@@ -115,7 +109,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 7,
     "title": "TATRY POLSKIE",
     "days": "5 dni",
     "titleSub": "Pensjonat w Murzasichlu lub Małem Cichem, wyżywienie 2X + prowiant",
@@ -134,7 +127,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 8,
     "title": "TATRY I SŁOWACJA",
     "days": "5 dni",
     "titleSub": "Pensjonat w Murzasichlu lub Małem Cichem, wyżywienie 2X + prowiant",
@@ -153,7 +145,6 @@
     "destinationType": "cross-border"
   },
   {
-    "idNumber": 9,
     "title": "WARMIA i MAZURY",
     "days": "5 dni",
     "titleSub": "OW/pensjonat w okolicach Giżycka, wyżywienie 2X + prowiant",
@@ -172,7 +163,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 10,
     "title": "SUWALSZCZYZNA, LITWA",
     "days": "5 dni",
     "titleSub": "Pensjonat w okolicach Suwałk, wyżywienie 2X + prowiant",
@@ -191,7 +181,6 @@
     "destinationType": "cross-border"
   },
   {
-    "idNumber": 11,
     "title": "MIERZEJA WIŚLANA",
     "days": "5 dni",
     "titleSub": "Pensjonat nad morzem w Kątach Rybackich, wyżywienie 3X",
@@ -210,7 +199,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 12,
     "title": "PRAGA, SKALNE MIASTO",
     "days": "5 dni",
     "titleSub": "Hotel w Nowej Rudzie, wyżywienie 2X + prowiant",
@@ -229,7 +217,6 @@
     "destinationType": "cross-border"
   },
   {
-    "idNumber": 13,
     "title": "PODLASIE",
     "days": "5 dni",
     "titleSub": "Hotel/pensjonat w Tykocinie lub Supraślu, wyzywienie 2X + prowiant",
@@ -248,7 +235,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 14,
     "title": "POMORZE ŚRODKOWE",
     "days": "5 dni",
     "titleSub": "OW/pensjonat w Chłapowie lub Jastrzębiej Górze, wyżywienie Je + prowiant",
@@ -267,7 +253,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 15,
     "title": "PUSZCZA KAMPINOSKA",
     "days": "3 dni",
     "titleSub": "OW w Kampinoskim PN (część zachodnia), wyżywienie 3x lub 2x + ognisko z kiełbaskami",
@@ -285,7 +270,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 16,
     "title": "PODLASIE",
     "days": "3 dni",
     "titleSub": "Hotel/pensjonat w Tykocinie lub Supraślu, wyzywienie 2X + prowiant",
@@ -302,7 +286,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 17,
     "title": "ROZTOCZE",
     "days": "3 dni",
     "titleSub": "OW/pensjonat w Krasnobrodzie lub Zwierzyńcu, wyżywienie 2x + prowiant",
@@ -319,7 +302,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 18,
     "title": "SPAŁA",
     "days": "3 dni",
     "titleSub": "OW w Spale, wyżywienie 2X + prowiant",
@@ -329,15 +311,14 @@
       "3. Inowłódz: romański kościół św. Idziego, Zamek Królewski lub Rogów: przejazd kolejką wąskotorową, muzeum kolei"
     ],
     "additionallyDesc": "Proponujemy rozważyć kilkugodzinny spływ kajakowy Pilicą na odcinku Tomaszów - Inowłódz",
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/spala.jpg",
     "price45people": 335,
     "price40people": 370,
-    "typeOfTrip": "buss-trip&kayak",
+    "typeOfTrip": "buss-trip",
     "lengthOfTrip": "three-days",
     "destinationType": "domestic"
   },
   {
-    "idNumber": 19,
     "title": "SZLAK PIASTOWSKI",
     "days": "3 dni",
     "titleSub": "Hotel/ OW na Pojezierzu Gnieźnieńskim, wyżywienie 2X + prowiant",
@@ -346,7 +327,7 @@
       "2. Biskupin: rez. archeologiczny, przejazd kolejką wąskotorową, muzeum kolei wąskotorowej, Gniezno: katedra oraz Muzeum Powstania Państwa Polskiego, Ostrów Lednicki - Muzeum Pierwszych Piastów",
       "3. Powidz - zwiedzanie lotniska NATO lub Bazylika w Licheniu"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/piastowie.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -354,7 +335,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 20,
     "title": "WROCŁAW",
     "days": "3 dni",
     "titleSub": "Hostel w centrum lub pensjonat na peryferiach, wyżywienie do ustalenia",
@@ -363,7 +343,7 @@
       "2. Hydropolis, Panorama Racławicka, stadion miejski",
       "3. Stare Miasto, Ostrów Tumski z przewodnikiem"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/wroclaw-old-town.jpg",
     "price45people": 410,
     "price40people": 450,
     "typeOfTrip": "buss-trip",
@@ -371,7 +351,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 21,
     "title": "BIAŁOWIEŻA",
     "days": "3 dni",
     "titleSub": "Pensjonacik w Białowieży lub w okolicach jez. Siemianówka, wyżywienie 2X + prowiant",
@@ -380,24 +359,7 @@
       "2. Białowieża: rez. pokazowy żubrów, Muzeum BPN, cerkiew, Dęby Królewskie, Ośrodek Edukacji Leśnej Jagiellońskie, Stara Białowieża",
       "3. Rez. ścisły BPN z przewodnikiem, Miejsce Mocy, skansen, Hajnówka"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
-    "price45people": 380,
-    "price40people": 420,
-    "typeOfTrip": "buss-trip",
-    "lengthOfTrip": "three-days",
-    "destinationType": "domestic"
-  },
-  {
-    "idNumber": 22,
-    "title": "BIAŁOWIEŻA",
-    "days": "3 dni",
-    "titleSub": "Pensjonacik w Białowieży lub w okolicach jez. Siemianówka, wyżywienie 2X + prowiant",
-    "description": [
-      "1. Drohiczyn, Prawosławne Sanktuarium w Grabarce, bunkry linii Mołotowa kolo Mielnika",
-      "2. Białowieża: rez. pokazowy żubrów, Muzeum BPN, cerkiew, Dęby Królewskie, Ośrodek Edukacji Leśnej Jagiellońskie, Stara Białowieża",
-      "3. Rez. ścisły BPN z przewodnikiem, Miejsce Mocy, skansen, Hajnówka"
-    ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/bialowieza.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -405,7 +367,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 23,
     "title": "JURA",
     "days": "3 dni",
     "titleSub": "OW lub pensjonat w Podlesicach, wyżywienie 2X + prowiant",
@@ -414,7 +375,7 @@
       "2. Kraków i Ojcowski PN (w tym Jaskinia Łokietka, zamek na Pieskowej Skale i Ojcowie)",
       "3. Zamek w Ogrodzieńcu, spacer Doliną Wiercicy (skałki, zamki, groty)"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/ojcow.jpg",
     "price45people": 350,
     "price40people": 385,
     "typeOfTrip": "buss-trip",
@@ -422,7 +383,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 24,
     "title": "TORUŃ",
     "days": "3 dni",
     "titleSub": "Pensjonat lub hotelik w Toruniu lub okolicach, wyżywienie 2X + prowiant",
@@ -431,7 +391,7 @@
       "2. Toruń: Stare Miasto, Planetarium, Muzeum Piernika i Kopernika, Zamek Krzyżacki, Obserwatorium Astronomiczne w Piwnicach",
       "3. Muzeum Mydła i Brudu w Bydgoszczy, Ciechocinek - kurort i tężnie, spacer po starym Płocku"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/torun.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -439,7 +399,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 25,
     "title": "LUBELSZCZYZNA",
     "days": "3 dni",
     "titleSub": "Pensjonat lub hotelik w Puławach lub Kazimierzu Dolnym, wyżywienie 2X + prowiant",
@@ -448,7 +407,7 @@
       "2. Janowiec- skansen i Zamek Firlejów, Sandomierz: Brama Opatowska, Rynek, wąwóz, zbrojownia, podziemia, kościół św. Jakuba",
       "3. Kazimierz Dolny: rynek, góra Trzech Krzyży, zamek i baszta, Spichlerze, Puławy- Pałac i park, Muzeum nietypowych rowerów w Gołębiu"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/lublin.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -456,7 +415,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 26,
     "title": "MIERZEJA WIŚLANA",
     "days": "3 dni",
     "titleSub": "Pensjonat nad morzem w Kątach Rybackich, wyżywienie 2X + prowiant",
@@ -465,7 +423,7 @@
       "2. Rez. kormoranów, KL Stuthoff, prelekcja o bursztynie lub Trójmiasto: plan do uzgodnienia lub latarnia morska, rejs statkiem, Muzeum Zalewu",
       "3. Zamek w Malborku lub Frombork: katedra, dzwonnica lub: skansen i Huta Szkła Artystycznego w Olsztynku"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/mierzeja_wislana.jpg",
     "price45people": 360,
     "price40people": 400,
     "typeOfTrip": "buss-trip",
@@ -473,16 +431,15 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 27,
     "days": "3 dni",
     "title": "SUWALSZCZYZNA",
     "titleSub": "Pensjonat w okolicach Suwałk, wyżywienie 2X + prowiant",
     "description": [
       "1. 'Polskie Termopile', Tykocin, min: Dom Talmudyczny, Wielka Synagoga, zamek, Biebrzański PN",
-      "2. Kolej wąskotorowa, klasztor Kamedułów nad Wigrami, rez. Glazowisko Bachanowo, jez. Hańcza, wiadukty w Stańczykach, 'trójstyk' granic, Góra Cisowa i Zamkowa, molenna w Wodzilkach",
+      "2. Kolej wąskotorowa, klasztor Kamedułów nad Wigrami, rez. Głazowisko Bachanowo, jez. Hańcza, wiadukty w Stańczykach, 'trójstyk' granic, Góra Cisowa i Zamkowa, molenna w Wodzilkach",
       "3. 'Litewski' Puńsk i Sejny, Sanktuarium w Studzienicznej, śluzy na Kanale Augustowskim"
     ],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "imageMain": "/pictures/polskie-termopile.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -490,7 +447,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 28,
     "title": "WKRA",
     "days": "1 dzień",
     "description": ["1. Spływ kajakowy lub rejs pontonowy"],
@@ -502,7 +458,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 29,
     "title": "PILICA",
     "days": "1 dzień",
     "description": ["1. Spływ kajakowy lub rejs pontonowy"],
@@ -514,7 +469,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 30,
     "title": "BZURA",
     "days": "1 dzień",
     "description": ["1. Spływ kajakowy lub rejs pontonowy"],
@@ -526,7 +480,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 31,
     "title": "SPAŁA, KONEWKA, INOWŁÓDZ, TOMASZÓW",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -538,7 +491,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 32,
     "title": "GOSPODARSTWO AGROTURYSTYCZNE",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -550,7 +502,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 33,
     "title": "TORUŃ",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -562,7 +513,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 34,
     "title": "ŁĘCZYCA, TUM, OPORÓW",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -574,7 +524,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 35,
     "title": "DZIAŁDOWO, NIDZICA, ŁYNA",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -586,7 +535,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 36,
     "title": "KAZIMIERZ DOLNY, JANOWIEC, GOŁĄB",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -598,7 +546,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 37,
     "title": "ARKADIA, NIEBOROW, BUDY GRABSKIE",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -610,7 +557,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 38,
     "title": "PALMIRY, KAZUŃ, MODLIN, WIERSZE",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -622,7 +568,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 39,
     "title": "SIERPC, CZERWIŃSK, MODLIN",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -634,7 +579,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 40,
     "title": "PUŁTUSK, MODLIN",
     "description": ["Wymyślić krótki opis"],
     "imageMain": "/pictures/tomek-sea.webp",
@@ -645,7 +589,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 41,
     "title": "KAZUŃ, MODLIN, LEONCIN I SECYMIN",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -657,7 +600,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 42,
     "title": "ŻELAZOWA WOLA, GRANICA",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -669,7 +611,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 43,
     "title": "ŁÓDŹ",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -681,7 +622,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 44,
     "title": "PUSZCZA KAMPINOSKA",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -693,7 +633,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 45,
     "title": "LIW, WĘGRÓW, SUCHA, SIEDLCE",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -705,7 +644,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 46,
     "title": "CIECHANÓW, GOŁOTCZYZNA, OPINOGÓRA",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -717,7 +655,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 47,
     "title": "OD ZIARENEK DO BOCHENKA",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -729,7 +666,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 48,
     "title": "LIW, DROHICZYN, GRABARKA, MIELNIK",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -741,7 +677,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 49,
     "title": "PŁOCK",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -753,7 +688,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 50,
     "title": "FARMA ILUZJI",
     "days": "1 dzień",
     "description": ["Wymyślić krótki opis"],
@@ -765,7 +699,6 @@
     "destinationType": "domestic"
   },
   {
-    "idNumber": 51,
     "title": "BERLIN",
     "days": "4 dni",
     "titleSub": "Hotel *** w Słubicach, wyżywienie 2X",
@@ -783,7 +716,6 @@
     "destinationType": "abroad"
   },
   {
-    "idNumber": 52,
     "title": "CZECHY, SAKSONIA",
     "days": "4 dni",
     "titleSub": "Hotel/pensjonat w Decinie (Czechy) lub okolicach, wyżywienie 2X",
@@ -801,7 +733,6 @@
     "destinationType": "abroad"
   },
   {
-    "idNumber": 53,
     "title": "KRAJE BAŁTYCKIE",
     "days": "5 dni",
     "titleSub": "Łotwa -2 noce: hotel w Rydze lub Jurmali, Estonia -2 noce: hotel w Parnawie lub Tallinie, wyżywienie 2X",
@@ -820,7 +751,6 @@
     "destinationType": "abroad"
   },
   {
-    "idNumber": 54,
     "title": "SZWECJA",
     "days": "4 dni",
     "titleSub": "Kabiny na promie i hotel w Karlskronie, wyżywienie 2X",
@@ -838,7 +768,6 @@
     "destinationType": "abroad"
   },
   {
-    "idNumber": 55,
     "title": "SŁOWACJA",
     "days": "5 dni",
     "titleSub": "Hotel w Jasnej w Dolinie Demanowskiej, wyżywienie 2X",
@@ -853,11 +782,10 @@
     "price45people": 700,
     "price40people": 750,
     "typeOfTrip": "buss-trip",
-    "lengthOfTrip": "four-days",
+    "lengthOfTrip": "five-days",
     "destinationType": "abroad"
   },
   {
-    "idNumber": 56,
     "title": "TRZY STOLICE",
     "days": "5 dni",
     "titleSub": "Hotel/pensjonat w Bratysławie lub okolicach, wyżywienie 2x",
@@ -876,7 +804,6 @@
     "destinationType": "abroad"
   },
   {
-    "idNumber": 57,
     "title": "LITWA",
     "days": "3 dni",
     "titleSub": "Hotel na peryferiach Wilna, wyżywienie 2X",
