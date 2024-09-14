@@ -20,6 +20,7 @@ import KayakTrip from "./components/Offers/KayakTrip";
 import Footer from "./components/Footer/Footer";
 
 import "./styles/index.css";
+import BtnScrollToTop from "./utils/BtnScrollToTop";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
       <Footer />
+      <BtnScrollToTop />
     </Router>
   );
 };
