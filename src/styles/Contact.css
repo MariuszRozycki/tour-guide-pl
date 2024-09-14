@@ -19,6 +19,10 @@
       gap: 5px;
       font-weight: 700;
 
+      &:hover {
+        color: var(--red-color);
+      }
+
       .contact-details-icon-wrapper {
         display: inline-block;
         height: 30px;
@@ -58,19 +62,20 @@ form {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: var(--light-green-color);
+  background-color: var(--secondary-color);
   padding: 20px;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow-medium);
 
   h3 {
     font-size: var(--h3-fs);
+    color: var(--black-color);
   }
 
   label {
     margin-top: 20px;
-    color: var(--very-dark-blue-color);
-    font-weight: 500;
+    color: var(--black-color);
+    font-weight: 700;
     text-align: left;
   }
 
@@ -82,7 +87,7 @@ form {
     border-radius: var(--border-radius-min);
     border: 1px solid var(--primary-color);
     background-color: var(--white-color);
-    color: var(--very-dark-blue-color);
+    color: var(--black-color);
   }
 
   textarea {
@@ -97,12 +102,13 @@ form {
     align-self: center;
     margin-top: 15px;
     box-shadow: var(--box-shadow-medium);
-    border: 1px solid var(--orange-color);
+    color: var(--black-color);
+    background-color: var(--tertiary-color);
 
     &:hover {
-      background-color: var(--orange-color);
-      color: var(--black-color);
       box-shadow: var(--box-shadow-none);
+      color: var(--black-color);
+      background-color: var(--tertiary-color);
     }
   }
 

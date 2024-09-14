@@ -22,6 +22,7 @@ const PageNavigator = () => {
     { path: "/offers/one-day", label: "Jednodniowe" },
     { path: "/offers/cross-border", label: "Transgraniczne" },
     { path: "/offers/three-days", label: "Trzydniowe" },
+    { path: "/offers/four-days", label: "Czterodniowe" },
     { path: "/offers/five-days", label: "Pięciodniowe" },
     { path: "/offers/kayak", label: "Spływy kajakowe" },
     { path: "/offers/buss-trip", label: "Autokarowe" },

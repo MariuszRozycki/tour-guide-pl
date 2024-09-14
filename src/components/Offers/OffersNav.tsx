@@ -7,6 +7,7 @@ const OffersNav = () => {
     { name: "Transgraniczne", type: "cross-border" },
     { name: "Wycieczki 1-dniowe", type: "one-day" },
     { name: "Wycieczki 3-dniowe", type: "three-days" },
+    { name: "Wycieczki 4-dniowe", type: "four-days" },
     { name: "Wycieczki 5-dniowe", type: "five-days" },
     { name: "Spływy kajakowe", type: "kayak" },
     { name: "Autokarowe", type: "buss-trip" },

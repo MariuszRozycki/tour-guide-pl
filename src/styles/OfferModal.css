@@ -23,8 +23,9 @@
 }
 
 .modal-content {
+  display: grid;
   background-color: white;
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 8px;
   width: 90%;
   max-width: 800px;
@@ -33,21 +34,33 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   position: relative;
   animation: fadeIn 0.2s ease-out;
+  box-shadow: var(--box-shadow-hard);
 
   h2,
   h3,
   p {
     text-align: left;
+    color: var(--black-color);
   }
 
   .offer-img-wrapper {
     margin-bottom: 20px;
-    height: 250px;
+    height: 220px;
+    box-shadow: var(--box-shadow-hard);
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
 
     img {
       width: 100%;
       height: 100%;
-      border-radius: 8px;
+      object-fit: cover;
+
+      transition: var(--transition-standard);
+
+      &:hover {
+        transform: scale(140%);
+      }
     }
   }
 
@@ -56,12 +69,14 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
+    margin-bottom: 20px;
     text-align: left;
 
     li {
       margin: 4px 0;
       line-height: 1.4;
-      font-size: var(--paragraph-fs);
+      font-size: 18px;
+      font-weight: 600;
     }
   }
 
@@ -77,24 +92,39 @@
 }
 
 .modal-close {
-  position: absolute;
+  position: sticky;
+  justify-self: flex-end;
   top: 0;
-  right: 10px;
-  background: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 0;
+  background-color: var(--main-color);
+  border-radius: 50%;
   border: none;
-  font-size: 38px;
+  margin-right: 10px;
   cursor: pointer;
   box-shadow: none;
-  padding: 0 10px;
+  font-weight: 700;
+  padding: 0 13px;
   color: var(--black-color);
+  z-index: 1001;
+  box-shadow: var(--box-shadow-hard);
+
+  img {
+    width: 100%;
+  }
 
   &:hover {
     box-shadow: none;
+    background-color: var(--tertiary-color);
   }
 }
 
 .modal-offer-price {
-  margin: 5px 0;
+  margin: 0;
   font-weight: 700;
 }
 
@@ -107,8 +137,11 @@
 
 @media (min-width: 600px) {
   .modal-content {
+    width: 90vw;
+    height: 90vh;
+
     .offer-img-wrapper {
-      height: 380px;
+      height: 300px;
     }
   }
 }

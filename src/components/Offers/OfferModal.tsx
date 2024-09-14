@@ -20,7 +20,7 @@ const OfferModal = ({ isOpen, onClose, children }: ModalProps) => {
     <div className="modal-backdrop" onClick={handleOutsideClick}>
       <div className="modal-content fade-in">
         <button className="modal-close" onClick={onClose}>
-          &times;
+          <img src="/public/icons/close.png" alt="x-mark" />
         </button>
         {children}
         <ul className="contact-details">
