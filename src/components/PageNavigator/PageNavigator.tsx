@@ -13,7 +13,7 @@ const PageNavigator = () => {
   };
 
   const pages = [
-    { path: "/", label: "Home" },
+    { path: "/", label: "Strona główna" },
     { path: "/about", label: "O mnie" },
     { path: "/offers", label: "Oferty" },
     { path: "/contact", label: "Kontakt" },
@@ -35,7 +35,7 @@ const PageNavigator = () => {
     isOffersPage && location.pathname !== "/offers" ? (
       <li className="PageNavigator-element">
         <button className="PageNavigator-button" onClick={goOffers}>
-          <img className="icon" src="/icons/target.png" alt="Icon target" />
+          <img className="icon" src="/icons/list-interface-symbol.png" alt="List icon" />
           <p>Pokaż wszystkie oferty</p>
         </button>
       </li>
