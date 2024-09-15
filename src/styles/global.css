@@ -183,7 +183,7 @@ button,
   transition: border-color 0.25s;
   color: var(--light-beige-color);
   box-shadow: var(--box-shadow-hard);
-  transition: var(--transition-standard);
+  transition: var(--transition-medium);
   text-transform: uppercase;
 }
 button:hover,

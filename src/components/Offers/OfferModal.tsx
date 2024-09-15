@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 
 interface ModalProps {
   isOpen: boolean;
@@ -20,7 +22,7 @@ const OfferModal = ({ isOpen, onClose, children }: ModalProps) => {
     <div className="modal-backdrop" onClick={handleOutsideClick}>
       <div className="modal-content fade-in">
         <button className="modal-close" onClick={onClose}>
-          <img src="/public/icons/close.png" alt="x-mark" />
+          <FontAwesomeIcon icon={faX} />
         </button>
         {children}
         <ul className="contact-details">
