@@ -62,10 +62,11 @@ form {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   padding: 20px;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow-medium);
+  text-shadow: var(--text-shadow);
 
   h3 {
     font-size: var(--h3-fs);
@@ -102,13 +103,13 @@ form {
     align-self: center;
     margin-top: 15px;
     box-shadow: var(--box-shadow-medium);
-    color: var(--black-color);
-    background-color: var(--tertiary-color);
+    color: var(--fifth-color);
+    background-color: var(--red-color);
 
     &:hover {
       box-shadow: var(--box-shadow-none);
-      color: var(--black-color);
-      background-color: var(--tertiary-color);
+      color: var(--fifth-color);
+      background-color: var(--red-color);
     }
   }
 

@@ -76,7 +76,6 @@
       margin: 4px 0;
       line-height: 1.4;
       font-size: 18px;
-      font-weight: 600;
     }
   }
 
@@ -98,7 +97,7 @@
   width: 40px;
   height: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   border-radius: 0;
   background-color: var(--main-color);
