@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
@@ -57,6 +59,37 @@ const Footer = () => {
                   <NavLink to="/contact" className={({ isActive }) => (isActive ? "footer-active" : undefined)}>
                     Kontakt
                   </NavLink>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section className="footer-main-wrap">
+            <div className="footer-contact-wrapper">
+              <p className="footer-contact-header">Contact to Web Developer:</p>
+              <ul className="footer-contact">
+                <li>
+                  <a href="tel:+4793928270">
+                    <div className="contact-details-icon-wrapper">
+                      <img src="/icons/telephone-call.png" alt="Telephone icon" />
+                    </div>
+                    +47 939 28 270
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:marius.front@gmail.com">
+                    <div className="contact-details-icon-wrapper email-icon">
+                      <img src="/icons/email-icon.png" alt="Email icon" />
+                    </div>
+                    marius.front@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/MariuszRozycki" target="_blank">
+                    <div className="contact-details-icon-wrapper">
+                      <FontAwesomeIcon icon={faGithub} />
+                    </div>
+                    All rights reserved© Mariusz Rozycki
+                  </a>
                 </li>
               </ul>
             </div>

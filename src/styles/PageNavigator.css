@@ -7,7 +7,6 @@
     padding: 0;
     margin: 15px 0 0 0;
     list-style: none;
-    gap: 5px;
 
     li {
       display: flex;
@@ -41,6 +40,7 @@
 
     .PageNavigator-element-paragraph {
       font-weight: 700;
+      padding: 0;
     }
 
     .PageNavigator-element {

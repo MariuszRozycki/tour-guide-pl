@@ -26,7 +26,7 @@ const PageNavigator = () => {
     { path: "/offers/five-days", label: "Pięciodniowe" },
     { path: "/offers/kayak", label: "Spływy kajakowe" },
     { path: "/offers/buss-trip", label: "Autokarowe" },
-    { path: "/offers/plane", label: "Samolotowe" },
+    // { path: "/offers/plane", label: "Samolotowe" },
   ];
 
   const currentPage = pages.find((page) => page.path === location.pathname);

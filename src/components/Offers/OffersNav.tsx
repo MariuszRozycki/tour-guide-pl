@@ -11,7 +11,7 @@ const OffersNav = () => {
     { name: "Wycieczki 5-dniowe", type: "five-days" },
     { name: "Spływy kajakowe", type: "kayak" },
     { name: "Autokarowe", type: "buss-trip" },
-    { name: "Samolotowe", type: "plane" },
+    // { name: "Samolotowe", type: "plane" },
   ];
 
   return (
