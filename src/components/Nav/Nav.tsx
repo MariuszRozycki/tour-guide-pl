@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <nav className="nav" ref={navMainRef}>
       <div className="container">
-        <div className="logo-component">
+        <a href="/" className="logo-component">
           <div className="nav-logo-wrapper">
             <a href="/">
               <img src="/pictures/logo.png" alt="logo" />
@@ -18,7 +18,7 @@ const Nav = () => {
             <li>Tour Guide</li>
             <li>Kraftowe wyjazdy</li>
           </ul>
-        </div>
+        </a>
         <HamburgerMenu
           ref={hamburgerMenuRef}
           barOneRef={barOneRef}
