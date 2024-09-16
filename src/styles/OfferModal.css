@@ -45,6 +45,10 @@
     color: var(--black-color);
   }
 
+  h2 {
+    margin-top: 10px;
+  }
+
   .offer-img-wrapper {
     margin-bottom: 20px;
     height: 220px;
@@ -106,7 +110,7 @@
   background-color: var(--red-color);
   border-radius: 50%;
   border: none;
-  margin-right: 0;
+  margin-right: 6px;
   cursor: pointer;
   box-shadow: none;
   font-weight: 700;
