@@ -38,8 +38,9 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
               <h2>
                 {offer.title}
                 <br />
-                {offer.days}
+                <span>{offer.days}</span>
               </h2>
+              <p></p>
               <div className="offer-img-wrapper">
                 <img src={offer.imageMain} alt={offer.title} />
               </div>
@@ -60,21 +61,28 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
               {selectedOffer.title} <br />
               {selectedOffer.days}
             </h2>
-            <h3>{selectedOffer.titleSub}</h3>
-            <div className="offer-img-wrapper">
-              <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
+
+            {selectedOffer.titleSub && (
+              <h3 style={{ display: selectedOffer.titleSub ? "block" : "none" }}>{selectedOffer.titleSub}</h3>
+            )}
+            <div className="pic-desc-wrap">
+              <div className="offer-img-wrapper">
+                <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
+              </div>
+              <ul>
+                {selectedOffer.description.map((desc, index) => (
+                  <li key={index}>{desc}</li>
+                ))}
+              </ul>
             </div>
-            <ul>
-              {selectedOffer.description.map((desc, index) => (
-                <li key={index}>{desc}</li>
-              ))}
-            </ul>
-            {selectedOffer.price45people !== 0 && (
-              <p className="modal-offer-price">Cena (45 osób): {selectedOffer.price45people} PLN</p>
-            )}
-            {selectedOffer.price40people !== 0 && (
-              <p className="modal-offer-price">Cena (40 osób): {selectedOffer.price40people} PLN</p>
-            )}
+            <div className="modal-offer-price-wrapper">
+              {selectedOffer.price45people !== 0 && (
+                <p className="modal-offer-price">Cena (45 osób): {selectedOffer.price45people} PLN</p>
+              )}
+              {selectedOffer.price40people !== 0 && (
+                <p className="modal-offer-price">Cena (40 osób): {selectedOffer.price40people} PLN</p>
+              )}
+            </div>
           </>
         )}
       </OfferModal>
