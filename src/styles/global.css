@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: var(--fifth-color);
+  background-color: var(--color-denary);
 }
 
 :root {
@@ -28,7 +28,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* colors */
-  --primary-color: rgb(33, 53, 71);
+  --color-black: #000;
+  --color-primary: #12273c;
+  --color-secondary: #183f60;
+  --color-tertiary: #183f60;
+  --color-quaternary: #20639a;
+  --color-quinary: #2679bd;
+  --color-senary: #72b1e4;
+  --color-septenary: #72b1e4;
+  --color-octonary: #a7d2f4;
+  --color-nonary: #ddeffd;
+  --color-denary: #f2f6ff;
+  --color-white: #fff;
+
+  --fifth-color: #ede0d4;
+  --sixth-color: #281c0e;
   --light-blue-color: #b1daec;
   --very-light-green-color: #f7fff8;
   --light-beige-color: #fff5ef;
@@ -40,27 +54,20 @@ body {
   --red-color: #772e25;
   --yellow-color: #ffa210;
   --yellow-light-color: #ffe3b3;
-  --white-color: #fff;
-  --black-color: #000;
   --active-color: var(--orange-color);
 
   --main-color: rgb(156, 102, 68);
-  --secondary-color: #7f5539;
-  --tertiary-color: #ddb892;
-  --fourth-color: #e6ccb2;
-  --fifth-color: #ede0d4;
-  --sixth-color: #281c0e;
 
   /* font-size */
   --h1-fs: clamp(2.4rem, 2.9vw, 3.3rem);
   --h1-spam-fs: clamp(1.4rem, 2.5vw, 2.2rem);
   --h2-fs: clamp(1.5rem, 3vw, 2.2rem);
-  --h2-fs-offer: clamp(1.5rem, 2vw, 2rem);
+  --h2-fs-offer: clamp(1.1rem, 1.8vw, 1.3em);
   --h3-fs: clamp(1.2rem, 2.5vw, 1.8rem);
   --a-link-fs: clamp(1rem, 2vw, 1.5rem);
   --a-link-fs-footer: clamp(1rem, 2vw, 1.1rem);
   --paragraph-fs: clamp(1rem, 3vw, 1.4rem);
-  --paragraph-slider-fs: clamp(1.1rem, 2vw, 1.5rem);
+  --paragraph-slider-fs: clamp(1rem, 1.8vw, 1.1rem);
   --btn-fs: clamp(0.9rem, 1.6vw, 1.1rem);
 
   /* transitions */
@@ -110,7 +117,7 @@ ul {
 }
 
 li {
-  font-weight: 500;
+  cursor: pointer;
 }
 
 p,
@@ -121,32 +128,27 @@ textarea {
   line-height: 1.5;
   font-weight: 400;
   font-size: var(--paragraph-fs);
-}
-
-p,
-li {
-  color: var(--black-color);
+  color: var(--color-primary);
 }
 
 a {
-  font-weight: 500;
-  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: 400;
+  color: var(--color-primary);
   text-decoration: inherit;
   font-size: var(--a-link-fs);
   transition: var(--transition-standard);
 }
-a:hover {
-  color: var(--white-color);
-}
 
 .active {
-  color: var(--white-color);
   position: relative;
+
   transition: var(--transition-standard);
-  font-weight: 600;
 }
 
-.active::after {
+/* .active::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -155,7 +157,7 @@ a:hover {
   transform: translateX(-5%);
   height: 2px;
   background-color: var(--white-color);
-}
+} */
 
 p,
 label,
@@ -209,11 +211,10 @@ button,
   font-size: var(--btn-fs);
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--secondary-color);
+  background-color: var(--color-secondary);
   cursor: pointer;
   transition: border-color 0.25s;
   color: var(--light-beige-color);
-  box-shadow: var(--box-shadow-hard);
   transition: var(--transition-medium);
   text-transform: uppercase;
 }

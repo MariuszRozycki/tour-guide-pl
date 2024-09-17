@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../Logo/Logo";
 
 interface ModalProps {
   isOpen: boolean;
@@ -21,7 +22,7 @@ const OfferModal = ({ isOpen, onClose, children }: ModalProps) => {
   return (
     <div className="modal-backdrop" onClick={handleOutsideClick}>
       <div className="modal-content fade-in">
-        <a href="/" className="logo-component">
+        {/* <a href="/" className="logo-component">
           <div className="nav-logo-wrapper">
             <a href="/">
               <img src="/pictures/logo.png" alt="logo" />
@@ -31,7 +32,8 @@ const OfferModal = ({ isOpen, onClose, children }: ModalProps) => {
             <li>Tour Guide</li>
             <li>Kraftowe wyjazdy</li>
           </ul>
-        </a>
+        </a> */}
+        <Logo />
         <button className="modal-close" onClick={onClose}>
           <FontAwesomeIcon icon={faX} />
         </button>

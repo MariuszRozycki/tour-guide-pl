@@ -37,7 +37,7 @@ const PageNavigator = () => {
       <li className="PageNavigator-element">
         <button className="PageNavigator-button" onClick={goOffers}>
           <img className="icon" src="/icons/list-interface-symbol.png" alt="List icon" />
-          <p>Pokaż wszystkie oferty</p>
+          <p>Wszystkie oferty</p>
         </button>
       </li>
     ) : null;

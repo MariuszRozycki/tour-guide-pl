@@ -1,4 +1,5 @@
 import { useNavLogic } from "../../hooks/useNavLogic";
+import Logo from "../Logo/Logo";
 import HamburgerMenu from "./HamburgerMenu";
 import NavMainList from "./NavMainList";
 
@@ -8,17 +9,7 @@ const Nav = () => {
   return (
     <nav className="nav" ref={navMainRef}>
       <div className="container">
-        <a href="/" className="logo-component">
-          <div className="nav-logo-wrapper">
-            <a href="/">
-              <img src="/pictures/logo.png" alt="logo" />
-            </a>
-          </div>
-          <ul className="logo-header">
-            <li>Tour Guide</li>
-            <li>Kraftowe wyjazdy</li>
-          </ul>
-        </a>
+        <Logo />
         <HamburgerMenu
           ref={hamburgerMenuRef}
           barOneRef={barOneRef}

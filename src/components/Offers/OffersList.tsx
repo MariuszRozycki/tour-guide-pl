@@ -35,18 +35,19 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
           {conditionNotExists}
           {filteredOffers.map((offer) => (
             <div className="single-offer" onClick={() => setSelectedOffer(offer)} key={offer.id}>
-              <h2>
-                {offer.title}
-                <br />
-                <span>{offer.days}</span>
-              </h2>
-              <p></p>
               <div className="offer-img-wrapper">
                 <img src={offer.imageMain} alt={offer.title} />
               </div>
-              <div className="offers-list-price-wrapper">
-                {offer.price45people !== 0 && <p className="single-offer-price">Cena (45 osób): {offer.price45people} PLN</p>}
-                {offer.price40people !== 0 && <p className="single-offer-price">Cena (40 osób): {offer.price40people} PLN</p>}
+              <div className="single-offer-details">
+                <h2>
+                  {offer.title}
+                  {/* <span>{offer.days}</span> */}
+                </h2>
+                <div className="offers-list-price-wrapper">
+                  <p className="single-offer-price">Cena: </p>
+                  {offer.price45people !== 0 && <p className="single-offer-price">{offer.price45people} PLN (min: 40 osób)</p>}
+                  {offer.price40people !== 0 && <p className="single-offer-price">{offer.price40people} PLN (min: 45 osób)</p>}
+                </div>
               </div>
               <button className="single-offer-btn">Szczegóły</button>
             </div>

@@ -1,43 +1,18 @@
-.nav .container,
-.nav-logo-wrapper,
-ul {
-  display: flex;
-}
-
 .nav {
   position: sticky;
   top: 0;
   z-index: 3;
-  background-color: var(--main-color);
+  background-color: var(--color-denary);
   box-shadow: var(--box-shadow-medium);
 }
 
-.logo-component {
+.nav .container,
+ul {
   display: flex;
-  min-width: 40%;
-  gap: 5px;
-
-  .logo-header {
-    font-size: 14px;
-  }
 }
 
-.nav-logo-wrapper {
-  align-items: center;
-  width: 55px;
-  height: 55px;
-
-  img {
-    width: 100%;
-  }
-}
-
-.logo-header {
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
+.nav .container {
+  padding: 0 15px;
 }
 
 .nav .container {
@@ -53,7 +28,7 @@ ul {
       width: 40px;
       height: 4px;
       margin: 6px 0;
-      background-color: var(--black-color);
+      background-color: var(--color-primary);
       border-radius: 50px;
       transition: var(--transition-standard);
     }
@@ -82,12 +57,11 @@ ul {
     left: -100vw;
     transition: var(--transition-medium);
     padding-bottom: 20px;
-    background-color: var(--main-color);
+    background-color: var(--color-denary);
 
     li {
       display: block;
       text-align: left;
-      color: var(--color-no9);
       font-size: calc(var(--normal-font-size) + 2vw);
       width: 100%;
       padding: var(--mobile-view-padding);
@@ -96,7 +70,7 @@ ul {
       text-transform: uppercase;
 
       &:hover {
-        color: var(--color-no1);
+        background-color: var(--color-octonary);
       }
     }
   }
@@ -111,7 +85,7 @@ ul {
 }
 
 /* media queries */
-@media (min-width: 530px) {
+@media (min-width: 600px) {
   .nav .container {
     .hamburger-menu {
       display: none;
@@ -122,13 +96,18 @@ ul {
       flex-direction: row;
       justify-content: flex-end;
       width: 60%;
-      gap: 10px;
-      padding-bottom: 0;
+      height: 100%;
+      padding: 0;
 
       li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         padding: var(--desktop-view-padding);
         margin: 0;
+        padding: 0;
+        height: 100%;
       }
     }
   }
