@@ -8,11 +8,17 @@ const Nav = () => {
   return (
     <nav className="nav" ref={navMainRef}>
       <div className="container">
-        <div className="nav-logo-wrapper">
-          <a href="/">
-            <img src="/pictures/logo.png" alt="logo" />
-          </a>
-        </div>
+        <a href="/" className="logo-component">
+          <div className="nav-logo-wrapper">
+            <a href="/">
+              <img src="/pictures/logo.png" alt="logo" />
+            </a>
+          </div>
+          <ul className="logo-header">
+            <li>Tour Guide</li>
+            <li>Kraftowe wyjazdy</li>
+          </ul>
+        </a>
         <HamburgerMenu
           ref={hamburgerMenuRef}
           barOneRef={barOneRef}
