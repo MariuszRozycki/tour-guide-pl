@@ -65,7 +65,7 @@ const Footer = () => {
           </section>
           <section className="footer-main-wrap">
             <div className="footer-contact-wrapper">
-              <p className="footer-contact-header">Contact to Web Developer:</p>
+              <p className="footer-contact-header">Web Developer:</p>
               <ul className="footer-contact">
                 <li>
                   <a href="tel:+4793928270">
@@ -88,7 +88,7 @@ const Footer = () => {
                     <div className="contact-details-icon-wrapper">
                       <FontAwesomeIcon icon={faGithub} />
                     </div>
-                    All rights reserved© Mariusz Rozycki
+                    GitHub Mariusz Rozycki
                   </a>
                 </li>
               </ul>

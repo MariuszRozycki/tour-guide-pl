@@ -19,14 +19,15 @@ const HomeSlider = () => {
     slidesToScroll: 1,
     swipe: true,
     arrows: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     fade: false,
     pauseOnHover: true,
     initialSlide: 0,
+
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 380,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

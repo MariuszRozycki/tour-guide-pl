@@ -59,16 +59,17 @@ body {
   --main-color: rgb(156, 102, 68);
 
   /* font-size */
-  --h1-fs: clamp(2.4rem, 2.9vw, 3.3rem);
-  --h1-spam-fs: clamp(1.4rem, 2.5vw, 2.2rem);
-  --h2-fs: clamp(1.5rem, 3vw, 2.2rem);
-  --h2-fs-offer: clamp(1.1rem, 1.8vw, 1.3em);
-  --h3-fs: clamp(1.2rem, 2.5vw, 1.8rem);
-  --a-link-fs: clamp(1rem, 2vw, 1.5rem);
-  --a-link-fs-footer: clamp(1rem, 2vw, 1.1rem);
-  --paragraph-fs: clamp(1rem, 3vw, 1.4rem);
-  --paragraph-slider-fs: clamp(1rem, 1.8vw, 1.1rem);
-  --btn-fs: clamp(0.9rem, 1.6vw, 1.1rem);
+  --h1-fs: 2rem;
+  --h1-spam-fs: 2rem;
+  --h2-fs: 1.5rem;
+  --h2-fs-offer: 1.5rem;
+  --h3-fs: 1.17rem;
+  --h4-fs: 1rem;
+  --a-link-fs: 1rem;
+  --a-link-fs-footer: 1rem;
+  --paragraph-fs: 1rem;
+  --paragraph-slider-fs: 1rem;
+  --btn-fs: 1rem;
 
   /* transitions */
   --transition-fast: 0.1s;
@@ -76,8 +77,11 @@ body {
   --transition-medium: 0.5s;
 
   /* padding */
-  --mobile-view-padding: 5px 15px;
-  --desktop-view-padding: 5px 0px;
+  --padding-small: 7px 8px;
+  --padding-standard: 5px 15px;
+  --padding-mobile: 0 5px;
+  --padding-desktop: 5px 10px;
+  --padding-slider: 2px 5px;
   --desktop-media-queries-padding: 5px 25px;
   --input-padding: 8px 5px;
 
@@ -101,19 +105,21 @@ body {
 }
 
 .container {
-  max-width: 1480px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: var(--mobile-view-padding);
+  padding: var(--padding-standard);
   text-align: center;
 }
 
-section {
-  margin-top: 40px;
+section,
+article {
+  margin-top: 35px;
 }
 
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -124,7 +130,7 @@ p,
 label,
 input,
 textarea {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: var(--paragraph-fs);
@@ -165,7 +171,7 @@ input,
 textarea,
 a,
 li {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -182,12 +188,12 @@ h1 {
   text-shadow: var(--text-shadow);
   color: var(--black-color);
   line-height: 1.1;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
   font-size: var(--h2-fs);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 800;
   color: var(--black-color);
   font-style: italic;

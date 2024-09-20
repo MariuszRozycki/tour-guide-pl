@@ -15,6 +15,7 @@ footer {
       margin-top: 20px;
       display: flex;
       flex-direction: column;
+      gap: 5px;
 
       .footer-nav-header,
       .footer-contact-header {
@@ -36,7 +37,6 @@ footer {
 
           li {
             list-style: none;
-            min-width: 300px;
             display: flex;
             justify-items: center;
             align-items: center;
@@ -101,6 +101,7 @@ footer {
     .container {
       .footer-main-wrap {
         flex-direction: row;
+        gap: 40px;
 
         .footer-contact {
           justify-content: flex-start;

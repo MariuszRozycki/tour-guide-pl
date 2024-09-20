@@ -66,7 +66,7 @@ const PageNavigator = () => {
   );
 
   return (
-    <div>
+    <div className="PageNavigator">
       <div className="container">
         <ul className="PageNavigator-buttons-wrapper">
           {currentPageBtn}

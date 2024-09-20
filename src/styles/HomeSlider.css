@@ -15,20 +15,25 @@
 .slider-item {
   border-radius: var(--border-radius-small);
   text-align: center;
-  background-color: var(--tertiary-color);
+  background-color: var(--color-octonary);
   cursor: pointer;
-  padding: 20px 0 20px;
+  padding: 0 0 20px;
+  display: flex !important;
+  flex-direction: column;
 
   h2 {
+    order: 2;
     margin: 8px 0;
-    padding: 5px 4px;
+    padding: var(--padding-slider);
     font-size: calc(var(--h2-fs-offer) - 7px);
     height: 75px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 5px;
     color: var(--black-color);
+    text-align: left;
 
     span {
       display: block;
@@ -41,12 +46,16 @@
   }
 
   .slider-offer-price {
+    order: 3;
     margin-top: 15px;
     font-size: var(--paragraph-slider-fs);
     font-weight: 700;
+    text-align: left;
+    padding: var(--padding-slider);
   }
 
   .slider-img-wrapper {
+    order: 1;
     width: 100%;
     height: 150px;
     padding: 0;
@@ -55,14 +64,18 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-top-left-radius: var(--border-radius-medium);
+      border-top-right-radius: var(--border-radius-medium);
     }
   }
 }
 
 .slider-offer-details-btn {
+  order: 4;
   text-transform: uppercase;
   font-weight: 700;
   width: 90%;
+  margin: auto;
 }
 
 .slick-prev,
@@ -82,8 +95,9 @@
 .slick-next:before {
   color: black;
   border-radius: 50%;
-  opacity: 1;
+  opacity: 0.5;
   font-size: 30px;
+  transition: var(--transition-standard);
 }
 
 .slick-dots {
