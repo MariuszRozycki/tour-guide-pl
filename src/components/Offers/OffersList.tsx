@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useGetOffers } from "../../hooks/useGetOffers";
 import { OfferResponse } from "../../types/offers";
-import MainHeading from "../MainHeading/MainHeading";
 import { conditionNotMeet } from "../../utils/conditionNotMeet";
 import OfferModal from "./OfferModal";
 import ClipLoader from "react-spinners/ClipLoader";
@@ -29,8 +28,7 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
   return (
     <div>
       <div className="container">
-        <MainHeading />
-        <h2>{title}</h2>
+        <h1>{title}</h1>
         <div className="offers-list">
           {conditionNotExists}
           {filteredOffers.map((offer) => (

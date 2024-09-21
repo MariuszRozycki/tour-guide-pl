@@ -49,27 +49,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: calc(var(--h1-fs) - 1vw);
 
   h1 {
     color: var(--color-white);
   }
 
   p {
-    font-size: calc(var(--paragraph-fs) - 2px);
+    font-size: calc(var(--paragraph-fs) + 2px);
     padding: var(--padding-standard);
     color: var(--color-white);
   }
 
   .hero-btn {
-    color: var(--light-beige-color);
+    color: var(--color-white);
     text-transform: uppercase;
     box-shadow: var(--box-shadow-hard);
     transition: var(--transition-standard);
-    font-weight: 700;
 
     &:hover {
-      box-shadow: var(--box-shadow-none);
+      color: var(--color-black);
+      background-color: var(--color-white);
     }
   }
 }

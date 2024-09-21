@@ -14,13 +14,13 @@ const HomeSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     swipe: true,
     arrows: true,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 4000,
     fade: false,
     pauseOnHover: true,
     initialSlide: 0,
@@ -37,21 +37,14 @@ const HomeSlider = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 800,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
         },
       },
     ],

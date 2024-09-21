@@ -56,7 +56,7 @@ body {
   --yellow-light-color: #ffe3b3;
   --active-color: var(--orange-color);
 
-  --main-color: rgb(156, 102, 68);
+  --color-hover: rgb(53 57 58);
 
   /* font-size */
   --h1-fs: 2rem;
@@ -211,11 +211,14 @@ button {
 
 button,
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: var(--btn-fs);
-  font-weight: 500;
+  padding: 0.4em 1.1em;
+  font-size: calc(var(--btn-fs) - 2px);
+  font-weight: 400;
   font-family: inherit;
   background-color: var(--color-secondary);
   cursor: pointer;
@@ -227,7 +230,7 @@ button,
 button:hover,
 .btn:hover {
   box-shadow: var(--box-shadow-null);
-  background-color: var(--main-color);
+  background-color: var(--color-hover);
 }
 button:focus,
 button:focus-visible {

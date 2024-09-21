@@ -1,12 +1,10 @@
-import MainHeading from "../MainHeading/MainHeading";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
     <div>
       <div className="container">
-        <MainHeading />
-        <h2>Kontakt:</h2>
+        <h1>Kontakt:</h1>
         <ul className="contact-details">
           <li>
             <a href="tel:+48601786363">
