@@ -46,12 +46,14 @@
   opacity: 0;
   animation: fadeInText 2s forwards;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 
   h1 {
     color: var(--color-white);
+    font-size: 1.8rem;
+    margin-bottom: 0;
   }
 
   p {
@@ -67,8 +69,8 @@
     transition: var(--transition-standard);
 
     &:hover {
-      color: var(--color-black);
-      background-color: var(--color-white);
+      color: var(--color-white);
+      background-color: var(--color-hover);
     }
   }
 }

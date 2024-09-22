@@ -109,7 +109,7 @@
     }
 
     .img-wrapper-fourth {
-      border-top-left-radius: var(--border-radius-medium);
+      border-top-left-radius: none;
       border-bottom-right-radius: var(--border-radius-medium);
     }
 

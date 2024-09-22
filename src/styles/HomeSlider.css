@@ -24,8 +24,8 @@
   h2 {
     order: 2;
     margin: 8px 0;
-    padding: var(--padding-slider);
-    font-size: calc(var(--h2-fs-offer) - 7px);
+    padding: var(--padding-slide);
+    font-size: var(--h2-fs-offer);
     height: 75px;
     display: flex;
     flex-direction: column;
@@ -47,17 +47,17 @@
 
   .slider-offer-price {
     order: 3;
-    margin-top: 15px;
+    margin: 0;
     font-size: var(--paragraph-slider-fs);
-    font-weight: 700;
+    font-weight: 400;
     text-align: left;
-    padding: var(--padding-slider);
+    padding: 0 5px;
   }
 
   .slider-img-wrapper {
     order: 1;
     width: 100%;
-    height: 150px;
+    height: 120px;
     padding: 0;
 
     img {
@@ -73,8 +73,8 @@
 .slider-offer-details-btn {
   order: 4;
   text-transform: uppercase;
-  width: 90%;
-  margin: auto;
+  width: auto;
+  margin: var(--padding-slide);
 }
 
 .slick-prev,
@@ -106,11 +106,3 @@
 }
 
 /* media queries */
-
-@media (min-width: 576px) {
-  .slider-item {
-    h2 {
-      font-size: calc(var(--h2-fs-offer) - 8px);
-    }
-  }
-}

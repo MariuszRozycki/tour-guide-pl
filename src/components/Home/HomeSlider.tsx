@@ -18,8 +18,8 @@ const HomeSlider = () => {
     slidesToShow: 4,
     slidesToScroll: 4,
     swipe: true,
-    arrows: true,
-    autoplay: true,
+    arrows: false,
+    autoplay: false,
     autoplaySpeed: 2000,
     fade: false,
     pauseOnHover: true,
@@ -72,7 +72,8 @@ const HomeSlider = () => {
             <div className="slider-img-wrapper">
               <img src={offer.imageMain} alt={`${offer.title}`} />
             </div>
-            <p className="slider-offer-price">Cena od: {offer.price45people} PLN</p>
+            <p className="slider-offer-price">Cena od:</p>
+            <p className="slider-offer-price">{offer.price45people} PLN (45 osób)</p>
             <button className="slider-offer-details-btn" onClick={() => setSelectedOffer(offer)}>
               Szczegóły
             </button>

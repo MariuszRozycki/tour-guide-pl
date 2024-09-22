@@ -30,14 +30,14 @@ const PageNavigator = () => {
   ];
 
   const currentPage = pages.find((page) => page.path === location.pathname);
-  const isOffersPage = location.pathname.startsWith("/offers");
+  const isHomePage = location.pathname !== "/";
 
   const allOffersBtn =
-    isOffersPage && location.pathname !== "/offers" ? (
+    isHomePage && location.pathname !== "/offers" ? (
       <li className="PageNavigator-element">
         <button className="PageNavigator-button" onClick={goOffers}>
           <img className="icon" src="/icons/list-interface-symbol.png" alt="List icon" />
-          <p>Wszystkie oferty</p>
+          <p>Pokaż oferty</p>
         </button>
       </li>
     ) : null;

@@ -31,7 +31,6 @@
       justify-content: center;
       align-items: center;
       margin: 0;
-      font-size: calc(var(--btn-fs) + 3px);
       background-color: transparent;
       color: var(--black-color);
       transition: var(--transition-standard);
