@@ -79,7 +79,7 @@ body {
 
   /* padding */
   --padding-small: 7px 8px;
-  --padding-standard: 5px 15px;
+  --padding-standard: 0 15px;
   --padding-mobile: 0 5px;
   --padding-desktop: 5px 10px;
   --padding-slide: 2px 5px;

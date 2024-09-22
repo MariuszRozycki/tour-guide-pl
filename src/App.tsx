@@ -21,6 +21,7 @@ import Footer from "./components/Footer/Footer";
 
 import "./styles/index.css";
 import BtnScrollToTop from "./utils/BtnScrollToTop";
+import SingleOfferPage from "./components/Offers/SingleOfferPage";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/offers/four-days" element={<FourDaysTrip />} />
         <Route path="/offers/five-days" element={<FiveDaysTrip />} />
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/offers/:category/:id" element={<SingleOfferPage />} />
       </Routes>
       <Footer />
       <BtnScrollToTop />

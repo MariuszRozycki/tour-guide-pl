@@ -6,13 +6,14 @@
 @import url("./PageNavigator.css");
 @import url("./Loader.css");
 @import url("./MainHeading.css");
-@import url("./OfferModal.css");
+@import url("./ImgModal.css");
+/* @import url("./OfferModal.css"); */
 @import url("./Hero.css");
 @import url("./Home.css");
 @import url("./About.css");
 @import url("./HomeSlider.css");
 @import url("./Offers.css");
 @import url("./offersByCategory.css");
-@import url("./SingleOffer.css");
+@import url("./SingleOfferPage.css");
 @import url("./Contact.css");
 @import url("./Footer.css");

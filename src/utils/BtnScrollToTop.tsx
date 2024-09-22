@@ -13,7 +13,7 @@ const BtnScrollToTop = () => {
   };
 
   const toggleVisibility = () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 80) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

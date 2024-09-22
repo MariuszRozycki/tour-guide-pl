@@ -1,18 +1,18 @@
-import { useState } from "react";
 import { useGetOffers } from "../../hooks/useGetOffers";
 import { OfferResponse } from "../../types/offers";
 import { conditionNotMeet } from "../../utils/conditionNotMeet";
-import OfferModal from "./OfferModal";
 import ClipLoader from "react-spinners/ClipLoader";
+import { useNavigate } from "react-router-dom";
 
 interface OffersListProps {
   title: string;
+  category: string;
   filterCondition: (offer: OfferResponse[number]) => boolean;
 }
 
-const OffersList = ({ title, filterCondition }: OffersListProps) => {
+const OffersList = ({ title, category, filterCondition }: OffersListProps) => {
   const { offers, loading } = useGetOffers();
-  const [selectedOffer, setSelectedOffer] = useState<OfferResponse[number] | null>(null);
+  const navigate = useNavigate();
 
   if (loading) {
     return (
@@ -25,6 +25,10 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
   const filteredOffers = offers.filter(filterCondition);
   const conditionNotExists = conditionNotMeet(filteredOffers);
 
+  const handleOfferClick = (offer: OfferResponse[number]) => {
+    navigate(`/offers/${category}/${offer.id}`, { state: { offer } });
+  };
+
   return (
     <div>
       <div className="container">
@@ -32,7 +36,7 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
         <div className="offers-list">
           {conditionNotExists}
           {filteredOffers.map((offer) => (
-            <div className="single-offer" onClick={() => setSelectedOffer(offer)} key={offer.id}>
+            <div className="single-offer" onClick={() => handleOfferClick(offer)} key={offer.id}>
               <div className="offer-img-wrapper">
                 <img src={offer.imageMain} alt={offer.title} />
               </div>
@@ -52,39 +56,6 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
           ))}
         </div>
       </div>
-
-      <OfferModal isOpen={!!selectedOffer} onClose={() => setSelectedOffer(null)}>
-        {selectedOffer && (
-          <>
-            <h2>
-              {selectedOffer.title} <br />
-              {selectedOffer.days}
-            </h2>
-
-            {selectedOffer.titleSub && (
-              <h3 style={{ display: selectedOffer.titleSub ? "block" : "none" }}>{selectedOffer.titleSub}</h3>
-            )}
-            <div className="pic-desc-wrap">
-              <div className="offer-img-wrapper">
-                <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
-              </div>
-              <ul>
-                {selectedOffer.description.map((desc, index) => (
-                  <li key={index}>{desc}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="modal-offer-price-wrapper">
-              {selectedOffer.price45people !== 0 && (
-                <p className="modal-offer-price">Cena (45 osób): {selectedOffer.price45people} PLN</p>
-              )}
-              {selectedOffer.price40people !== 0 && (
-                <p className="modal-offer-price">Cena (40 osób): {selectedOffer.price40people} PLN</p>
-              )}
-            </div>
-          </>
-        )}
-      </OfferModal>
     </div>
   );
 };
