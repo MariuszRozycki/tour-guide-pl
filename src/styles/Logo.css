@@ -8,7 +8,7 @@
 
   .logo-img-wrapper {
     align-items: center;
-    height: 55px;
+    height: 40px;
 
     img {
       width: 100%;
@@ -41,6 +41,14 @@
 
     .logo-text {
       margin: 0;
+    }
+  }
+}
+
+@media (max-width: 260px) {
+  .logo-component {
+    .logo-text {
+      display: none;
     }
   }
 }

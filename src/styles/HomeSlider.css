@@ -15,7 +15,7 @@
 .slider-item {
   border-radius: var(--border-radius-small);
   text-align: center;
-  background-color: var(--color-octonary);
+  background-color: var(--color-nonary);
   cursor: pointer;
   padding: 0 0 20px;
   display: flex !important;

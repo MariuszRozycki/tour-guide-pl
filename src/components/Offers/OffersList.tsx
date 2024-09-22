@@ -39,7 +39,7 @@ const OffersList = ({ title, filterCondition }: OffersListProps) => {
               <div className="single-offer-details">
                 <h2>
                   {offer.title}
-                  {/* <span>{offer.days}</span> */}
+                  <span>{offer.days}</span>
                 </h2>
                 <div className="offers-list-price-wrapper">
                   <p className="single-offer-price">Cena: </p>

@@ -59,7 +59,7 @@ body {
   --color-hover: rgb(53 57 58);
 
   /* font-size */
-  --h1-fs: 2rem;
+  --h1-fs: 1.7rem;
   --h1-spam-fs: 2rem;
   --h2-fs: 1.5rem;
   --h2-fs-offer: 1.5rem;
@@ -144,26 +144,30 @@ a {
   font-weight: 400;
   color: var(--color-primary);
   text-decoration: inherit;
-  font-size: var(--a-link-fs);
+  font-size: calc(var(--a-link-fs) - 3px);
   transition: var(--transition-standard);
+  /* padding: 0 10px; */
 }
 
 .active {
   position: relative;
-
   transition: var(--transition-standard);
+  color: var(--color-quaternary);
+  font-weight: 600;
 }
 
-/* .active::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 110%;
-  transform: translateX(-5%);
-  height: 2px;
-  background-color: var(--white-color);
-} */
+@media (min-width: 600px) {
+  .active::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 110%;
+    transform: translateX(-5%);
+    height: 2px;
+    background-color: var(--color-quaternary);
+  }
+}
 
 p,
 label,

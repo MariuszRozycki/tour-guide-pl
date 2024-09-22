@@ -20,7 +20,7 @@ const HomeSlider = () => {
     swipe: true,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
     fade: false,
     pauseOnHover: true,
     initialSlide: 0,
