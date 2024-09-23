@@ -22,17 +22,6 @@ const OfferModal = ({ isOpen, onClose, children }: ModalProps) => {
   return (
     <div className="modal-backdrop" onClick={handleOutsideClick}>
       <div className="modal-content fade-in">
-        {/* <a href="/" className="logo-component">
-          <div className="nav-logo-wrapper">
-            <a href="/">
-              <img src="/pictures/logo.png" alt="logo" />
-            </a>
-          </div>
-          <ul className="logo-header">
-            <li>Tour Guide</li>
-            <li>Kraftowe wyjazdy</li>
-          </ul>
-        </a> */}
         <Logo />
         <button className="modal-close" onClick={onClose}>
           <FontAwesomeIcon icon={faX} />

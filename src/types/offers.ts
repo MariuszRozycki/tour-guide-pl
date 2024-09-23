@@ -1,15 +1,15 @@
 export interface Offer {
-  id: string; // Zostawiamy id jako string
+  id: string;
   days: string;
-  title: string; // Główny tytuł oferty
-  titleSub: string; // Podtytuł oferty
-  description: string[]; // Zmienione na tablicę z wieloma elementami
-  imageMain: string; // Adres URL do obrazka
-  price45people: number; // Cena dla grupy 45 osób
-  price40people: number; // Cena dla grupy 40 osób
-  typeOfTrip: string; // Typ wycieczki
-  lengthOfTrip: string; // Długość wycieczki
-  destinationType: string; // Typ destynacji (np. krajowa/zagraniczna)
+  title: string;
+  titleSub: string;
+  description: string[];
+  imageMain: string;
+  price45people: number;
+  price40people: number;
+  typeOfTrip: string;
+  lengthOfTrip: string;
+  destinationType: string;
 }
 
 export type OfferResponse = Offer[];

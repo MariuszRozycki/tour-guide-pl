@@ -52,8 +52,12 @@
 
   h1 {
     color: var(--color-white);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-bottom: 0;
+
+    span {
+      font-size: 1.7rem;
+    }
   }
 
   p {
@@ -78,11 +82,11 @@
 @keyframes fadeInText {
   0% {
     opacity: 0;
-    transform: scale(0);
+    transform: translateY(90%);
   }
   100% {
     opacity: 1;
-    transform: scale(100%);
+    transform: transformY(100%);
   }
 }
 

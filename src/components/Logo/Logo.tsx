@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 const Logo = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate(`/`);
+  };
   return (
     <>
-      <div className="logo-component">
+      <div className="logo-component" onClick={handleLogoClick}>
         <a className="logo-img-wrapper" href="/">
           <img src="/pictures/logo.png" alt="logo" />
         </a>

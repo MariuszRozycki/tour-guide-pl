@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+
 interface ImageModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -6,13 +9,13 @@ interface ImageModalProps {
 }
 
 const ImageModal = ({ isOpen, onClose, imageSrc, altText }: ImageModalProps) => {
-  if (!isOpen) return null; // Nie pokazuj modala, jeśli jest zamknięty
+  if (!isOpen) return null;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>
-          &times; {/* Znak krzyżyka */}
+          <FontAwesomeIcon icon={faX} />
         </button>
         <img src={imageSrc} alt={altText} className="modal-image" />
       </div>

@@ -1,15 +1,14 @@
 import Slider from "react-slick";
 import { useGetOffers } from "../../hooks/useGetOffers";
-import OfferModal from "../Offers/OfferModal";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { OfferResponse } from "../../types/offers";
-import { useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
+import { useNavigate } from "react-router-dom";
 
 const HomeSlider = () => {
   const { offers, loading } = useGetOffers();
-  const [selectedOffer, setSelectedOffer] = useState<OfferResponse[number] | null>(null);
+  const navigate = useNavigate();
 
   const settings = {
     dots: false,
@@ -20,7 +19,7 @@ const HomeSlider = () => {
     swipe: true,
     arrows: false,
     autoplay: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     fade: false,
     pauseOnHover: true,
     initialSlide: 0,
@@ -50,6 +49,10 @@ const HomeSlider = () => {
     ],
   };
 
+  const handleOfferClick = (offer: OfferResponse[number]) => {
+    navigate(`/offers/${offer.typeOfTrip}/${offer.id}`, { state: { offer } });
+  };
+
   if (loading) {
     return (
       <div className="loader-container">
@@ -63,7 +66,7 @@ const HomeSlider = () => {
       <h2>Oferty dla Ciebie</h2>
       <Slider {...settings}>
         {offers.map((offer) => (
-          <div key={offer.id} className="slider-item" onClick={() => setSelectedOffer(offer)}>
+          <div key={offer.id} className="slider-item">
             <h2>
               {offer.title}
               <span>{offer.days}</span>
@@ -74,42 +77,12 @@ const HomeSlider = () => {
             </div>
             <p className="slider-offer-price">Cena od:</p>
             <p className="slider-offer-price">{offer.price45people} PLN (45 osób)</p>
-            <button className="slider-offer-details-btn" onClick={() => setSelectedOffer(offer)}>
+            <button className="slider-offer-details-btn" onClick={() => handleOfferClick(offer)}>
               Szczegóły
             </button>
           </div>
         ))}
       </Slider>
-
-      <OfferModal isOpen={!!selectedOffer} onClose={() => setSelectedOffer(null)}>
-        {selectedOffer && (
-          <>
-            <h2>
-              {selectedOffer.title}
-              <span>{selectedOffer.days}</span>
-            </h2>
-            <h3>{selectedOffer.titleSub}</h3>
-            <div className="pic-desc-wrap">
-              <div className="offer-img-wrapper">
-                <img src={selectedOffer.imageMain} alt={selectedOffer.title} />
-              </div>
-              <ul>
-                {selectedOffer.description.map((desc, index) => (
-                  <li key={index}>{desc}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="modal-offer-price-wrapper">
-              {selectedOffer.price45people !== 0 && (
-                <p className="modal-offer-price">Cena (45 osób): {selectedOffer.price45people} PLN</p>
-              )}
-              {selectedOffer.price40people !== 0 && (
-                <p className="modal-offer-price">Cena (40 osób): {selectedOffer.price40people} PLN</p>
-              )}
-            </div>
-          </>
-        )}
-      </OfferModal>
     </div>
   );
 };

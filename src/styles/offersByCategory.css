@@ -81,7 +81,6 @@
   color: brown;
 }
 
-/* Breakpointy */
 @media (min-width: 420px) {
   .offers-list {
     grid-template-columns: 1fr 1fr;
@@ -106,13 +105,5 @@
 @media (min-width: 768px) {
   .offers-list {
     grid-template-columns: 1fr 1fr 1fr;
-
-    /* .single-offer {
-      .offers-list-price-wrapper {
-        .single-offer-price {
-          font-size: calc(var(--paragraph-slider-fs));
-        }
-      }
-    } */
   }
 }
