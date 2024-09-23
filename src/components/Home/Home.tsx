@@ -4,24 +4,24 @@ import HomeSlider from "./HomeSlider";
 
 const Home = () => {
   return (
-    <div>
+    <section className="home">
       <div className="container">
         <Hero />
 
-        <section>
+        <article>
           <h2>Witaj na stronie głównej!</h2>
-          <div className="about-wrapper clearfix">
+          <div className="home-content-wrapper">
             <div className="img-wrapper">
               <img src="/pictures/tomek-zdunek.jpg" alt="Tour Guide - Tomek Zdunek" />
             </div>
             <HomeAboutText />
           </div>
-        </section>
-        <section>
+        </article>
+        <section aria-label="Slider">
           <HomeSlider />
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 

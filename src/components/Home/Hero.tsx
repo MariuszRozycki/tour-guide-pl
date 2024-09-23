@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
-    <div className="hero-wrapper">
-      <div className="hero">
+    <div className="hero">
+      <div className="hero-bcg-img">
         <div className="hero-content">
           <MainHeading />
           <p>Skorzystaj z najlepszych ofert na podróże już teraz!</p>
