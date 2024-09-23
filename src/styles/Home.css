@@ -37,10 +37,10 @@
       display: grid;
       text-align: left;
       font-weight: 400;
-      font-size: calc(var(--paragraph-fs) - 2px);
+      font-size: var(--paragraph-fs);
 
       a {
-        font-size: calc(var(--paragraph-fs) - 2px);
+        font-size: var(--paragraph-fs);
         font-weight: 500;
       }
     }

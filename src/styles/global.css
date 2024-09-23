@@ -67,9 +67,9 @@ body {
   --h4-fs: 1rem;
   --fs-input-text-area: clamp(12px, 1rem + 2vw, 14px);
   --a-link-fs: 1rem;
-  --a-link-fs-footer: clamp(10px, 1rem + 2vw, 12px);
-  --paragraph-fs: clamp(12px, 1rem + 2vw, 14px);
-  --paragraph-slider-fs: clamp(12px, 1rem + 2vw, 14px);
+  --a-link-fs-footer: clamp(12px, 1rem + 2vw, 14px);
+  --paragraph-fs: clamp(14px, 1rem + 2vw, 16px);
+  --paragraph-slider-fs: clamp(14px, 1rem + 2vw, 16px);
   --btn-fs: clamp(12px, 1rem + 2vw, 14px);
 
   /* transitions */
@@ -80,7 +80,7 @@ body {
   /* padding */
   --padding-small: 7px 8px;
   --padding-standard: 0 15px;
-  --padding-mobile: 0 5px;
+  --padding-mobile: 3px 5px;
   --padding-desktop: 5px 10px;
   --padding-slide: 2px 5px;
   --desktop-media-queries-padding: 5px 25px;
@@ -147,7 +147,7 @@ a {
   font-weight: 400;
   color: var(--color-primary);
   text-decoration: inherit;
-  font-size: calc(var(--a-link-fs) - 3px);
+  font-size: var(--a-link-fs);
   transition: var(--transition-standard);
 }
 

@@ -7,7 +7,7 @@ const Contact = () => {
         <h1>Kontakt:</h1>
         <div className="contact-details-wrapper">
           <div className="img-wrapper">
-            <img src="../../../public/pictures/contact-us.jpg" alt="Contact us" />
+            <img src="/pictures/contact-us.jpg" alt="Contact us" />
           </div>
           <ul className="contact-details">
             <li>
