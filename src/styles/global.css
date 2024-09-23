@@ -62,15 +62,15 @@ body {
   --h1-fs: clamp(100%, 1rem + 2vw, 24px);
   --h1-spam-fs: 2rem;
   --h2-fs: 1.5rem;
-  --h2-fs-offer: clamp(12px, 1rem + 2vw, 16px);
+  --h2-fs-offer: clamp(14px, 1rem + 2vw, 16px);
   --h3-fs: 1.17rem;
   --h4-fs: 1rem;
   --fs-input-text-area: clamp(12px, 1rem + 2vw, 14px);
   --a-link-fs: 1rem;
-  --a-link-fs-footer: clamp(12px, 1rem + 2vw, 14px);
+  --a-link-fs-footer: clamp(14px, 1rem + 2vw, 16px);
   --paragraph-fs: clamp(14px, 1rem + 2vw, 16px);
   --paragraph-slider-fs: clamp(14px, 1rem + 2vw, 16px);
-  --btn-fs: clamp(12px, 1rem + 2vw, 14px);
+  --btn-fs: clamp(14px, 1rem + 2vw, 16px);
 
   /* transitions */
   --transition-fast: 0.1s;
