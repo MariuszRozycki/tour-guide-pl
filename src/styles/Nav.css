@@ -21,8 +21,8 @@ ul {
     cursor: pointer;
     .bars {
       display: block;
-      width: 30px;
-      height: 2px;
+      width: 35px;
+      height: 4px;
       margin: 4px 0;
       background-color: var(--color-primary);
       border-radius: 50px;
@@ -32,12 +32,12 @@ ul {
     /* bars transition */
     .bar-one {
       transform: translateY(10px) rotate(45deg);
-      margin: 8px 0;
+      margin: 6px 0;
     }
 
     .bar-three {
       transform: translateY(-10px) rotate(-45deg);
-      margin: 8px 0;
+      margin: 6px 0;
     }
 
     .bar-two {
@@ -47,7 +47,9 @@ ul {
 
   .nav-main_list {
     flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
+    height: 250px;
     padding: 0;
     position: absolute;
     top: 52px;
@@ -95,7 +97,7 @@ ul {
       flex-direction: row;
       justify-content: flex-end;
       width: 60%;
-      height: 100%;
+      height: 60px;
       padding: 0;
 
       li {

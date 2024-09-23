@@ -25,7 +25,6 @@ footer {
         font-weight: 700;
         text-transform: uppercase;
         text-align: left;
-        font-size: smaller;
         margin-bottom: 4px;
       }
 
@@ -92,6 +91,30 @@ footer {
 
             &:hover {
               color: var(--color-quaternary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 263px) {
+  .footer {
+    .container {
+      .footer-main-wrap {
+        .footer-contact-wrapper {
+          .footer-contact {
+            a {
+              font-size: calc(var(--a-link-fs-footer) - 1vw);
+            }
+          }
+        }
+
+        .footer-nav-wrapper {
+          .footer-nav li {
+            a {
+              font-size: calc(var(--a-link-fs-footer) - 1vw);
             }
           }
         }

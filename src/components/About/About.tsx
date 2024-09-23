@@ -12,7 +12,7 @@ const About = () => {
           <ContentWrapper className="ContentWrapper-first">
             <ImageWrapper
               className="img-wrapper img-wrapper-odd img-wrapper-first"
-              picture="../../../public/pictures/tomek-zdunek.jpg"
+              picture="/pictures/tomek-zdunek.jpg"
               alt="Tour Guide - Tomasz Zdunek"
               imgElement="img-first"
             />
@@ -22,7 +22,7 @@ const About = () => {
           <ContentWrapper className="ContentWrapper-second">
             <ImageWrapper
               className="img-wrapper img-wrapper-even img-wrapper-second"
-              picture="../../../public/pictures/tomek-about-1.jpg"
+              picture="/pictures/tomek-about-1.jpg"
               alt="Tour Guide - Tomasz Zdunek"
               imgElement="img-second"
             />
@@ -32,7 +32,7 @@ const About = () => {
           <ContentWrapper className="ContentWrapper-third">
             <ImageWrapper
               className="img-wrapper img-wrapper-odd img-wrapper-third"
-              picture="../../../public/pictures/tomek-about-2.jpg"
+              picture="/pictures/tomek-about-2.jpg"
               alt="Tour Guide - Tomasz Zdunek"
               imgElement="img-third"
             />
@@ -42,7 +42,7 @@ const About = () => {
           <ContentWrapper className="ContentWrapper-fourth">
             <ImageWrapper
               className="img-wrapper img-wrapper-even img-wrapper-fourth"
-              picture="../../../public/pictures/tomek-about-3.jpg"
+              picture="/pictures/tomek-about-3.jpg"
               alt="Tour Guide - Tomasz Zdunek"
               imgElement="img-fourth"
             />

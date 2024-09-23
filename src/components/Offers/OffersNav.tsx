@@ -2,15 +2,15 @@ import { NavLink } from "react-router-dom";
 
 const OffersNav = () => {
   const categories = [
-    { name: "Zagraniczne", type: "abroad", imgSrc: "/public/pictures/berlin-1897125_1280.jpg" },
-    { name: "Krajowe", type: "domestic", imgSrc: "/public/pictures/trip-domestic.jpg" },
-    { name: "Transgraniczne", type: "cross-border", imgSrc: "/public/pictures/trip-cross-border.jpg" },
-    { name: "1-dniowe", type: "one-day", imgSrc: "/public/pictures/trip-one-day.jpg" },
-    { name: "3-dniowe", type: "three-days", imgSrc: "/public/pictures/trip-three-days.jpg" },
-    { name: "4-dniowe", type: "four-days", imgSrc: "/public/pictures/trip-four-days.jpg" },
-    { name: "5-dniowe", type: "five-days", imgSrc: "/public/pictures/trip-five-days.jpg" },
-    { name: "Spływy kajakowe", type: "kayak", imgSrc: "/public/pictures/trip-kayak.jpg" },
-    { name: "Autokarowe", type: "buss-trip", imgSrc: "/public/pictures/trip-bus.jpg" },
+    { name: "Zagraniczne", type: "abroad", imgSrc: "/pictures/berlin-1897125_1280.jpg" },
+    { name: "Krajowe", type: "domestic", imgSrc: "/pictures/trip-domestic.jpg" },
+    { name: "Transgraniczne", type: "cross-border", imgSrc: "/pictures/trip-cross-border.jpg" },
+    { name: "1-dniowe", type: "one-day", imgSrc: "/pictures/trip-one-day.jpg" },
+    { name: "3-dniowe", type: "three-days", imgSrc: "/pictures/trip-three-days.jpg" },
+    { name: "4-dniowe", type: "four-days", imgSrc: "/pictures/trip-four-days.jpg" },
+    { name: "5-dniowe", type: "five-days", imgSrc: "/pictures/trip-five-days.jpg" },
+    { name: "Spływy kajakowe", type: "kayak", imgSrc: "/pictures/trip-kayak.jpg" },
+    { name: "Autokarowe", type: "buss-trip", imgSrc: "/pictures/trip-bus.jpg" },
     // { name: "Samolotowe", type: "plane" },
   ];
 

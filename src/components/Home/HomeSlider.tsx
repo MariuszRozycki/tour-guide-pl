@@ -14,11 +14,11 @@ const HomeSlider = () => {
     dots: false,
     infinite: true,
     speed: 3000,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     swipe: true,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     fade: false,
     pauseOnHover: true,
@@ -26,7 +26,7 @@ const HomeSlider = () => {
 
     responsive: [
       {
-        breakpoint: 380,
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
