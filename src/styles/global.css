@@ -68,7 +68,7 @@ body {
   --fs-input-text-area: clamp(12px, 1rem + 2vw, 14px);
   --a-link-fs: 1rem;
   --a-link-fs-footer: clamp(14px, 1rem + 2vw, 16px);
-  --paragraph-fs: clamp(14px, 1rem + 2vw, 16px);
+  --paragraph-fs: clamp(17px, 1rem + 2vw, 16px);
   --paragraph-slider-fs: clamp(14px, 1rem + 2vw, 16px);
   --btn-fs: clamp(14px, 1rem + 2vw, 16px);
 
