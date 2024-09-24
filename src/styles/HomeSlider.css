@@ -20,7 +20,6 @@
 .slider-item {
   border-radius: var(--border-radius-small);
   text-align: center;
-  background-color: var(--color-nonary);
   cursor: pointer;
   padding: 0 0 20px;
   display: flex !important;
@@ -37,7 +36,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 5px;
+    gap: 2px;
     color: var(--black-color);
     text-align: left;
 

@@ -8,9 +8,9 @@ const Hero: React.FC = () => {
       <div className="hero-bcg-img">
         <div className="hero-content">
           <MainHeading />
-          <p>Skorzystaj z najlepszych ofert na podróże już teraz!</p>
+          <p>Skorzystaj z najlepszych ofert!</p>
 
-          <NavLink to="/offers" className="btn hero-btn">
+          <NavLink to="/offers" className="btn">
             Zobacz oferty
           </NavLink>
         </div>

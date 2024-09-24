@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ContactForm from "./ContactForm";
+import { faEnvelope, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -13,7 +15,7 @@ const Contact = () => {
             <li>
               <a href="tel:+48601786363">
                 <div className="contact-details-icon-wrapper">
-                  <img src="/icons/telephone-call.png" alt="Telephone icon" />
+                  <FontAwesomeIcon icon={faMobileAlt} />
                 </div>
                 +48 601-786-363
               </a>
@@ -21,7 +23,7 @@ const Contact = () => {
             <li>
               <a href="mailto:info@tour-guide.pl">
                 <div className="contact-details-icon-wrapper email-icon">
-                  <img src="/icons/email-icon.png" alt="Email icon" />
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </div>
                 info@tour-guide.pl
               </a>
@@ -29,7 +31,7 @@ const Contact = () => {
             <li>
               <a href="mailto:tourguide@poczta.onet.pl">
                 <div className="contact-details-icon-wrapper email-icon">
-                  <img src="/icons/email-icon.png" alt="Email icon" />
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </div>
                 tourguide@poczta.onet.pl
               </a>
