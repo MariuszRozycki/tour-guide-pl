@@ -62,7 +62,7 @@ body {
   --h1-fs: clamp(34px, 1rem + 2vw, 54px);
   --h1-spam-fs: 2rem;
   --h2-fs: 1.8rem;
-  --h2-fs-offer: clamp(16px, 1rem + 2vw, 18px);
+  --h2-fs-offer: clamp(16px, 1rem + 2vw, 16px);
   --h3-fs: 1.17rem;
   --h4-fs: 1rem;
   --fs-input-text-area: clamp(12px, 1rem + 2vw, 14px);
