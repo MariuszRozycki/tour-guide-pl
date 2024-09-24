@@ -40,7 +40,9 @@ body {
   --color-nonary: #ddeffd;
   --color-denary: #f2f6ff;
   --color-white: #fff;
-
+  --color-orange: #c44536;
+  --color-red: #772e25;
+  --color-yellow: rgb(255, 162, 16);
   --fifth-color: #ede0d4;
   --sixth-color: #281c0e;
   --light-blue-color: #b1daec;
@@ -50,26 +52,24 @@ body {
   --dark-blue-color: #243662;
   --very-dark-blue-color: #2f3e46;
   --very-dark-green-color: #79a086;
-  --orange-color: #c44536;
-  --red-color: #772e25;
-  --yellow-color: #ffa210;
+
   --yellow-light-color: #ffe3b3;
   --active-color: var(--orange-color);
-
   --color-hover: rgb(53 57 58);
+  --color-yellow-hover: rgb(170, 119, 35);
 
   /* font-size */
-  --h1-fs: clamp(100%, 1rem + 2vw, 24px);
+  --h1-fs: clamp(34px, 1rem + 2vw, 54px);
   --h1-spam-fs: 2rem;
-  --h2-fs: 1.5rem;
-  --h2-fs-offer: clamp(14px, 1rem + 2vw, 16px);
+  --h2-fs: 1.8rem;
+  --h2-fs-offer: clamp(16px, 1rem + 2vw, 18px);
   --h3-fs: 1.17rem;
   --h4-fs: 1rem;
   --fs-input-text-area: clamp(12px, 1rem + 2vw, 14px);
   --a-link-fs: 1rem;
   --a-link-fs-footer: clamp(14px, 1rem + 2vw, 16px);
   --paragraph-fs: clamp(17px, 1rem + 2vw, 16px);
-  --paragraph-slider-fs: clamp(14px, 1rem + 2vw, 16px);
+  --paragraph-slider-fs: clamp(14px, 1rem + 2vw, 17px);
   --btn-fs: clamp(14px, 1rem + 2vw, 16px);
 
   /* transitions */
@@ -80,7 +80,7 @@ body {
   /* padding */
   --padding-small: 7px 8px;
   --padding-standard: 0 15px;
-  --padding-mobile: 3px 5px;
+  --padding-mobile: 3px 7px;
   --padding-desktop: 5px 10px;
   --padding-slide: 2px 5px;
   --desktop-media-queries-padding: 5px 25px;
@@ -145,7 +145,7 @@ a {
   align-items: center;
   height: 100%;
   font-weight: 400;
-  color: var(--color-primary);
+  color: var(--color-white);
   text-decoration: inherit;
   font-size: var(--a-link-fs);
   transition: var(--transition-standard);
@@ -154,7 +154,7 @@ a {
 .active {
   position: relative;
   transition: var(--transition-standard);
-  color: var(--color-quaternary);
+  color: var(--color-yellow);
   font-weight: 600;
 }
 
@@ -167,7 +167,7 @@ a {
     width: 110%;
     transform: translateX(-5%);
     height: 2px;
-    background-color: var(--color-quaternary);
+    background-color: var(--color-yellow);
   }
 }
 
@@ -186,7 +186,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -194,13 +194,13 @@ h1 {
   text-shadow: var(--text-shadow);
   color: var(--black-color);
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h2 {
   font-size: var(--h2-fs);
   margin-bottom: 10px;
-  font-weight: 800;
+  font-weight: 500;
   color: var(--black-color);
   font-style: italic;
   text-shadow: var(--text-shadow);
@@ -222,14 +222,14 @@ button,
   align-items: center;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.4em 1.1em;
+  padding: 0.6em 1.1em;
   font-size: calc(var(--btn-fs) - 2px);
-  font-weight: 400;
+  font-weight: 500;
   font-family: inherit;
   background-color: var(--color-secondary);
   cursor: pointer;
   transition: border-color 0.25s;
-  color: var(--light-beige-color);
+  color: var(--color-white);
   transition: var(--transition-medium);
   text-transform: uppercase;
 }

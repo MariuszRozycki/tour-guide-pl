@@ -13,12 +13,11 @@
     justify-self: flex-start;
     list-style: none;
     margin: auto;
-
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column;
     padding: 0;
     gap: 10px;
 
@@ -26,12 +25,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       a {
         display: flex;
         justify-content: center;
+        align-items: baseline;
         gap: 5px;
         font-weight: 600;
-        font-size: small;
+        color: var(--color-black);
+        transition: color var(--transition-standard);
 
         &:hover {
           color: var(--red-color);
@@ -40,16 +42,15 @@
         .contact-details-icon-wrapper {
           display: inline-block;
           height: 20px;
-          width: auto;
 
           img {
             width: auto;
             height: 100%;
           }
-        }
 
-        .contact-details-icon-wrapper.email-icon {
-          height: 20px;
+          &.email-icon {
+            height: 20px;
+          }
         }
       }
 
@@ -57,10 +58,8 @@
         font-weight: 600;
       }
 
-      &:nth-last-of-type(1) {
-        p {
-          margin: 7px 0;
-        }
+      &:last-of-type p {
+        margin: 7px 0;
       }
     }
   }
@@ -74,8 +73,8 @@ form {
   background-color: var(--color-secondary);
   padding: 20px;
   border-radius: var(--border-radius-min);
-
   border: 1px solid;
+  box-shadow: var(--box-shadow-light);
 
   h3 {
     font-size: var(--h3-fs);
@@ -113,11 +112,12 @@ form {
     margin-top: 15px;
     box-shadow: var(--box-shadow-medium);
     color: var(--color-black);
-    background-color: var(--color-octonary);
+    background-color: var(--color-yellow);
+    transition: box-shadow var(--transition-standard), background-color var(--transition-standard);
 
     &:hover {
       box-shadow: var(--box-shadow-none);
-      background-color: var(--color-white);
+      background-color: var(--color-yellow-hover);
     }
   }
 
@@ -148,9 +148,9 @@ form {
   }
 }
 
+/* Media Queries */
 @media (min-width: 420px) {
   .contact-details-wrapper {
-    display: grid;
     grid-template-columns: 130px 1fr;
     grid-template-rows: 100px;
     column-gap: 10px;
@@ -158,7 +158,6 @@ form {
 
     .img-wrapper {
       width: 100%;
-      order: 0;
 
       img {
         object-position: 0 center;
@@ -171,9 +170,5 @@ form {
       height: 100%;
       justify-content: stretch;
     }
-  }
-
-  form {
-    box-shadow: var(--box-shadow-light);
   }
 }

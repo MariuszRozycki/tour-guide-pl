@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  animation: fadeIn var(--transition-standard) forwards;
 }
 
 .modal-content {
@@ -50,4 +51,13 @@
 
 .modal-close:hover {
   color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

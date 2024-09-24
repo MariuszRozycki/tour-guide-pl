@@ -1,5 +1,5 @@
 .hero-bcg-img {
-  background: url("/pictures/pexels-blooddrainer-566496-q_gZJS7X.jpg");
+  background: url("/pictures/hero-bcg-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,7 +52,7 @@
 
   h1 {
     color: var(--color-white);
-    font-size: 2.2rem;
+    font-size: var(--h1-fs);
     margin-bottom: 0;
 
     span {
@@ -66,15 +66,17 @@
     color: var(--color-white);
   }
 
-  .hero-btn {
-    color: var(--color-white);
+  .btn {
+    color: var(--color-black);
     text-transform: uppercase;
     box-shadow: var(--box-shadow-hard);
     transition: var(--transition-standard);
+    font-weight: 500;
+    background-color: var(--color-yellow);
 
     &:hover {
-      color: var(--color-white);
-      background-color: var(--color-hover);
+      color: var(--color-black);
+      background-color: rgb(170, 119, 35);
     }
   }
 }
@@ -82,7 +84,7 @@
 @keyframes fadeInText {
   0% {
     opacity: 0;
-    transform: translateY(90%);
+    transform: translateY(15%);
   }
   100% {
     opacity: 1;
@@ -97,7 +99,7 @@
 }
 
 @media (min-width: 600px) {
-  .hero {
+  .hero-bcg-img {
     animation: scaleBg 20s infinite alternate ease-in-out;
   }
 }
