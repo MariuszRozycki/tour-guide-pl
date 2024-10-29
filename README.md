@@ -10,69 +10,57 @@ Live site [Tour Guide Live Site](https://main--tour-guide-tomek.netlify.app/)
 ![image](https://github.com/user-attachments/assets/5cdc8de8-7597-4d28-9388-8e231cd7ae7f)
 <br>
 <br>
-This project is an eCommerce store built with React, following the requirements set out in the project brief. The store uses an external API (https://v2.api.noroff.dev/online-shop) to fetch product data and allows users to browse products, view individual product details, add items to the cart, and complete the checkout process.
 
 ## Table of Contents
-- Goal
-- Features
-- Technologies Used
-- Pages
+- Project Goal
+- Key Features
+- Technology Stack
+- Pages and Components
 - Installation
-- Usage
+- How to Use
 - Deployment
-- Author
+- Contact
 
 ## Goal
-To demonstrate knowledge of React by building an eCommerce store using the API provided by Noroff.
+The goal of this project is to build a high-quality travel guide application for a professional travel agency, offering users insights into destinations within Poland and its neighboring countries.
 
 ## Features
-- Homepage displaying a list of all available products.
-- Search bar with live search filtering.
-- Product page for individual product details.
-- Cart functionality with the ability to add, view, and remove items.
-- Checkout flow including a success page with an order confirmation message.
-- Contact form with validation.
-- Responsive design for both desktop and mobile.
-- Clean and well-structured code using modern React features like hooks and React Router.
+- Interactive Homepage: The homepage greets users with a hero section that highlights popular destinations.
+- About Us Section: Provides background information about the travel agency.
+- Contact Form: Users can easily reach out through a contact form with built-in validation.
+- Footer Section: Displays links and contact information on every page.
+- Responsive Design: The application is optimized for both desktop and mobile devices.
+- Organized Codebase: Components are structured for clarity and ease of maintenance.
 
 ## Technologies Used
 
-- React: Core framework for building the front-end.
-- React Router: For managing page navigation.
-- Styled-components: Used for styling the components and making the design responsive.
-- React Toastify: To display notifications for various actions such as successful form submissions and errors.
-- Fetch API: For making requests to the external API to retrieve product data.
+- React: The core library for building the user interface.
+- TypeScript: Enhances code quality and reliability.
+- React Router: Manages page navigation within the app.
+- Regular CSS: Used for styling the application without styled-components.
+- JavaScript Data File: Instead of an external API, a local JavaScript file is used to provide data for destinations.
 - Netlify: For deployment of the live site.
 
-## Pages
-
-1. Homepage: Lists all products fetched from the API and provides a search bar for filtering products by name. Clicking on a product redirects the user to the individual product page.
-2. Product Page: Displays the details of a specific product including its title, description, image, and discounted price (if available). There is an "Add to Cart" button to add products to the cart.
-3. Cart Page: Lists all products added to the cart, displays the total price, and includes a "Checkout" button.
-4. Checkout Success Page: Displays a success message confirming the order and provides a link to return to the homepage. The cart is cleared upon reaching this page.
-5. Contact Page: Contains a form with validation for the following fields:
- - Full name (minimum 3 characters)
- - Subject (minimum 3 characters)
- - Email (valid email address)
- - Telephone number
- - Message body (minimum 3 characters)
-Once validation passes, the form data is logged to the console.
+## Pages and Components
+- Homepage: Features a hero section (Hero.tsx) to attract users' attention to featured destinations.
+- About Us: Displays the agency's mission and background using components like ContentWrapper and TextParagraph.
+- Contact Page: Includes a ContactForm with fields for Full Name, Email, Subject, and Message, with validation implemented for user convenience.
+- Footer: Provides essential links and contact information across all pages.
 
 
 ## Installation
-
 To run this project locally, follow the steps below:
 
 1. Clone the repository:<br>
 
 ```
-git clone https://github.com/MariuszRozycki/e-com-store-react.git
+git clone https://github.com/your-username/tour-guide-pl.git
 ```
 
 2. Navigate to the project directory:<br>
 
 ```
-cd ecom-react-store
+cd tour-guide-pl
 ```
 
 3. Install dependencies:<br>
