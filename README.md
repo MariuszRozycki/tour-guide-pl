@@ -7,7 +7,7 @@ Tour Guide PL is a travel guide application designed for a Polish travel agency.
 The project has been deployed to Netlify. You can view the live site here:
 Live site [Tour Guide Live Site](https://main--tour-guide-tomek.netlify.app/)
 
-![image](https://github.com/user-attachments/assets/bfb50a28-6730-4a57-80cf-5cc5690dd008) 
+![image](https://github.com/user-attachments/assets/5cdc8de8-7597-4d28-9388-8e231cd7ae7f)
 <br>
 <br>
 This project is an eCommerce store built with React, following the requirements set out in the project brief. The store uses an external API (https://v2.api.noroff.dev/online-shop) to fetch product data and allows users to browse products, view individual product details, add items to the cart, and complete the checkout process.
