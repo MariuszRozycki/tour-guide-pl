@@ -1,8 +1,11 @@
-# eCommerce Store - React Application
+# Tour Guide - Travel Guide Application
+
+## Overview
+Tour Guide PL is a travel guide application designed for a Polish travel agency. This app showcases tours not only in Poland but also to neighboring countries, providing users with a comprehensive travel experience. The application is currently in development and includes features like an About Us section, a contact form, and an interactive homepage.
 
 ## Deployment
 The project has been deployed to Netlify. You can view the live site here:
-Live site [eCom Live Site](https://ecom-react-mariusz.netlify.app/)
+Live site [Tour Guide Live Site](https://main--tour-guide-tomek.netlify.app/)
 
 ![image](https://github.com/user-attachments/assets/bfb50a28-6730-4a57-80cf-5cc5690dd008) 
 <br>
