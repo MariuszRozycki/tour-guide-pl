@@ -13,14 +13,14 @@ Live site [Tour Guide Live Site](https://main--tour-guide-tomek.netlify.app/)
 
 ## Table of Contents
 - [Overview](#overview)
-- Deployment
-- Project Goal
-- Key Features
-- Technology Stack
-- Pages and Components
-- Installation
-- How to Use
-- Author
+- [Deployment](#deployment)
+- [Project Goal](#project-goal)
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Pages and Components](#pages-and-components)
+- [Installation](#installation)
+- [How to Use](#how-to-use)
+- [Author](#author)
 
 ## Project Goal
 The goal of this project is to build a high-quality travel guide application for a professional travel agency, offering users insights into destinations within Poland and its neighboring countries.
