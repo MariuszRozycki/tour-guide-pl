@@ -12,7 +12,7 @@ Live site [Tour Guide Live Site](https://main--tour-guide-tomek.netlify.app/)
 <br>
 
 ## Table of Contents
-- Overview
+- [Overview](#overview)
 - Deployment
 - Project Goal
 - Key Features
