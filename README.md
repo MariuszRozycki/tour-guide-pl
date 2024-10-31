@@ -93,7 +93,7 @@ Support for Inquiries: The contact form can be used for inquiries about availabi
 Mobile and Desktop Friendly: The application is optimized for mobile devices, allowing users to easily browse offers and utilize the full functionality of the app on their phones, tablets, or computers.
 5. Preview and Plan Your Travel
 Visual Inspiration: Each tour and destination features images that help users get a feel for the location before making a booking.
-Organized Planning: With the division into categories and the ability to add favorites, users can easily plan their trip with a clear view of available options.
+Organized Planning: With the division into categories, users can easily plan their trip with a clear view of available options.
 6. Check for Updates
 Updates and News: The application is regularly updated to provide the latest offers and information about available tours. Users are encouraged to visit the site frequently to stay informed about new opportunities.
 
