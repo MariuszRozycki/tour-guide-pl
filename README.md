@@ -12,19 +12,20 @@ Live site [Tour Guide Live Site](https://main--tour-guide-tomek.netlify.app/)
 <br>
 
 ## Table of Contents
+- Overview
+- Deployment
 - Project Goal
 - Key Features
 - Technology Stack
 - Pages and Components
 - Installation
 - How to Use
-- Deployment
-- Contact
+- Author
 
-## Goal
+## Project Goal
 The goal of this project is to build a high-quality travel guide application for a professional travel agency, offering users insights into destinations within Poland and its neighboring countries.
 
-## Features
+## Key Features
 - Interactive Homepage: The homepage greets users with a hero section that highlights popular destinations.
 - About Us Section: Provides background information about the travel agency.
 - Contact Form: Users can easily reach out through a contact form with built-in validation.
@@ -32,7 +33,7 @@ The goal of this project is to build a high-quality travel guide application for
 - Responsive Design: The application is optimized for both desktop and mobile devices.
 - Organized Codebase: Components are structured for clarity and ease of maintenance.
 
-## Technologies Used
+## Technology Stack
 
 - React: The core library for building the user interface.
 - TypeScript: Enhances code quality and reliability.
