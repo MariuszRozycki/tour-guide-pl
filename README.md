@@ -1,5 +1,17 @@
 # Tour Guide - Travel Guide Application
 
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+- [Deployment](#deployment)
+- [Project Goal](#project-goal)
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Pages and Components](#pages-and-components)
+- [Installation](#installation)
+- [How to Use](#how-to-use)
+- [Author](#author)
+
 ## Overview
 Tour Guide is a travel guide application designed for a Polish travel agency. This app showcases tours not only in Poland but also to neighboring countries, providing users with a comprehensive travel experience. The application is currently in development and includes features like an About Us section, a contact form, and an interactive homepage.
 
@@ -10,17 +22,6 @@ Live site [Tour Guide Live Site](https://main--tour-guide-tomek.netlify.app/)
 ![image](https://github.com/user-attachments/assets/5cdc8de8-7597-4d28-9388-8e231cd7ae7f)
 <br>
 <br>
-
-## Table of Contents
-- [Overview](#overview)
-- [Deployment](#deployment)
-- [Project Goal](#project-goal)
-- [Key Features](#key-features)
-- [Technology Stack](#technology-stack)
-- [Pages and Components](#pages-and-components)
-- [Installation](#installation)
-- [How to Use](#how-to-use)
-- [Author](#author)
 
 ## Project Goal
 The goal of this project is to build a high-quality travel guide application for a professional travel agency, offering users insights into destinations within Poland and its neighboring countries.
