@@ -12,6 +12,10 @@
     margin: 0;
   }
 
+  h2 {
+    font-weight: 700;
+  }
+
   h2,
   h3 {
     font-size: var(--h2-fs-offer);
