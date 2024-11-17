@@ -31,13 +31,18 @@
     }
   }
 
-  ul {
+  ul,
+  ol,
+  p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
-    margin: 0 18px 0 25px;
+    margin: 0 18px 0 5px;
     font-size: var(--paragraph-fs);
-    list-style: decimal;
+  }
+
+  .desc-title {
+    margin-bottom: 5px;
   }
 
   .offers-list-price-wrapper {
@@ -73,7 +78,9 @@
       grid-column: 1/2;
     }
 
-    ul {
+    ul,
+    ol,
+    p {
       row-gap: 0px;
     }
 

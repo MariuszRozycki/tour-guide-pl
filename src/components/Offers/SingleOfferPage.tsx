@@ -14,8 +14,10 @@ const SingleOfferPage = () => {
     return <p>Ładowanie danych oferty lub brak danych...</p>;
   }
 
+  const isOneDayTrip = offer.days.includes("1");
+
   return (
-    <div className="single-offer-page-details">
+    <div className='single-offer-page-details'>
       <h2>
         {offer.title}
         <br />
@@ -23,19 +25,30 @@ const SingleOfferPage = () => {
       </h2>
       {offer.titleSub && <h3>{offer.titleSub}</h3>}
 
-      <div className="offer-img-wrapper" onClick={openModal}>
+      <div className='offer-img-wrapper' onClick={openModal}>
         <img src={offer.imageMain} alt={offer.title} />
       </div>
+      {isOneDayTrip ? (
+        <ul>
+          {offer.descTitle && (
+            <li className='desc-title'>
+              <strong>{offer.descTitle}</strong>
+            </li>
+          )}
+          {offer.description && offer.description.map((desc, index) => <li key={index}>{desc}</li>)}
+        </ul>
+      ) : (
+        <ol>
+          {offer.description.map((desc, index) => (
+            <li key={index}>{desc}</li>
+          ))}
+        </ol>
+      )}
 
-      <ul>
-        {offer.description.map((desc, index) => (
-          <li key={index}>{desc}</li>
-        ))}
-      </ul>
-      <div className="offers-list-price-wrapper">
-        <p className="single-offer-price">Cena:</p>
-        {offer.price45people !== 0 && <p className="single-offer-price">{offer.price45people} PLN (45 osób)</p>}
-        {offer.price40people !== 0 && <p className="single-offer-price">{offer.price40people} PLN (40 osób)</p>}
+      <div className='offers-list-price-wrapper'>
+        <p className='single-offer-price'>Cena:</p>
+        {offer.price45people !== 0 && <p className='single-offer-price'>{offer.price45people} PLN (45 osób)</p>}
+        {offer.price40people !== 0 && <p className='single-offer-price'>{offer.price40people} PLN (40 osób)</p>}
       </div>
 
       <ImageModal isOpen={isModalOpen} onClose={closeModal} imageSrc={offer.imageMain} altText={offer.title} />

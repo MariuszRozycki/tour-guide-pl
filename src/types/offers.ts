@@ -3,6 +3,7 @@ export interface Offer {
   days: string;
   title: string;
   titleSub: string;
+  descTitle?: string;
   description: string[];
   imageMain: string;
   price45people: number;
