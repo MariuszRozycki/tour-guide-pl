@@ -16,6 +16,7 @@ import CrossBorder from "./components/Offers/CrossBorder";
 import ThreeDaysTrip from "./components/Offers/ThreeDaysTrip";
 import FourDaysTrip from "./components/Offers/FourDaysTrip";
 import FiveDaysTrip from "./components/Offers/FiveDaysTrip";
+import WeekendTrip from "./components/Offers/WeekendTrip";
 import KayakTrip from "./components/Offers/KayakTrip";
 import Footer from "./components/Footer/Footer";
 
@@ -30,21 +31,22 @@ const App = () => {
       <Nav />
       <PageNavigator />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/offers" element={<Offers />} />
-        <Route path="/offers/abroad" element={<AbroadTrip />} />
-        <Route path="/offers/domestic" element={<DomesticTrip />} />
-        <Route path="/offers/buss-trip" element={<BussTrip />} />
-        <Route path="/offers/plane" element={<PlaneTrip />} />
-        <Route path="/offers/kayak" element={<KayakTrip />} />
-        <Route path="/offers/one-day" element={<OneDayTrip />} />
-        <Route path="/offers/cross-border" element={<CrossBorder />} />
-        <Route path="/offers/three-days" element={<ThreeDaysTrip />} />
-        <Route path="/offers/four-days" element={<FourDaysTrip />} />
-        <Route path="/offers/five-days" element={<FiveDaysTrip />} />
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/offers/:category/:id" element={<SingleOfferPage />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/offers' element={<Offers />} />
+        <Route path='/offers/abroad' element={<AbroadTrip />} />
+        <Route path='/offers/domestic' element={<DomesticTrip />} />
+        <Route path='/offers/buss-trip' element={<BussTrip />} />
+        <Route path='/offers/plane' element={<PlaneTrip />} />
+        <Route path='/offers/kayak' element={<KayakTrip />} />
+        <Route path='/offers/one-day' element={<OneDayTrip />} />
+        <Route path='/offers/cross-border' element={<CrossBorder />} />
+        <Route path='/offers/three-days' element={<ThreeDaysTrip />} />
+        <Route path='/offers/four-days' element={<FourDaysTrip />} />
+        <Route path='/offers/five-days' element={<FiveDaysTrip />} />
+        <Route path='/offers/weekend' element={<WeekendTrip />} />
+        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/offers/:category/:id' element={<SingleOfferPage />} />
       </Routes>
       <Footer />
       <BtnScrollToTop />

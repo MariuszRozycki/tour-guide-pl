@@ -14,7 +14,7 @@ const SingleOfferPage = () => {
     return <p>Ładowanie danych oferty lub brak danych...</p>;
   }
 
-  const isOneDayTrip = offer.days.includes("1");
+  const isTripType = offer.days.includes("1") || offer.days.includes("weekend");
 
   return (
     <div className='single-offer-page-details'>
@@ -28,7 +28,7 @@ const SingleOfferPage = () => {
       <div className='offer-img-wrapper' onClick={openModal}>
         <img src={offer.imageMain} alt={offer.title} />
       </div>
-      {isOneDayTrip ? (
+      {isTripType ? (
         <ul>
           {offer.descTitle && (
             <li className='desc-title'>

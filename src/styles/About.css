@@ -8,7 +8,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     row-gap: 10px;
-    background: linear-gradient(var(--color-octonary), var(--color-denary), var(--color-octonary));
   }
 
   .content-wrapper {
@@ -53,8 +52,6 @@
   .about {
     .about-wrapper {
       grid-template-rows: repeat(4, auto);
-      border-radius: var(--border-radius-medium);
-      box-shadow: var(--box-shadow-light);
     }
 
     .content-wrapper {
