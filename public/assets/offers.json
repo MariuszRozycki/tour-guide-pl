@@ -10,7 +10,7 @@
       "Spacer na Rachowiec",
       "Browar w Żywcu lub SFA w Bielsku-Białej"
     ],
-    "imageMain": "/pictures/beskidy-zachodnie.jpg",
+    "imageMain": "/pictures/cross-border/beskidy-zachodnie.jpg",
     "price45people": 560,
     "price40people": 585,
     "typeOfTrip": "buss-trip",
@@ -28,7 +28,7 @@
       "Polańczyk Zdrój, rejs statkiem po Jez. Solińskim, korona zapory",
       "Sandomierz: zamek, rynek, wąwóz, Brama Opatowska, zbrojownia"
     ],
-    "imageMain": "/pictures/pexels-marek-piwnicki-3907296-15499463.jpg",
+    "imageMain": "/pictures/domestic/bieszczady01.jpg",
     "price45people": 560,
     "price40people": 610,
     "typeOfTrip": "buss-trip",
@@ -47,7 +47,7 @@
       "Park miniatur w Kowarach, zamek Książ lub: Sokoliki, zamek Bolków i Świny"
     ],
 
-    "imageMain": "/pictures/pexels-marcin-jozwiak-199600-3193686.jpg",
+    "imageMain": "/pictures/domestic/karkonosze01.jpg",
     "price45people": 560,
     "price40people": 610,
     "typeOfTrip": "buss-trip",
@@ -65,7 +65,7 @@
       "Twierdza w Srebrnej Górze lub Kłodzku, papiernia w Dusznikach",
       "Kopalnia Złota w Złotym Stoku lub: zamek Książ, Świdnica - kościół Pokoju"
     ],
-    "imageMain": "/pictures/castle-6789725_1280.jpg",
+    "imageMain": "/pictures/domestic/kotlina-klodzka-castle01.jpg",
     "price45people": 560,
     "price40people": 620,
     "typeOfTrip": "buss-trip",
@@ -83,7 +83,7 @@
       "Woliński PN: zagroda żubrów, klif Gosań, latarnia Kikut i Niechorze, Międzyzdroje, park miniatur latarni morskich",
       "Muzeum Mydła i Brudu - Bydgoszcz"
     ],
-    "imageMain": "/pictures/lighthouse-1632134_1280.jpg",
+    "imageMain": "/pictures/domestic/lighthouse01.jpg",
     "price45people": 600,
     "price40people": 670,
     "typeOfTrip": "buss-trip",
@@ -101,7 +101,7 @@
       "Zamki w Ogrodzieńcu, Olsztynie, Bobolicach i Mirowie",
       "Kraków"
     ],
-    "imageMain": "/pictures/krakow-2893783_1280.jpg",
+    "imageMain": "/pictures/domestic/krakow01.jpg",
     "price45people": 580,
     "price40people": 630,
     "typeOfTrip": "buss-trip",
@@ -119,7 +119,7 @@
       "Spacer w Tatrach (j.w.) lub aquapark",
       "Ojcowski PN: Jaskinia Łokietka, zamek na Pieskowej Skale i w Ojcowie, lub Kopalnia Soli w Wieliczce"
     ],
-    "imageMain": "/pictures/polana-kalatowki-7958161_1280.jpg",
+    "imageMain": "/pictures/domestic/polana-kalatowki.jpg",
     "price45people": 580,
     "price40people": 630,
     "typeOfTrip": "buss-trip",
@@ -137,7 +137,7 @@
       "Orava: Aquapark w Oravicach, zamek Orawski, skansen w Zubercu",
       "Ojcowski PN: Jaskinia Łokietka, zamek na Pieskowej Skale i w Ojcowie"
     ],
-    "imageMain": "/pictures/orava-castle-4930173_1280.jpg",
+    "imageMain": "/pictures/cross-border/slov-orava-castle01.jpg",
     "price45people": 580,
     "price40people": 630,
     "typeOfTrip": "buss-trip",
@@ -155,7 +155,7 @@
       "Wiadukty w Kruklankach, Bunkry Himmlera w Pozezdrzu, pałac w Sztynorcie, śluzy na Kanale Mazurskim",
       "Zamek w Rynie"
     ],
-    "imageMain": "/pictures/reszel-4505501_1280.jpg",
+    "imageMain": "/pictures/domestic/reszel.jpg",
     "price45people": 550,
     "price40people": 590,
     "typeOfTrip": "buss-trip",
@@ -173,7 +173,7 @@
       "Druskienniki i Grutas (Muzeum Komunizmu)",
       "'Litewski' Puńsk i Sejny, Sanktuarium w Studzienicznej, śluzy na Kanale Augustowskim"
     ],
-    "imageMain": "/pictures/lithuania-966145_1280.jpg",
+    "imageMain": "/pictures/cross-border/lithuania01.jpg",
     "price45people": 590,
     "price40people": 640,
     "typeOfTrip": "buss-trip",
@@ -191,7 +191,7 @@
       "Latarnia morska w Krynicy, rejs statkiem. Muzeum Zalewu",
       "Zamek w Malborku lub: Frombork (Wzgórze Zamkowe z planetarium, katedra, dzwonnica, lub: skansen i Huta Szkła Artystycznego w Olsztynku"
     ],
-    "imageMain": "/pictures/mierzeja_wislana.jpg",
+    "imageMain": "/pictures/domestic/mierzeja_wislana01.jpg",
     "price45people": 550,
     "price40people": 579,
     "typeOfTrip": "buss-trip",
@@ -209,7 +209,7 @@
       "Kopalnia węgla kamiennego w Nowej Rudzie, sztolnie Walim lub Osówka, zamek Grodno lub: Szczeliniec, Kaplica Czaszek, Wambierzyce",
       "Kopalnia węgla"
     ],
-    "imageMain": "/pictures/praha-7015699_1280.jpg",
+    "imageMain": "/pictures/cross-border/praha01.jpg",
     "price45people": 620,
     "price40people": 660,
     "typeOfTrip": "buss-trip",
@@ -227,7 +227,7 @@
       "Muzeum Ikon, Silvarium, Kultura Tatarska - zwiedzanie Minaretu i Mizaru",
       "Białowieża: Muzeum BPN, Dęby Królewskie, Miejsce Mocy, rezerwat pokazowy żubrów"
     ],
-    "imageMain": "/pictures/podlasie-view.jpg",
+    "imageMain": "/dist/pictures/podlasie/podlasie01.jpg",
     "price45people": 555,
     "price40people": 585,
     "typeOfTrip": "buss-trip",
@@ -245,7 +245,7 @@
       "Półwysep Helski: Fokarium, bunkry, muzeum rybołówstwa, Jastarnia, Chałupy",
       "Drezyny w Kolbudach"
     ],
-    "imageMain": "/pictures/torun-419209_1280.jpg",
+    "imageMain": "/pictures/domestic/torun02.jpg",
     "price45people": 580,
     "price40people": 620,
     "typeOfTrip": "buss-trip",
@@ -262,7 +262,7 @@
       "Warowny koscioł w Brochowie i dwor w Tułowicach, powrot"
     ],
     "additionallyDesc": "W cenie brak kosztow dodatkowych i dojazdu!",
-    "imageMain": "/pictures/kampinos.jpg",
+    "imageMain": "/pictures/kampinos/kampinos.jpg",
     "price45people": 250,
     "price40people": 0,
     "typeOfTrip": "buss-trip",
@@ -278,7 +278,7 @@
       "Tykocin, m.in.: Dom Talmudyczny, Wielka Synagoga, zamek, Pętowo - wioska bociania, bunkier kpt. W. Raginisa k. Wizny, Biebrzański PN - zajęcia edukacyjne, twierdza Osowiec",
       "Muzeum Ikon w Supraślu, Silvarium, Kruszyniany - zwiedzanie Minaretu i Mizaru"
     ],
-    "imageMain": "/pictures/podlasie-window-2461303_1280.jpg",
+    "imageMain": "/pictures/podlasie/podlasie02.jpg",
     "price45people": 350,
     "price40people": 385,
     "typeOfTrip": "buss-trip",
@@ -294,7 +294,7 @@
       "Rezerwaty: szumy na Tanwii, Czartowe Pole, skansen w Guciowie, Zwierzyniec, Górecka Kościelne",
       "Stare Miasto w Zamościu, Kozłówka: zamek Zamoyskich"
     ],
-    "imageMain": "/pictures/szumy-na tanwii.jpg",
+    "imageMain": "/pictures/domestic/roztocze-tanwia.jpg",
     "price45people": 330,
     "price40people": 365,
     "typeOfTrip": "buss-trip",
@@ -311,7 +311,7 @@
       "Inowłódz: romański kościół św. Idziego, Zamek Królewski lub Rogów: przejazd kolejką wąskotorową, muzeum kolei"
     ],
     "additionallyDesc": "Proponujemy rozważyć kilkugodzinny spływ kajakowy Pilicą na odcinku Tomaszów - Inowłódz",
-    "imageMain": "/pictures/spala.jpg",
+    "imageMain": "/pictures/domestic/spala.jpg",
     "price45people": 335,
     "price40people": 370,
     "typeOfTrip": "buss-trip",
@@ -327,7 +327,7 @@
       "Biskupin: rez. archeologiczny, przejazd kolejką wąskotorową, muzeum kolei wąskotorowej, Gniezno: katedra oraz Muzeum Powstania Państwa Polskiego, Ostrów Lednicki - Muzeum Pierwszych Piastów",
       "Powidz - zwiedzanie lotniska NATO lub Bazylika w Licheniu"
     ],
-    "imageMain": "/pictures/piastowie.jpg",
+    "imageMain": "/pictures/domestic/piastowie.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -343,7 +343,7 @@
       "Hydropolis, Panorama Racławicka, stadion miejski",
       "Stare Miasto, Ostrów Tumski z przewodnikiem"
     ],
-    "imageMain": "/pictures/wroclaw-old-town.jpg",
+    "imageMain": "/pictures/domestic/wroclaw-old-town.jpg",
     "price45people": 410,
     "price40people": 450,
     "typeOfTrip": "buss-trip",
@@ -359,7 +359,7 @@
       "Białowieża: rez. pokazowy żubrów, Muzeum BPN, cerkiew, Dęby Królewskie, Ośrodek Edukacji Leśnej Jagiellońskie, Stara Białowieża",
       "Rez. ścisły BPN z przewodnikiem, Miejsce Mocy, skansen, Hajnówka"
     ],
-    "imageMain": "/pictures/bialowieza.jpg",
+    "imageMain": "/pictures/domestic/bialowieza.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -375,7 +375,7 @@
       "Kraków i Ojcowski PN (w tym Jaskinia Łokietka, zamek na Pieskowej Skale i Ojcowie)",
       "Zamek w Ogrodzieńcu, spacer Doliną Wiercicy (skałki, zamki, groty)"
     ],
-    "imageMain": "/pictures/ojcow.jpg",
+    "imageMain": "/pictures/domestic/ojcow.jpg",
     "price45people": 350,
     "price40people": 385,
     "typeOfTrip": "buss-trip",
@@ -391,7 +391,7 @@
       "Toruń: Stare Miasto, Planetarium, Muzeum Piernika i Kopernika, Zamek Krzyżacki, Obserwatorium Astronomiczne w Piwnicach",
       "Muzeum Mydła i Brudu w Bydgoszczy, Ciechocinek - kurort i tężnie, spacer po starym Płocku"
     ],
-    "imageMain": "/pictures/torun.jpg",
+    "imageMain": "/pictures/domestic/torun03.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -407,7 +407,7 @@
       "Janowiec- skansen i Zamek Firlejów, Sandomierz: Brama Opatowska, Rynek, wąwóz, zbrojownia, podziemia, kościół św. Jakuba",
       "Kazimierz Dolny: rynek, góra Trzech Krzyży, zamek i baszta, Spichlerze, Puławy- Pałac i park, Muzeum nietypowych rowerów w Gołębiu"
     ],
-    "imageMain": "/pictures/lublin.jpg",
+    "imageMain": "/pictures/domestic/lublin.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -423,7 +423,7 @@
       "Rez. kormoranów, KL Stuthoff, prelekcja o bursztynie lub Trójmiasto: plan do uzgodnienia lub latarnia morska, rejs statkiem, Muzeum Zalewu",
       "Zamek w Malborku lub Frombork: katedra, dzwonnica lub: skansen i Huta Szkła Artystycznego w Olsztynku"
     ],
-    "imageMain": "/pictures/mierzeja_wislana.jpg",
+    "imageMain": "/pictures/domestic/mierzeja-wislana02.jpg",
     "price45people": 360,
     "price40people": 400,
     "typeOfTrip": "buss-trip",
@@ -439,7 +439,7 @@
       "Kolej wąskotorowa, klasztor Kamedułów nad Wigrami, rez. Głazowisko Bachanowo, jez. Hańcza, wiadukty w Stańczykach, 'trójstyk' granic, Góra Cisowa i Zamkowa, molenna w Wodzilkach",
       "'Litewski' Puńsk i Sejny, Sanktuarium w Studzienicznej, śluzy na Kanale Augustowskim"
     ],
-    "imageMain": "/pictures/polskie-termopile.jpg",
+    "imageMain": "/pictures/domestic/suwalszczyzna-polskie-termopile.jpg",
     "price45people": 380,
     "price40people": 430,
     "typeOfTrip": "buss-trip",
@@ -447,10 +447,15 @@
     "destinationType": "domestic"
   },
   {
-    "title": "WKRA",
+    "title": "SPŁYWY KAJAKOWE - WKRA",
     "days": "1 dzień",
-    "description": ["Spływ kajakowy lub rejs pontonowy"],
-    "imageMain": "/pictures/splyw-wkra.jpg",
+    "descTitle": "Na Mazowszu mamy kilka rzek idealnych na przygodę w kajaku.",
+    "description": [
+      "Idealna wydaje się być Wkra bo blisko, bezpiecznie, spokojnie a dojechać można pociągiem do Pomiechówka.",
+      "Poza tym polecam Bzurę i Pilicę albo Liwiec. Bug i Wisła może przerażać majestatem…",
+      "Zawsze podczas spływu towarzyszy nam kilku ratowników/ instruktorów a odpocząć możemy przy ognisku z kiełbaskami"
+    ],
+    "imageMain": "/pictures/kayak/splyw-wkra.jpg",
     "price45people": 120,
     "price40people": 0,
     "typeOfTrip": "kayak",
@@ -458,10 +463,15 @@
     "destinationType": "domestic"
   },
   {
-    "title": "PILICA",
+    "title": "SPŁYWY KAJAKOWE - PILICA",
     "days": "1 dzień",
-    "description": ["Spływ kajakowy lub rejs pontonowy"],
-    "imageMain": "/pictures/splyw-pilica.jpg",
+    "descTitle": "Na Mazowszu mamy kilka rzek idealnych na przygodę w kajaku.",
+    "description": [
+      "Idealna wydaje się być Wkra bo blisko, bezpiecznie, spokojnie a dojechać można pociągiem do Pomiechówka.",
+      "Poza tym polecam Bzurę i Pilicę albo Liwiec. Bug i Wisła może przerażać majestatem…",
+      "Zawsze podczas spływu towarzyszy nam kilku ratowników/ instruktorów a odpocząć możemy przy ognisku z kiełbaskami"
+    ],
+    "imageMain": "/pictures/kayak/splyw-pilica.jpg",
     "price45people": 120,
     "price40people": 0,
     "typeOfTrip": "kayak",
@@ -469,10 +479,15 @@
     "destinationType": "domestic"
   },
   {
-    "title": "BZURA",
+    "title": "SPŁYWY KAJAKOWE - BZURA",
     "days": "1 dzień",
-    "description": ["Spływ kajakowy lub rejs pontonowy"],
-    "imageMain": "/pictures/splyw-bzura.jpg",
+    "descTitle": "Na Mazowszu mamy kilka rzek idealnych na przygodę w kajaku.",
+    "description": [
+      "Idealna wydaje się być Wkra bo blisko, bezpiecznie, spokojnie a dojechać można pociągiem do Pomiechówka.",
+      "Poza tym polecam Bzurę i Pilicę albo Liwiec. Bug i Wisła może przerażać majestatem…",
+      "Zawsze podczas spływu towarzyszy nam kilku ratowników/ instruktorów a odpocząć możemy przy ognisku z kiełbaskami"
+    ],
+    "imageMain": "/pictures/kayak/splyw-bzura.jpg",
     "price45people": 120,
     "price40people": 0,
     "typeOfTrip": "kayak",
@@ -480,10 +495,18 @@
     "destinationType": "domestic"
   },
   {
-    "title": "SPAŁA, KONEWKA, INOWŁÓDZ, TOMASZÓW",
+    "title": "SPAŁA I OKOLICE",
     "days": "1 dzień",
-    "description": ["Wymyślić krótki opis"],
-    "imageMain": "/pictures/spala-konewka-inowlodz-tomaszow.jpg",
+    "descTitle": "Spała to kameralne miasteczko w środku lasu nad Pilicą, której walory docenili carowie Rosyjscy i potem polscy prezydenci.",
+    "description": [
+      "Warto zajrzeć do drewnianego kościółka (inspirowanego zakopiańskim), COSu, zobaczyć pomnik Żubra, sosny na szczudłach, ławeczkę Mościckiego.",
+      "Nieopodal w Konewce zwiedzimy bunkier kolejowy z czasów II wojny światowej.",
+      "W Tomaszowie Maz. warto pospacerować po rez „niebieskie źródła” i zwiedzić Skansen rzeki Pilicy oraz pstryknąć fotkę z zalewem sulejowskim.",
+      "W nadpilickim Inowłodzu koniecznie dotknąć romańskich murów kolegiaty i zamku kazimierzowskiego.",
+      "Po zwiedzaniu polecamy pizzę w kultowej pizzerii olimpijskiej (dziś zabujana).",
+      "Problem w tym, że wszystkiego nie da się zobaczyć w jeden dzień - trzeba wybierać albo przyjechać na dłużej."
+    ],
+    "imageMain": "/pictures/spala/spala01.jpg",
     "price45people": 95,
     "price40people": 0,
     "typeOfTrip": "buss-trip",
@@ -502,10 +525,45 @@
     "destinationType": "domestic"
   },
   {
+    "title": "WARSZAWA",
+    "days": "1 dzień",
+    "descTitle": "Naturalnie ta propozycja nie jest skierowana dla Warszawiaków... jeżeli jednak, jesteś z Warszawy i chcesz lepiej poznać swoje miasto, to również zapraszam, zorganizuję dla Ciebie \"city tour\" po Twoim mieście.",
+    "description": [
+      "Warto dojechać koleją i poruszać się komunikacją i metrem.",
+      "A zobaczyć jest co: spacer po Starówce z przewodnikiem, PKiN- taras widokowy, stadion, Łazienki, Muzea."
+    ],
+    "imageMain": "/pictures/warszawa/warszawa01.jpg",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
     "title": "TORUŃ",
     "days": "1 dzień",
-    "description": ["Wymyślić krótki opis"],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "descTitle": "To miasto broni się pod każdym względem: dobry dojazd niemal z każdej strony, ogrom zabytków, ciekawa oferta edukacyjna i prestiż UNESCO",
+    "description": [
+      "Gotyk na dotyk… Dom Kopernika, Krzywa wieża, rynek z ratuszem, pozostałości zamku krzyżackiego, mury miejskie, kameralne uliczki- oczywiście z przewodnikiem. A poza tym: Planetarium, Muzeum Piernika a może Młyn Wiedzy lub rejs po Wiśle?"
+    ],
+    "imageMain": "/pictures/torun/torun01.jpg",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "title": "LUBLIN",
+    "days": "1 dzień",
+    "descTitle": "Miasto niedoceniane…niestety. Dojazd bardzo dobry, Stare Miasto z klimatem, nawiązania historyczne do Litwy i Wilna, Majdanek, cebularz.",
+    "description": [
+      "Na pewno szwendanie się po wąskich uliczkach Starego Miasta z przewodnikiem to tzw. \"must have\".",
+      "Zerknąć na dziedziniec zamkowy, zobaczyć panoramę miasta z baszty też warto.",
+      "Pomachać Wilniakom przez „portal”- tylko w Lublinie!",
+      "Lubisz kulinaria? To koniecznie Muzeum Cebularza- upieczesz własny placek. Majdanek jednak dla nie dla wszystkich…"
+    ],
+    "imageMain": "/pictures/lublin/lublin01.jpg",
     "price45people": 89,
     "price40people": 0,
     "typeOfTrip": "buss-trip",
@@ -535,10 +593,17 @@
     "destinationType": "domestic"
   },
   {
-    "title": "KAZIMIERZ DOLNY, JANOWIEC, GOŁĄB",
+    "title": "KAZIMIERSKI PRZEŁOM WISŁY",
     "days": "1 dzień",
-    "description": ["Wymyślić krótki opis"],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "descTitle": "Wycieczka polecana szczególnie zamieszkałym w południowej części woj. mazowieckiego. Będzie taniej i sensowniej. Trudno zobaczyć wszystko w ciągu kilku godzin więc trzeba wybierać…a może pojechać na dwa lub 3 dni?",
+    "description": [
+      "KAZIMIERZ DOLNY - perełka wśród nadwiślańskich miasteczek. Trzeba koniecznie wejść na Górę Trzech Krzyży, zamek i basztę-widok na przełom Wisły fantastyczny- pospacerować brukowanymi uliczkami i nadrzecznymi bulwarami. A gdyby komuś było mało niech rozważy wizytę w wąwozie (jednym z wielu) i żydowskim cmentarzu.",
+      "NAŁĘCZÓW - jedyne uzdrowisko w kraju specjalizujące się w chorobach złamanych serc… Cisza, spokój, świeże powietrze i zdrowe wody do picia.",
+      "GOŁĄB - domek loretański z XVII w ale przede wszystkim Muzeum Nietypowych Rowerów. Każdy ma dziś rower ale na pewno inny!",
+      "DĘBLIN - Muzeum Sił Powietrznych czyli tak zwane must have",
+      "JANOWIEC - zamek Firlejów i kameralny skansen"
+    ],
+    "imageMain": "/dist/pictures/kazimierz-dolny/kazimierz-dolny01.jpg",
     "price45people": 99,
     "price40people": 0,
     "typeOfTrip": "buss-trip",
@@ -613,8 +678,13 @@
   {
     "title": "ŁÓDŹ",
     "days": "1 dzień",
-    "description": ["Wymyślić krótki opis"],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "descTitle": "Jeszcze niedawno drugie największe miasto w Polsce. Miasto nieobojętne nikomu więc trzeba zobaczyć. Dojazd rewelacyjny z każdej strony.",
+    "description": [
+      "ZOO- Orientarium obok wrocławskiego Afrykarium najciekawsze pawilony w polskich ogrodach zoologicznych.",
+      "Spacer po ul. Piotrkowskiej, Księżym Młynie z przewodnikiem a dla chętnych Muzeum Kinematografii lub Pałac Izraela Poznańskiego.",
+      "Posiłek w Manufakturze"
+    ],
+    "imageMain": "/pictures/lodz/lodz01.jpg",
     "price45people": 89,
     "price40people": 0,
     "typeOfTrip": "buss-trip",
@@ -624,8 +694,15 @@
   {
     "title": "PUSZCZA KAMPINOSKA",
     "days": "1 dzień",
-    "description": ["Wymyślić krótki opis"],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "descTitle": "Co z tego, że blisko skoro nieznana? A ciekawych zakątków tu sporo.",
+    "description": [
+      "PALMIRY- Miejsce Pamięci Palmiry i cmentarz pomordowanej inteligencji warszawskiej",
+      "FORTY MODLIŃSKIE w Dębinie lub Cebulicach- fortyfikacje będące satelitami twierdzy Modlin, jedne z wielu a nieźle zachowane",
+      "CMENTARZ MENNONICKI w Sadach lub Śladowie",
+      "LOTNISKO Modlin- niby nic ale radzi sobie lepiej od większego i droższego Warszawa Radom",
+      "No i tradycyjnie spacer po puszczy, choćby krótki…może łosie się pokażą?"
+    ],
+    "imageMain": "/pictures/kampinos/kampinos.jpg",
     "price45people": 69,
     "price40people": 0,
     "typeOfTrip": "buss-trip",
@@ -646,8 +723,49 @@
   {
     "title": "CIECHANÓW, GOŁOTCZYZNA, OPINOGÓRA",
     "days": "1 dzień",
-    "description": ["Wymyślić krótki opis"],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "descTitle": "Niedoceniany region a ma sporo do zaoferowania…W końcu Doda się tu wychowała.",
+    "description": [
+      "A tak na poważnie, idealny kierunek dla licealistów- na maturze może się przydać!",
+      "CIECHANÓW- zamek książąt mazowieckich z XIV w.",
+      "GOŁOTCZYZNA- Muzeum Szlachty Mazowieckiej",
+      "OPINOGÓRA- Muzeum Romantyzmu"
+    ],
+    "imageMain": "/pictures/ciechanow/ciechanow01.jpg",
+    "price45people": 99,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "title": "PODLASIE",
+    "days": "1 dzień",
+    "descTitle": "Wycieczka idealna w formie 3 dniówki ale w wersji okrojonej też się da bo dojazd niezły.",
+    "description": [
+      "TYKOCIN- kameralne miasteczko nad Narwią z ciekawą zabudową, wieloma zabytkami (Alumnat, synagoga i kirkut, odbudowany zamek, plac Czarnieckiego, kilka pomników) zwiedzimy z przewodnikiem.",
+      "PENTOWO- miejsce magiczne nie tylko dlatego, że jest letnią rezydencją dla kilkudziesięciu bocianich rodzin",
+      "STRĘKOWA GÓRA- bunkier obronny nad rozlewiskami Narwi, wrzesień ‘39",
+      "CARSKA DROGA- kultowa droga bita przez mokradła i lasy Biebrzańskiego PN. Kilka wież widokowych i kładek spacerowych.",
+      "Możliwość lekcji edukacyjnej z pracownikiem parku albo",
+      "SUPRAŚL- perełka w środku Puszczy Knyszyńskiej ma do zaoferowania kresową architekturę, cerkiew bizantyjską i muzeum ikon.",
+      "Trudno zobaczyć wszystko w mniej niż 2 godziny…"
+    ],
+    "imageMain": "/pictures/podlasie/podlasie01.jpg",
+    "price45people": 99,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "one-day",
+    "destinationType": "domestic"
+  },
+  {
+    "title": "PLAŻA I NIE TYLKO",
+    "days": "1 dzień",
+    "descTitle": "Drogi mamy coraz lepsze więc może jednodniowy wypad na plażę? Z północnej części Warszawy i Mazowsza to tylko 330 km czyli 4.5 godziny jazdy. Dwóch kierowców i damy radę.",
+    "description": [
+      "MIERZEJA- na pewno trzeba pobyczyć się na plaży- po to przyjechaliśmy.",
+      "Dla chętnych Muzeum Zalewu Wiślanego, OK. Stuthoff, latarnia morska w Krynicy Morskiej, przekop na mierzei"
+    ],
+    "imageMain": "/pictures/beach/beach01.jpg",
     "price45people": 99,
     "price40people": 0,
     "typeOfTrip": "buss-trip",
@@ -679,8 +797,11 @@
   {
     "title": "PŁOCK",
     "days": "1 dzień",
-    "description": ["Wymyślić krótki opis"],
-    "imageMain": "/pictures/tomek-sea.webp",
+    "descTitle": "Mało kto wie ale kiedyś stolica… a w katedrze spoczywają szczątki dwóch królów. Dziś wszyscy kojarzą miasto tylko z rafinerią.",
+    "description": [
+      "ZOO- kameralny ogród zoologiczny położony na skarpie wiślanej (szczególnie polecany młodszym) albo Muzeum Secesji (przyda się do matury więc idealne dla starszych). Oczywiście spacer po starej części miasta: katedra, widok na Wisłę, Liceum Małachowskiego, rynek. W drodze powrotnej warto zahaczyć o jeden z wielu cmentarzy mennonickich (świadectwo wielokulturowości przedwojennej Polski) albo zatrzymać się w Czerwińsku (opactwo romańskie)"
+    ],
+    "imageMain": "/pictures/plock/plock01.jpg",
     "price45people": 89,
     "price40people": 0,
     "typeOfTrip": "buss-trip",
@@ -708,7 +829,7 @@
       "Poczdam: Sanssouci (pałac i park) lub Babelsberg (studio filmowe) lub Berlin: Muzeum Pergameńskie, Checkpoint Charlie, Muzeum Muru Berlińskiego, Charlottenburg",
       "Tropi cal Island, powrót do Polski"
     ],
-    "imageMain": "/pictures/berlin-1897125_1280.jpg",
+    "imageMain": "/pictures/abroad/berlin01.jpg",
     "price45people": 740,
     "price40people": 790,
     "typeOfTrip": "buss-trip",
@@ -725,7 +846,7 @@
       "Drezno i Pirna",
       "Zamek w Stolpen"
     ],
-    "imageMain": "/pictures/hrensko-55969_1280.jpg",
+    "imageMain": "/pictures/abroad/czech01.jpg",
     "price45people": 775,
     "price40people": 799,
     "typeOfTrip": "buss-trip",
@@ -743,7 +864,7 @@
       "Tallin: Stare Miasto",
       "Powrót do Polski"
     ],
-    "imageMain": "/pictures/latvia-3725546_1280.jpg",
+    "imageMain": "/pictures/abroad/latvia01.jpg",
     "price45people": 899,
     "price40people": 999,
     "typeOfTrip": "buss-trip",
@@ -760,7 +881,7 @@
       "Karlskrona: Muzeum Marynarki Wojennej, rejs na wyspę Aspoo, zakupy, rejs do Gdyni",
       "Powrót przez Malbork lub Toruń"
     ],
-    "imageMain": "/pictures/sweden-1322238_1280.jpg",
+    "imageMain": "/pictures/abroad/sweden01.jpg",
     "price45people": 999,
     "price40people": 1100,
     "typeOfTrip": "buss-trip",
@@ -778,7 +899,7 @@
       "Jaskinia Słobody lub Lodowa, Vrbickie Jezioro, Tatralandia lub baseny w Beszeniowej",
       "Zamek Orawski lub wieś Vlkolinec"
     ],
-    "imageMain": "/pictures/liptowski-mikulasz.jpg",
+    "imageMain": "/pictures/abroad/slov-orava-castle01.jpg",
     "price45people": 700,
     "price40people": 750,
     "typeOfTrip": "buss-trip",
@@ -796,7 +917,7 @@
       "Wiedeń: plan do uzgodnienia (architektura, Mozart, Habsburgowie itd.)",
       "Powrót przez Zwardoń"
     ],
-    "imageMain": "/pictures/budapest.jpg",
+    "imageMain": "/pictures/abroad/budapest01.jpg",
     "price45people": 790,
     "price40people": 850,
     "typeOfTrip": "buss-trip",
@@ -812,11 +933,107 @@
       "Wilno (plan do uzgodnienia)",
       "Troki: zamek i ulica Karaimów"
     ],
-    "imageMain": "/pictures/vilnius-4229320_1280.jpg",
+    "imageMain": "/pictures/abroad/vilnius01.jpg",
     "price45people": 499,
     "price40people": 550,
     "typeOfTrip": "buss-trip",
     "lengthOfTrip": "three-days",
     "destinationType": "abroad"
+  },
+  {
+    "title": "MIERZEJA WIŚLANA",
+    "days": "weekend",
+    "descTitle": "Doskonały kierunek! Dojazd coraz lepszy, plaże piękne nie tylko latem a i zwiedzić jest co.",
+    "description": [
+      "Wyjazd to zwykle popołudniowe godziny piątkowe, przejazd bezpośrednio do hotelu, zakwaterowanie, wieczorny obiad i tzw. zajęcia w podgrupach.",
+      "Sobotnie śniadanie normalnie o 7.30, wyjazd do Trójmiasta godzinę poźniej. Tam zwiedzanie z przewodnikiem gdańskiego Głównego Miasta, Sopotu i ewentualnie Gdyni.",
+      "Powrót wieczorem i biesiada (może być z tańcami i muzyką).",
+      "W niedzielę poźniejsze śniadanie i zwiedzanie mierzei, do wyboru: Krynica Morska (latarnia), przekop mierzei, Kąty Rybackie (rez. kormoranów), KL Stuthoff.",
+      "Wyjazd po obiedzie, powrót wieczorem."
+    ],
+    "imageMain": "/dist/pictures/vistula-split/vistula-spit01.jpg",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "weekend",
+    "destinationType": "domestic"
+  },
+  {
+    "title": "LUBLIN",
+    "days": "weekend",
+    "descTitle": "Miasto zdecydowanie warte odwiedzenia, dojazd świetny.",
+    "description": [
+      "Piątek to w zasadzie tylko przejazd i zakwaterowanie w hotelu, obiad i czas wolny.",
+      "Następnego dnia przejazd do Lublina i zwiedzanie miasta z przewodnikiem (3 godziny powinno wystarczyć chyba, że zdecydujecie się na Majdanek wtedy nieco dłużej) i czas wolny dla siebie.",
+      "Powrót do hotelu, biesiada (może być z kapelą, DJem lub bez).",
+      "W niedzielę późniejszy wyjazd do Nałęczowa i Kazimierza Dolnego (niby każdy zna ale zawsze warto wrócić i cieszyć się urokiem klimatycznego miasteczka).",
+      "Powrót wieczorem."
+    ],
+    "imageMain": "/pictures/lublin/lublin02.jpg",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "weekend",
+    "destinationType": "domestic"
+  },
+  {
+    "title": "PODLASIE",
+    "days": "weekend",
+    "descTitle": "Dla koneserów ciszy i spokoju…dojazd świetny, ludzie mili. Tu jako bazę preferuję Tykocin lub Supraśl, czasem Białystok. W okolicy dwa parki narodowe i jeden krajobrazowy.",
+    "description": [
+      "Wyjazd tradycyjnie w piątek po południu, przejazd do hotelu, zakwaterowanie, posiłek i relaks.",
+      "W sobotę po śniadaniu spacer po Tykocinie z przewodnikiem (rynek, synagoga, zamek), wizyta w Wiosce Bocianiej (Pentowo), Strękowa Góra (bunkier Raginisa) i przejazd przez Biebrzański PN.",
+      "Powrót wczesnym wieczorem, relaks i biesiada (do wyboru: grillowi, w Sali, z muzyką lub bez).",
+      "W niedzielę śniadanie, wykwaterowanie i wyjazd do Supraśla (cerkiew bizantyjska lub/ i Muzeum Ikon),",
+      "Kruszynian (Tatarzy podlascy: meczet i mizar z Dżamilem). Powrót do domu w godzinach wieczornych."
+    ],
+    "imageMain": "/pictures/podlasie/podlasie02.jpg",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "weekend",
+    "destinationType": "domestic"
+  },
+  {
+    "title": "TATRY",
+    "days": "weekend",
+    "descTitle": "Kultowe Podhale…zawsze przyciąga zwłaszcza, że 400 km da się pokonać już w stosunkowo krótkim czasie. Opcji tej wycieczki jest bardzo dużo bo region ma naprawdę dużo do zaoferowania: góry, termy, przełom Dunajca itd .",
+    "description": [
+      "Wersja wiele razy sprawdzona poniżej:",
+      "Wyjazd po południu z Mazowsza, przejazd pod Tatry, zakwaterowanie, posiłek i zasłużony odpoczynek.",
+      "Sobotę widzę tak: po śniadaniu wyjazd do Zakopanego i zwiedzanie z pilotem lub przewodnikiem: wjazd lub wejście na Gubałówkę, omówienie panoramy Tatr, wizyta na cmentarzu na Pękowym Brzyzku, starym kościółku, Krupówki (sugeruję czas wolny) i stocznie narciarskie.",
+      "Bardzo polecam prelekcję w Izbie Regionalnej (godzinna pogadanka o historii, geografii i kulturze regionu).",
+      "Powrót na biesiadę- koniecznie z kapelą góralską, może być przy ognisku lub w salce biesiadnej.",
+      "W niedzielę wyjazd po śniadaniu w Pieniny, tam spływ tratwami lub spacer Drogą Pienińską po stronie słowackiej (9-11 km).",
+      "Powrót do domu w godzinach wieczornych."
+    ],
+    "imageMain": "/pictures/tatry/tatry01.jpg",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "weekend",
+    "destinationType": "domestic"
+  },
+  {
+    "title": "KRAKÓW I OKOLICE",
+    "days": "weekend",
+    "descTitle": "Jedno z najpiękniejszych miast Europy, które przyciąga miliony turystów z całego świata. Każdy zna i każdy chętnie wraca… Wpisane na listę UNESCO, tak samo jak kopalnia w Wieliczce",
+    "description": [
+      "W piątek wyjazd po południu, przejazd do hotelu (Kraków lub nieopodal), obiad i relaks.",
+      "Po sobotnim śniadaniu intensywne zwiedzanie Krakowa z przewodnikiem:",
+      "Wawel (katedra, katakumby, dzwon Zygmunta itd.), rynek i Stare Miasto (min Collegium Maius, planty, sukiennice).",
+      "Powrót do hotelu i obiad (ewentualna biesiada zależy od rodzaju hotelu, w którym zamieszkamy).",
+      "W niedzielny poranek, śniadanie i wykwaterowanie a potem do wyboru- zwiedzanie Kazimierza (słynny okrąglak, synagoga i kirkut)",
+      "albo kopalnia w Wieliczce",
+      "albo wyjazd do Ojcowskiego PN,",
+      "ostatecznie KL Auschwitz- Birkenau.",
+      "Powrót wieczorem"
+    ],
+    "imageMain": "/dist/pictures/krakow/krakow01.jpg",
+    "price45people": 89,
+    "price40people": 0,
+    "typeOfTrip": "buss-trip",
+    "lengthOfTrip": "weekend",
+    "destinationType": "domestic"
   }
 ]

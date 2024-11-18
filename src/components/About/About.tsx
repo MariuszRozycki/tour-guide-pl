@@ -1,20 +1,56 @@
-import MainHeading from "../MainHeading/MainHeading";
-import AboutText from "./AboutText";
+import ContentWrapper from "./ContentWrapper";
+import ImageWrapper from "./ImageWrapper";
+import TextParagraph from "./TextParagraph";
+import { textAbout } from "./textAbout";
 
 const About = () => {
   return (
-    <div>
+    <section className="about">
       <div className="container">
-        <MainHeading />
-        <h2>O mnie</h2>
+        <h1>O mnie!</h1>
         <div className="about-wrapper">
-          <div className="img-wrapper">
-            <img src="/pictures/tomek-zdunek.jpg" alt="Tour Guide - Tomek Zdunek" />
-          </div>
-          <AboutText />
+          <ContentWrapper className="ContentWrapper-first">
+            <ImageWrapper
+              className="img-wrapper img-wrapper-odd img-wrapper-first"
+              picture="/pictures/tomek-zdunek.jpg"
+              alt="Tour Guide - Tomasz Zdunek"
+              imgElement="img-first"
+            />
+            <TextParagraph text={textAbout.first} className="text-paragraph text-paragraph-first text-odd" />
+          </ContentWrapper>
+
+          <ContentWrapper className="ContentWrapper-second">
+            <ImageWrapper
+              className="img-wrapper img-wrapper-even img-wrapper-second"
+              picture="/pictures/tomek-about-1.jpg"
+              alt="Tour Guide - Tomasz Zdunek"
+              imgElement="img-second"
+            />
+            <TextParagraph text={textAbout.second} className="text-paragraph text-paragraph-second text-even" />
+          </ContentWrapper>
+
+          <ContentWrapper className="ContentWrapper-third">
+            <ImageWrapper
+              className="img-wrapper img-wrapper-odd img-wrapper-third"
+              picture="/pictures/tomek-about-2.jpg"
+              alt="Tour Guide - Tomasz Zdunek"
+              imgElement="img-third"
+            />
+            <TextParagraph text={textAbout.third} className="text-paragraph text-paragraph-third text-odd" />
+          </ContentWrapper>
+
+          <ContentWrapper className="ContentWrapper-fourth">
+            <ImageWrapper
+              className="img-wrapper img-wrapper-even img-wrapper-fourth"
+              picture="/pictures/tomek-about-3.jpg"
+              alt="Tour Guide - Tomasz Zdunek"
+              imgElement="img-fourth"
+            />
+            <TextParagraph text={textAbout.fourth} className="text-paragraph text-paragraph-fourth text-even" />
+          </ContentWrapper>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

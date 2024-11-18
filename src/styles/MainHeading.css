@@ -1,0 +1,9 @@
+.h1-heading {
+  font-size: var(--h1-fs);
+  margin-bottom: 20px;
+  span {
+    line-height: 1.5;
+    display: block;
+    font-size: var(--h1-spam-fs);
+  }
+}

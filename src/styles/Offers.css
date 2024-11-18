@@ -2,26 +2,117 @@
   .offers-navigator {
     ul {
       display: grid;
+      gap: 10px;
       grid-template-columns: 1fr;
       list-style: none;
       padding: 10px;
-      max-width: 600px;
+      max-width: 500px;
       margin: auto;
-      background-color: var(--tertiary-color);
+      background-color: var(--color-white);
       border-radius: var(--border-radius-small);
       text-align: center;
-      box-shadow: var(--box-shadow-hard);
 
       li {
-        p {
-          text-transform: uppercase;
-          margin: 10px 0;
-          font-weight: 700;
+        display: grid;
+        grid-template-rows: auto;
+        border-radius: var(--border-radius-min);
+        border: 1px solid lightgray;
+        min-height: 70px;
+
+        a {
+          display: grid;
+          grid-template-columns: auto 1fr 1fr 1fr;
+          gap: 10px;
+
+          .img-wrapper {
+            justify-content: center;
+            align-items: center;
+            grid-column: 1/2;
+            width: 110px;
+            height: 80px;
+            grid-row: 1;
+
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-top-left-radius: var(--border-radius-min);
+              border-bottom-left-radius: var(--border-radius-min);
+            }
+          }
+          p {
+            text-align: left;
+            grid-row: 1;
+            grid-column: 2/5;
+            text-transform: uppercase;
+            margin: 10px 0;
+            font-weight: 500;
+            transition: var(--transition-standard);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 680px) {
+  .OffersContainer {
+    .offers-navigator {
+      ul {
+        max-width: 800px;
+        grid-template-columns: 1fr 1fr;
+
+        li {
           transition: var(--transition-standard);
+          a {
+            p {
+              font-size: calc(var(--paragraph-fs) - 1px);
+            }
+          }
 
           &:hover {
-            color: var(--black-color);
-            transform: scale(1.1);
+            box-shadow: var(--box-shadow-light);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .OffersContainer {
+    .offers-navigator {
+      ul {
+        li {
+          a {
+            .img-wrapper {
+              width: 70px;
+              height: 80px;
+            }
+            p {
+              font-size: calc(var(--paragraph-fs) - 0.5vw);
+              /* word-break: break-all; */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 275px) {
+  .OffersContainer {
+    .offers-navigator {
+      ul {
+        li {
+          a {
+            .img-wrapper {
+              display: none;
+            }
+            p {
+              word-break: break-all;
+            }
           }
         }
       }

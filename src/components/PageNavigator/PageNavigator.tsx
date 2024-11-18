@@ -30,14 +30,15 @@ const PageNavigator = () => {
   ];
 
   const currentPage = pages.find((page) => page.path === location.pathname);
-  const isOffersPage = location.pathname.startsWith("/offers");
+  const isHomePage = location.pathname !== "/";
+  const isSingleOfferPage = location.pathname.startsWith("/offers/") && location.pathname.split("/").length === 4;
 
   const allOffersBtn =
-    isOffersPage && location.pathname !== "/offers" ? (
+    isHomePage && location.pathname !== "/offers" ? (
       <li className="PageNavigator-element">
         <button className="PageNavigator-button" onClick={goOffers}>
           <img className="icon" src="/icons/list-interface-symbol.png" alt="List icon" />
-          <p>Pokaż wszystkie oferty</p>
+          <p>Pokaż oferty</p>
         </button>
       </li>
     ) : null;
@@ -61,12 +62,16 @@ const PageNavigator = () => {
         <li>
           <p className="PageNavigator-element-paragraph active">{currentPage.label}</p>
         </li>
+      ) : isSingleOfferPage ? (
+        <li>
+          <p className="PageNavigator-element-paragraph active">Szczegóły oferty</p>
+        </li>
       ) : null}
     </>
   );
 
   return (
-    <div>
+    <div className="PageNavigator">
       <div className="container">
         <ul className="PageNavigator-buttons-wrapper">
           {currentPageBtn}

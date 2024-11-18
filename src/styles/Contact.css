@@ -1,82 +1,90 @@
-.contact-details {
-  list-style: none;
-  margin: auto;
-  max-width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0;
-  gap: 10px;
+.contact-details-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 600px;
+  margin: 20px auto;
 
-  li {
+  .img-wrapper {
+    width: 150px;
+  }
+
+  .contact-details {
+    justify-self: flex-start;
+    list-style: none;
+    margin: auto;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    a {
+    align-items: flex-start;
+    padding: 0;
+    gap: 10px;
+
+    li {
       display: flex;
       justify-content: center;
-      gap: 5px;
-      font-weight: 700;
+      align-items: center;
 
-      &:hover {
-        color: var(--red-color);
-      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 5px;
+        font-weight: 600;
+        color: var(--color-black);
+        transition: color var(--transition-standard);
 
-      .contact-details-icon-wrapper {
-        display: inline-block;
-        height: 30px;
-        width: auto;
+        &:hover {
+          color: var(--red-color);
+        }
 
-        img {
-          width: auto;
-          height: 100%;
+        .contact-details-icon-wrapper {
+          display: inline-block;
+          height: 20px;
+
+          img {
+            width: auto;
+            height: 100%;
+          }
+
+          &.email-icon {
+            height: 20px;
+          }
         }
       }
 
-      .contact-details-icon-wrapper.email-icon {
-        height: 25px;
-      }
-    }
-
-    p {
-      font-weight: 600;
-    }
-
-    &:nth-last-of-type(1) {
       p {
+        font-weight: 600;
+      }
+
+      &:last-of-type p {
         margin: 7px 0;
       }
-    }
-  }
-
-  .excursion-schedule-title {
-    p {
-      margin-bottom: 3px;
     }
   }
 }
 
 form {
-  margin: 50px auto 0;
+  margin: 0 auto;
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: var(--tertiary-color);
+  background-color: var(--color-secondary);
   padding: 20px;
-  border-radius: var(--border-radius-small);
-  box-shadow: var(--box-shadow-medium);
-  text-shadow: var(--text-shadow);
+  border-radius: var(--border-radius-min);
+  border: 1px solid;
+  box-shadow: var(--box-shadow-light);
 
   h3 {
     font-size: var(--h3-fs);
-    color: var(--black-color);
+    color: var(--color-white);
   }
 
   label {
     margin-top: 20px;
-    color: var(--black-color);
-    font-weight: 700;
+    color: var(--color-white);
+    font-weight: 500;
     text-align: left;
   }
 
@@ -85,10 +93,10 @@ form {
     padding: var(--input-padding);
     margin-top: 4px;
     width: 100%;
+    border: 0;
     border-radius: var(--border-radius-min);
-    border: 1px solid var(--primary-color);
-    background-color: var(--white-color);
-    color: var(--black-color);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
 
   textarea {
@@ -98,18 +106,18 @@ form {
 
   .btn {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     max-width: 100%;
     align-self: center;
     margin-top: 15px;
     box-shadow: var(--box-shadow-medium);
-    color: var(--fifth-color);
-    background-color: var(--red-color);
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+    transition: box-shadow var(--transition-standard), background-color var(--transition-standard);
 
     &:hover {
       box-shadow: var(--box-shadow-none);
-      color: var(--fifth-color);
-      background-color: var(--red-color);
+      background-color: var(--color-yellow-hover);
     }
   }
 
@@ -123,9 +131,12 @@ form {
   }
 
   .form-error {
-    color: var(--orange-color);
-    font-weight: 700;
+    color: var(--color-white);
+    font-weight: 400;
     margin-top: 5px;
+    padding: var(--padding-small);
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: var(--border-radius-min);
   }
 
   .success {
@@ -134,5 +145,30 @@ form {
 
   .error {
     color: red;
+  }
+}
+
+/* Media Queries */
+@media (min-width: 420px) {
+  .contact-details-wrapper {
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: 100px;
+    column-gap: 10px;
+    border-radius: var(--border-radius-min);
+
+    .img-wrapper {
+      width: 100%;
+
+      img {
+        object-position: 0 center;
+        border-top-left-radius: var(--border-radius-min);
+        border-bottom-left-radius: var(--border-radius-min);
+      }
+    }
+
+    .contact-details {
+      height: 100%;
+      justify-content: stretch;
+    }
   }
 }

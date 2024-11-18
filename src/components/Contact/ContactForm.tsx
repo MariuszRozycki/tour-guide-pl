@@ -108,6 +108,7 @@ const ContactForm: React.FC = () => {
 
     formDataObject.append("user-name", formData.userName);
     formDataObject.append("your-email", formData.email);
+    formDataObject.append("honeypot-field", "");
     formDataObject.append("your-phone", formData.phone);
     formDataObject.append("your-subject", formData.subject);
     formDataObject.append("your-message", formData.message);
@@ -137,70 +138,72 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form id="form-15" action={url} method="post" onSubmit={handleSubmit}>
+    <form id='form-15' action={url} method='post' onSubmit={handleSubmit}>
       <h3>Zapytaj o ofertę przez formularz</h3>
 
-      <label htmlFor="user-name">
+      <label htmlFor='user-name'>
         Twoje imię:
-        <input id="user-name" type="text" name="userName" value={formData.userName} onChange={handleChange} />
+        <input id='user-name' type='text' name='userName' value={formData.userName} onChange={handleChange} />
         {errors.userName && (
-          <p className="form-error" id="name-error">
+          <p className='form-error' id='name-error'>
             {errors.userName}
           </p>
         )}
       </label>
 
-      <label htmlFor="your-email">
+      <label htmlFor='your-email'>
         Twój adres email:
-        <input id="your-email" type="email" name="email" value={formData.email} onChange={handleChange} />
+        <input id='your-email' type='email' name='email' value={formData.email} onChange={handleChange} />
         {errors.email && (
-          <p className="form-error" id="email-error">
+          <p className='form-error' id='email-error'>
             {errors.email}
           </p>
         )}
       </label>
 
-      <label htmlFor="your-phone">
+      <input type='text' name='honeypot-field' style={{ display: "none" }} value='' readOnly />
+
+      <label htmlFor='your-phone'>
         Twój numer telefonu:
-        <input id="your-phone" type="tel" name="phone" value={formData.phone} onChange={handleChange} />
+        <input id='your-phone' type='tel' name='phone' value={formData.phone} onChange={handleChange} />
         {errors.phone && (
-          <p className="form-error" id="phone-error">
+          <p className='form-error' id='phone-error'>
             {errors.phone}
           </p>
         )}
       </label>
 
-      <label htmlFor="your-subject">
+      <label htmlFor='your-subject'>
         Temat wiadomości:
-        <input id="your-subject" type="text" name="subject" value={formData.subject} onChange={handleChange} />
+        <input id='your-subject' type='text' name='subject' value={formData.subject} onChange={handleChange} />
         {errors.subject && (
-          <p className="form-error" id="subject-error">
+          <p className='form-error' id='subject-error'>
             {errors.subject}
           </p>
         )}
       </label>
 
-      <label htmlFor="your-message">
+      <label htmlFor='your-message'>
         Treść wiadomości:
-        <textarea id="your-message" name="message" value={formData.message} onChange={handleChange} />
+        <textarea id='your-message' name='message' value={formData.message} onChange={handleChange} />
         {errors.message && (
-          <p className="form-error" id="user-message--error">
+          <p className='form-error' id='user-message--error'>
             {errors.message}
           </p>
         )}
       </label>
 
-      <div id="message" className="message" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <div id='message' className='message' style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         {isLoading ? (
-          <Oval color="#00BFFF" height={40} width={40} />
+          <Oval color='#00BFFF' height={40} width={40} />
         ) : (
-          <button className="btn" type="submit">
+          <button className='btn' type='submit'>
             Wyślij
           </button>
         )}
       </div>
 
-      <ToastContainer position="top-center" />
+      <ToastContainer position='top-center' />
     </form>
   );
 };

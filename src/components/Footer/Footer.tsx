@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
                 <li>
                   <a href="tel:+48601786363">
                     <div className="contact-details-icon-wrapper">
-                      <img src="/icons/telephone-call.png" alt="Telephone icon" />
+                      <FontAwesomeIcon icon={faMobileAlt} />
                     </div>
                     +48 601-786-363
                   </a>
@@ -22,7 +23,7 @@ const Footer = () => {
                 <li>
                   <a href="mailto:info@tour-guide.pl">
                     <div className="contact-details-icon-wrapper email-icon">
-                      <img src="/icons/email-icon.png" alt="Email icon" />
+                      <FontAwesomeIcon icon={faEnvelope} />
                     </div>
                     info@tour-guide.pl
                   </a>
@@ -30,7 +31,7 @@ const Footer = () => {
                 <li>
                   <a href="mailto:tourguide@poczta.onet.pl">
                     <div className="contact-details-icon-wrapper email-icon">
-                      <img src="/icons/email-icon.png" alt="Email icon" />
+                      <FontAwesomeIcon icon={faEnvelope} />
                     </div>
                     tourguide@poczta.onet.pl
                   </a>
@@ -65,12 +66,12 @@ const Footer = () => {
           </section>
           <section className="footer-main-wrap">
             <div className="footer-contact-wrapper">
-              <p className="footer-contact-header">Contact to Web Developer:</p>
+              <p className="footer-contact-header">Web Developer:</p>
               <ul className="footer-contact">
                 <li>
                   <a href="tel:+4793928270">
                     <div className="contact-details-icon-wrapper">
-                      <img src="/icons/telephone-call.png" alt="Telephone icon" />
+                      <FontAwesomeIcon icon={faMobileAlt} />
                     </div>
                     +47 939 28 270
                   </a>
@@ -78,7 +79,8 @@ const Footer = () => {
                 <li>
                   <a href="mailto:marius.front@gmail.com">
                     <div className="contact-details-icon-wrapper email-icon">
-                      <img src="/icons/email-icon.png" alt="Email icon" />
+                      {/* <img src="/icons/email-icon.png" alt="Email icon" /> */}
+                      <FontAwesomeIcon icon={faEnvelope} />
                     </div>
                     marius.front@gmail.com
                   </a>
@@ -88,7 +90,7 @@ const Footer = () => {
                     <div className="contact-details-icon-wrapper">
                       <FontAwesomeIcon icon={faGithub} />
                     </div>
-                    All rights reserved© Mariusz Rozycki
+                    GitHub Mariusz Rozycki
                   </a>
                 </li>
               </ul>
